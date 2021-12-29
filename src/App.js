@@ -8,7 +8,7 @@ function App() {
 
   const bodyInput = useRef('');
   const [newPost, setNewPost] = useState({});
-  const [value, setValue] = useState("");
+  const [value, setValue] = useState("Shop");
   const [posts, setPosts] = useState([
     {
       id: uuidv4(),
