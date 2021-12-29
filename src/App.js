@@ -79,7 +79,7 @@ function App() {
         <option value1="Tech">Tech</option>
         <option value1="Rest">Rest</option>
       </select>
-      <button onClick={Add} className="buttonAdd" type="text">&#x2BA0;
+      <button onClick={Add} className="buttonAdd" type="text">&#x1F4AC;
      
       </button>
     </div>
