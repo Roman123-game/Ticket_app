@@ -55,7 +55,7 @@ function App() {
   }, [posts]);
   return (
     <div className="App">
-      Ultimate Todo
+     Tickets
       <div>
         {posts.map((item) => (
           <Task
