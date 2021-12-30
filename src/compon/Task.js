@@ -3,7 +3,7 @@ import React from "react";
 const Task = (props) => {
 
   return (
-    <div className="Task">
+    <div className="task">
       <fieldset className="fieldset">
         <legend className="legend">{props.postId}</legend>
         <h4 className="title"><b>{props.listName}</b></h4>

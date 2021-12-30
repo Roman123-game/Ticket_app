@@ -7,6 +7,7 @@
   display: grid;
   background-color: rgb(144, 238, 144);
   color: whitesmoke;
+  
 }
 
 .fieldset {
@@ -16,7 +17,7 @@
   background-color: rgb(255, 255, 255,0.5);
   color: black;
   font-size: medium;
- 
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .legend {
   font-size: 10px;
@@ -68,7 +69,7 @@
   color: #16b10a;
   height: 40px;
 }
-.Task {
+.task {
   display: inline;
   height: 100px;
   display: contents;
