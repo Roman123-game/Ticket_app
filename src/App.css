@@ -58,7 +58,6 @@
 }
 .buttonRem {
   border: 1px solid red;
-  border-top: dotted;
   background: whitesmoke;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
