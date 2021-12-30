@@ -5,7 +5,7 @@
   font-size: xx-large;
   border: 1px solid brown;
   display: grid;
-  background-color: lightgreen;
+  background-color: rgb(144, 238, 144);
   color: whitesmoke;
 }
 
@@ -13,9 +13,10 @@
   display: inline;
   border-radius: 5px;
   border: 1px solid rgb(81, 0, 128);
-  background-color: wheat;
+  background-color: rgb(255, 255, 255,0.5);
   color: black;
   font-size: medium;
+ 
 }
 .legend {
   font-size: 10px;
