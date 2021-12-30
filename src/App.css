@@ -59,14 +59,14 @@
 .buttonRem {
   border: 1px solid red;
   background: whitesmoke;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
   margin-left: 100px;
   margin-right: auto;
   margin-top: auto;
   margin-bottom: auto;
   color: #16b10a;
-  
+  height: 40px;
 }
 .Task {
   display: inline;
