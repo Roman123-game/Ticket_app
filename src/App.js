@@ -33,7 +33,7 @@ function App() {
     {
       id: uuidv4(),
       listName: "Rest",
-      description: "Go Piknik",
+      description: "Go Picnic",
     },
   ]);
   function remove( props) {
