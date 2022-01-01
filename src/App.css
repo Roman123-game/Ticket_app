@@ -66,14 +66,14 @@
 }
 
 .buttonRem {
-  display: inline;
+  display: inline-flex;
   border: 2px solid red;
   background-color: rgb(255, 250, 250, 0.8);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
   border-top: dashed red thin;
   margin-right:auto;
-  margin-left:110px;
+  margin-left:140px;
   margin-bottom: 1px;
   color: #16b10a;
   height: 40px;
