@@ -33,14 +33,20 @@
 }
 
 .input {
-  border: 1px solid blue;
-  border-radius: 5px;
+  border: 1px solid #0000ff;
+  border-top: none ;
+  border-right: none;
+  border-left: none;
   display: inline-grid;
   width: 200px;
   height: 20px;
   margin-right: 3px;
   margin-left: auto;
-  background-color: rgb(255, 255, 255, 0.4);
+  background-color: rgb(255, 255, 255, 0.0);
+}
+input:focus {
+  background-color: rgb(255, 255, 255, 0.0);
+  b
 }
 
 .select {
