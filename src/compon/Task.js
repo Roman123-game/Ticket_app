@@ -1,5 +1,6 @@
 import React from "react";
 
+
 const Task = (props) => {
 
   return (
@@ -8,7 +9,7 @@ const Task = (props) => {
         <legend className="legend">{props.postId}</legend>
         <h4 className="title"><b>{props.listName}</b></h4>
         <h6 className="bodyPost"><i>{props.description}</i></h6>
-          <button className="buttonRem" onClick={()=>props.remove(props)}>&#x267B;</button>
+          <button className="buttonRem" onClick={()=>props.remove(props)}>&#x1F5D1;</button>
       </fieldset>
     </div>
   );
