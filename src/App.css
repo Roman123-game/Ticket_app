@@ -75,14 +75,13 @@ input:focus {
   display: inline-flex;
   background-size:length;
   background: none;
-  border:1px solid black;
+  border:1px solid red;
   border-radius: 5px;
   font-size: 22px;
   margin-right:auto;
   margin-left:120px;
   margin-bottom: 0px;
-  color:red;
-  
+  color:black;
 }
 
 .task {
