@@ -73,11 +73,11 @@ input:focus {
 
 .buttonRem {
   display: inline-flex;
-  border: 2px solid red;
+  border: 3px double red;
   background-color: rgb(255, 250, 250, 0.8);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
-  border-top: dashed red thin;
+  border-top: dotted red thin;
   margin-right:auto;
   margin-left:140px;
   margin-bottom: 1px;
