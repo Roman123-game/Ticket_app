@@ -87,20 +87,17 @@ input:focus {
   height: 100px;
   display: contents;
 }
-.title {
-  color: blueviolet;
-}
 .fade-enter {
-  transform: translateY(-150px);
+  opacity: 0;
 }
 .fade-enter-active {
-  transform: translateY(0px);
-  transition:  all 2000ms  ease-in;
+  opacity: 1;
+  transition: opacity 2000ms ease-in-out;
 }
 .fade-exit {
   opacity: 1;
 }
 .fade-exit-active {
-  transform: translateY(150px);
-  transition: all 2000ms  ease-in;
+  opacity: 0;
+  transition: opacity 2000ms ease-in-out;
 }
