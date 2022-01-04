@@ -3,6 +3,7 @@ import { useState, useMemo, useRef } from "react";
 import "./App.css";
  import { v4 as uuidv4 } from "uuid";
 import Task from "./compon/Task";
+import { CSSTransition, TransitionGroup } from "react-transition-group";
 
 function App() {
 
@@ -56,17 +57,18 @@ function App() {
   return (
     <div className="App">
      Tickets
-      <div>
+     <TransitionGroup>
         {posts.map((item) => (
+          <CSSTransition classNames="fade"  key={item.id} timeout={50}>
           <Task
             remove={remove}
-            key={item.id}
             listName={item.listName}
             postId={item.id}
             description={item.description}
           ></Task>
+          </CSSTransition>
         ))}
-      </div>
+      </TransitionGroup>
       <input
         ref={bodyInput}
         id="input"

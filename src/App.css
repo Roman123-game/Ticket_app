@@ -75,21 +75,32 @@ input:focus {
   display: inline-flex;
   background-size:length;
   background: none;
-  border:1px solid red;
+  border:3px double red;
   border-radius: 5px;
   font-size: 22px;
   margin-right:auto;
   margin-left:120px;
   margin-bottom: 0px;
-  
 }
-
 .task {
   display: inline;
   height: 100px;
   display: contents;
 }
-
 .title {
   color: blueviolet;
+}
+.fade-enter {
+  transform: translateY(-150px);
+}
+.fade-enter-active {
+  transform: translateY(0px);
+  transition:  all 2000ms  ease-in;
+}
+.fade-exit {
+  opacity: 1;
+}
+.fade-exit-active {
+  transform: translateY(150px);
+  transition: all 2000ms  ease-in;
 }
