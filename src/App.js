@@ -3,10 +3,9 @@ import { useState, useMemo, useRef } from "react";
 import "./App.css";
  import { v4 as uuidv4 } from "uuid";
 import Task from "./compon/Task";
-import { CSSTransition, TransitionGroup } from "react-transition-group";
 
 function App() {
-const [anim, setAnim]  = useState(false);
+
   const bodyInput = useRef('');
   const [newPost, setNewPost] = useState({});
   const [value, setValue] = useState("Shop");
@@ -38,21 +37,17 @@ const [anim, setAnim]  = useState(false);
     },
   ]);
   function remove( props) {
-    setAnim(true)
     console.log("remove function");  
     const afterFilter =  posts.filter(val => val.id !== props.postId);
     console.log(afterFilter);
     setPosts(afterFilter);
-    setAnim(false)
   }
   function Add() {
-    setAnim(true)
     setNewPost({});
     setPosts([
       ...posts,
       { ...newPost, id: uuidv4(), listName: value, description: bodyInput.current.value},
     ]);
-    setAnim(false)
   }
 
   useMemo(() => {
@@ -61,18 +56,17 @@ const [anim, setAnim]  = useState(false);
   return (
     <div className="App">
      Tickets
-     <TransitionGroup>
+     <div>
         {posts.map((item) => (
-          <CSSTransition classNames="fade"  key={item.id} timeout={500} in={anim}>
           <Task
+          key={item.id}
             remove={remove}
             listName={item.listName}
             postId={item.id}
             description={item.description}
           ></Task>
-          </CSSTransition>
         ))}
-      </TransitionGroup>
+      </div>
       <input
         ref={bodyInput}
         id="input"
