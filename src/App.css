@@ -91,3 +91,6 @@ input:focus {
   display: contents;
 
 }
+.empty{
+  font-size: 22px;
+}

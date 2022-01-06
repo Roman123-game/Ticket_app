@@ -57,6 +57,7 @@ function App() {
     <div className="App">
      Tickets
     {(posts.length)?
+    // if else statement
      <div>
         {posts.map((item) => (
           <Task
@@ -70,8 +71,8 @@ function App() {
       </div>
 
       // continue if else statement
-         :<div>Add New Ticket</div>}
-            <input
+         :<div className="empty">Add Your First Ticket</div>}
+        <input
         ref={bodyInput}
         id="input"
         className="input"
