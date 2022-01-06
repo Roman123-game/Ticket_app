@@ -16,20 +16,26 @@ function App() {
       description: "Learn React.js",
     },
     {
-      id: uuidv4(),
-      listName: "Tech",
-      description: "Learn Redux",
-    },
-    {
       id:uuidv4(),
       listName: "Shop",
-      description: "Buy Sugar",
+      description: "Buy Milk",
+    },
+  
+    {
+      id:uuidv4(),
+      listName: "Rest",
+      description: "Go",
     }, 
     {
       id:uuidv4(),
       listName: "Shop",
-      description: "Buy Milk",
-    }
+      description: "Buy Salt",
+    },  
+    {
+      id: uuidv4(),
+      listName: "Tech",
+      description: "Learn Redux",
+    },
     
   ]);
   function remove( props) {
