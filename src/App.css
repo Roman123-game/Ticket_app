@@ -45,7 +45,7 @@
   background-color: rgb(255, 255, 255, 0.0);
 }
 input:focus {
-  background: none;
+  background-color: none;
   outline: none;
 }
 

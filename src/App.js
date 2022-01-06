@@ -56,6 +56,7 @@ function App() {
   return (
     <div className="App">
      Tickets
+    {(posts.length)?
      <div>
         {posts.map((item) => (
           <Task
@@ -67,12 +68,15 @@ function App() {
           ></Task>
         ))}
       </div>
-      <input
+
+      // continue if else statement
+         :<div>Add New Ticket</div>}
+            <input
         ref={bodyInput}
         id="input"
         className="input"
         type="text"
-        placeholder="New Task"
+        placeholder="New Ticket"
       ></input>
       <select className="select" onChange={(event) => setValue(event.target.value)}>
         <option value1="Shop">Shop</option>
