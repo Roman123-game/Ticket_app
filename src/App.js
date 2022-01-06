@@ -69,7 +69,6 @@ function App() {
           ></Task>
         ))}
       </div>
-
       // continue if else statement
          :<div className="empty">Add Your First Ticket</div>}
         <input
