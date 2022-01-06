@@ -29,12 +29,8 @@ function App() {
       id:uuidv4(),
       listName: "Shop",
       description: "Buy Milk",
-    },
-    {
-      id: uuidv4(),
-      listName: "Rest",
-      description: "Go Picnic",
-    },
+    }
+    
   ]);
   function remove( props) {
     console.log("remove function");  
