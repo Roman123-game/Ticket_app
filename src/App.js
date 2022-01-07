@@ -57,7 +57,7 @@ function App() {
   }, [posts]);
   return (
     <div className="App">
-     Tickets
+    Golden Tickets
     {(posts.length)?
     // if else statement
      <div>
