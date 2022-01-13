@@ -5,6 +5,7 @@ import "./App.css";
 import Task from "./compon/Task";
 import Select from "./compon/Select";
 import Input from "./compon/Input";
+import Button from "./compon/Button";
 
 function App() {
 
@@ -50,11 +51,11 @@ function App() {
     setValue(event.target.value);
   }
  function chngInp(event){
+   event.stopPropagation();
+   console.log(event.target.value)
    setValueInput(event.target.value)
   }
   function Add() {
-    console.log(valueInput)
-    
     setNewPost({});
     setPosts([
       ...posts,
@@ -70,25 +71,14 @@ function App() {
     Golden Tickets
     {(posts.length)?
     // if else statement
-     <div>
-        {posts.map((item) => (
-          <Task
-          key={item.id}
-            remove={remove}
-            listName={item.listName}
-            postId={item.id}
-            description={item.description}
-          ></Task>
-        ))}
-      </div>
+     <div> {posts.map((item) => (
+       <Task key={item.id} remove={remove} listName={item.listName} postId={item.id} description={item.description} />
+        ))} </div>
       // continue if else statement
-         :<div className="empty">Add Your First Ticket</div>}
-        <Input value={valueInput} className="input" type="text" placeholder="New Ticket" onChange={chngInp}
-      ></Input>
-      <Select className="select" onChange={onChangeSel}>
-      </Select>
-      <button onClick={Add} className="buttonAdd" type="text">&#x1F4AC;
-      </button>
+         : <div className="empty">Add Your First Ticket</div>}
+      <Input value={valueInput} className="input" type="text" placeholder="New Ticket" onChange={chngInp} />
+      <Select className="select" onChange={onChangeSel}/>
+      <Button onClick={Add} className="buttonAdd" type="text"></Button>
     </div>
   );
 }
