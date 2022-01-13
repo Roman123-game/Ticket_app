@@ -1,13 +1,14 @@
 import React from "react";
-import { useState, useMemo, useRef } from "react";
+import { useState, useMemo } from "react";
 import "./App.css";
  import { v4 as uuidv4 } from "uuid";
 import Task from "./compon/Task";
 import Select from "./compon/Select";
+import Input from "./compon/Input";
 
 function App() {
 
-  const bodyInput = useRef('');
+  const [valueInput, setValueInput] = useState("New Ticket");
   const [newPost, setNewPost] = useState({});
   const [value, setValue] = useState("Shop");
   const [posts, setPosts] = useState([
@@ -48,11 +49,16 @@ function App() {
   function onChangeSel(event){
     setValue(event.target.value);
   }
+ function chngInp(event){
+   setValueInput(event.target.value)
+  }
   function Add() {
+    console.log(valueInput)
+    
     setNewPost({});
     setPosts([
       ...posts,
-      { ...newPost, id: uuidv4(), listName: value, description: bodyInput.current.value},
+      { ...newPost, id: uuidv4(), listName: value, description: valueInput},
     ]);
   }
 
@@ -77,17 +83,11 @@ function App() {
       </div>
       // continue if else statement
          :<div className="empty">Add Your First Ticket</div>}
-        <input
-        ref={bodyInput}
-        id="input"
-        className="input"
-        type="text"
-        placeholder="New Ticket"
-      ></input>
+        <Input value={valueInput} className="input" type="text" placeholder="New Ticket" onChange={chngInp}
+      ></Input>
       <Select className="select" onChange={onChangeSel}>
       </Select>
       <button onClick={Add} className="buttonAdd" type="text">&#x1F4AC;
-     
       </button>
     </div>
   );
