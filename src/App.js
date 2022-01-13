@@ -45,7 +45,6 @@ function App() {
   function remove( props) {
     console.log("remove function");  
     const afterFilter =  posts.filter(val => val.id !== props.postId);
-    console.log(afterFilter);
     setPosts(afterFilter);
   }
   function onChangeSel(event){
