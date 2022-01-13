@@ -50,7 +50,7 @@ function App() {
   function onChangeSel(event){
     setValue(event.target.value);
   }
- function chngInp(event){
+ function changInp(event){
    event.stopPropagation();
    console.log(event.target.value)
    setValueInput(event.target.value)
@@ -76,9 +76,9 @@ function App() {
         ))} </div>
       // continue if else statement
          : <div className="empty">Add Your First Ticket</div>}
-      <Input value={valueInput} className="input" type="text" placeholder="New Ticket" onChange={chngInp} />
+      <Input value={valueInput} className="input" type="text" placeholder="New Ticket" onChange={changInp} />
       <Select className="select" onChange={onChangeSel}/>
-      <Button onClick={Add} className="buttonAdd" type="text"></Button>
+      <Button onClick={Add} className="buttonAdd" type="text"/>
     </div>
   );
 }
