@@ -3,6 +3,7 @@ import { useState, useMemo, useRef } from "react";
 import "./App.css";
  import { v4 as uuidv4 } from "uuid";
 import Task from "./compon/Task";
+import Select from "./compon/Select";
 
 function App() {
 
@@ -44,6 +45,9 @@ function App() {
     console.log(afterFilter);
     setPosts(afterFilter);
   }
+  function onChangeSel(event){
+    setValue(event.target.value);
+  }
   function Add() {
     setNewPost({});
     setPosts([
@@ -80,11 +84,11 @@ function App() {
         type="text"
         placeholder="New Ticket"
       ></input>
-      <select className="select" onChange={(event) => setValue(event.target.value)}>
-        <option value1="Shop">Shop</option>
-        <option value1="Tech">Tech</option>
-        <option value1="Rest">Rest</option>
-      </select>
+      <Select className="select" onChange={onChangeSel}>
+        <option value="Shop"></option>
+        <option value="Tech"></option>
+        <option value="Rest"></option>
+      </Select>
       <button onClick={Add} className="buttonAdd" type="text">&#x1F4AC;
      
       </button>
