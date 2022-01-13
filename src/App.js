@@ -6,6 +6,7 @@ import Task from "./compon/Task";
 import Select from "./compon/Select";
 import Input from "./compon/Input";
 import Button from "./compon/Button";
+import { render } from "@testing-library/react";
 
 function App() {
 
@@ -61,10 +62,10 @@ function App() {
       { ...newPost, id: uuidv4(), listName: value, description: valueInput},
     ]);
   }
-
   useMemo(() => {
-  return {...posts};
+  render ({...posts});
   }, [posts]);
+  
   return (
     <div className="App">
     Golden Tickets
