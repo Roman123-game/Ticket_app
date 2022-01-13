@@ -52,7 +52,6 @@ function App() {
   }
  function changInp(event){
    event.stopPropagation();
-   console.log(event.target.value)
    setValueInput(event.target.value)
   }
   function Add() {
