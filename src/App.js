@@ -85,9 +85,6 @@ function App() {
         placeholder="New Ticket"
       ></input>
       <Select className="select" onChange={onChangeSel}>
-        <option value="Shop"></option>
-        <option value="Tech"></option>
-        <option value="Rest"></option>
       </Select>
       <button onClick={Add} className="buttonAdd" type="text">&#x1F4AC;
      
