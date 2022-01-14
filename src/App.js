@@ -6,7 +6,7 @@ import Task from "./compon/Task";
 import Select from "./compon/Select";
 import Input from "./compon/Input";
 import Button from "./compon/Button";
-import { render } from "@testing-library/react";
+
 
 function App() {
 
@@ -62,8 +62,8 @@ function App() {
     ]);
   }
   useMemo(() => {
-  render ({...posts});
-  }, [posts]);
+    console.log("cashing");
+  }, []);
   
   return (
     <div className="App">
