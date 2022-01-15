@@ -28,7 +28,7 @@ function App() {
     {
       id:uuidv4(),
       listName: "Rest",
-      description: "Go",
+      description: "Walk 7 km",
     }, 
     {
       id:uuidv4(),
@@ -38,7 +38,7 @@ function App() {
     {
       id: uuidv4(),
       listName: "Tech",
-      description: "Learn Redux",
+      description: "Learn Angular 4.0",
     },
     
   ]);
