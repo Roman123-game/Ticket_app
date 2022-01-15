@@ -68,13 +68,13 @@ function App() {
   return (
     <div className="App">
     Golden Tickets
+
     {(posts.length) ?
-  
      <div> {posts.map((item) => (
        <Task key={item.id} remove={remove} listName={item.listName} postId={item.id} description={item.description} />
         ))} </div>
-   
       : <div className="empty">Add Your First Ticket</div>}
+      
       <Input value={valueInput} className="input" type="text" placeholder="New Ticket" onChange={changInp} />
       <Select className="select" onChange={onChangeSel}/>
       <Button onClick={Add} className="buttonAdd" type="text"/>
