@@ -31,15 +31,15 @@ function App() {
       description: "Walk 7 km",
     }, 
     {
-      id:uuidv4(),
-      listName: "Shop",
-      description: "Buy Salt",
-    },  
-    {
       id: uuidv4(),
       listName: "Tech",
-      description: "Learn Angular 4.0",
+      description: "Learn Angular",
+    }, {
+      id: uuidv4(),
+      listName: "Tech",
+      description: "Learn Python",
     },
+    
     
   ]);
   function remove( props) {
