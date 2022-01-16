@@ -80,9 +80,10 @@ input::placeholder{
   display: inline-flex;
   background-size:length;
   background: none;
+  border-top: solid;
   border:3px double red;
   border-radius: 5px;
-  font-size: 22px;
+  font-size: 10px;
   margin-right:auto;
   margin-left:120px;
   margin-bottom: 0px;
