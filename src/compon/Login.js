@@ -1,10 +1,10 @@
 import React from 'react'
-
+import "./Posts.css"
 const Login = props => {
     return (
         <div>
-           < input placeholder='User Name' />
-           < input placeholder='Password'/>
+           < input className='input' placeholder='User Name' />
+           < input  className='input' placeholder='Password'/>
         </div>
     )
 }
