@@ -9,7 +9,7 @@ const Login = (props) => {
            < input className={props.className} placeholder='User Name' ></input>
            < input  className={props.className} placeholder='Password'/>
            <Button onClick={props.onClick}/>
-           <h6> <i>*Press button ot login</i></h6>
+           <h6> <i>*Press button to login</i></h6>
         </div>
     )
 }

@@ -78,15 +78,15 @@ input::placeholder{
 
 .buttonRem {
   align-items: flex-end;
-  background-size:length;
   background: none;
-  border-top: solid;
-  border:3px double red;
+  border:1px solid red;
   border-radius: 5px;
-  font-size: 10px;
+  font-size: 12px;
   margin-right:auto;
   margin-left:120px;
-  margin-bottom: 0px;
+  color: red;
+  padding-top: -5px;
+  padding-bottom: -5px;
 }
 .title{
  color: rgb(81, 0, 128)
@@ -95,7 +95,7 @@ input::placeholder{
 .task {
   height: 100px;
   display: contents;
-
+  
 }
 .empty{
   font-size: 22px;
