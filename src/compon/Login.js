@@ -4,11 +4,13 @@ import Button from './Button'
 const Login = (props) => {
     return (
         <div>
-        <h1>Welcome to Golden Tickets</h1>
-        <h6>Press button ot login</h6>
+        <h3>Welcome to </h3>
+        <h1> Golden Tickets</h1>
+       
            < input className={props.className} placeholder='User Name' ></input>
            < input  className={props.className} placeholder='Password'/>
            <Button onClick={props.onClick}/>
+           <h6> <i>*Press button ot login</i></h6>
         </div>
     )
 }
