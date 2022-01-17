@@ -1,11 +1,11 @@
 import React from 'react'
-import "./Posts.css"
+
 import Button from './Button'
 const Login = (props) => {
     return (
         <div>
-           < input className='input' placeholder='Welcome to Tickets' />
-           < input  className='input' placeholder='Press button to Login'/>
+           < input className={props.className} placeholder='Welcome to Tickets' ></input>
+           < input  className={props.className} placeholder='Press button to Login'/>
            <Button onClick={props.onClick}/>
         </div>
     )

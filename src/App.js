@@ -11,7 +11,7 @@ function App() {
     return(
     <BrowserRouter>
     <Routes>
-    <Route path="/" element={<Login onClick={setToken} />}/>
+    <Route path="/" element={<Login className="input" onClick={setToken} />}/>
     </Routes>
       </BrowserRouter>
     )
