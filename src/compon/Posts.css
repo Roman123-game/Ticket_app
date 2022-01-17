@@ -21,7 +21,7 @@
 
 .legend {
   font-size: 10px;
-  color:#2f4f4f;;
+  color: silver;
 }
 
 .bodyPost {
@@ -43,7 +43,7 @@
   margin-right: 3px;
   margin-left: auto;
   background-color:inherit;
-  color:#2f4f4f;
+  color:silver;
 }
 input:focus {
   background-color: none;
