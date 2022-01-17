@@ -2,31 +2,23 @@ import React from "react";
 import "./App.css";
 import Login from "./compon/Login";
 import Posts from "./compon/Posts";
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter, Route,  Routes,} from "react-router-dom";
 
 function App() {
+
+
+
   return (
-    <BrowserRouter>
-      <div>
-        <ul>
-          <li>
-            <Link to="/">Login</Link>
-          </li>
-          <li>
-            <Link to="/Posts">Posts</Link>
-          </li>
-        </ul>
-        <hr />
-        <Routes>
-          <Route exact path="/">
-         home
-          </Route>
-          <Route path="/posts">
-          POSTS
-          </Route>
-        </Routes>
-      </div>
-    </BrowserRouter>
+ 
+      <BrowserRouter>
+
+       <Routes>
+       <Route path ="/" index element={<Posts/>} />
+       <Route path="/Login" element={<Login />}/>
+     
+       </Routes>
+      </BrowserRouter>
+
   );
 }
 export default App;

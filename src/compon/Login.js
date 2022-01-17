@@ -1,10 +1,12 @@
 import React from 'react'
 import "./Posts.css"
-const Login = props => {
+import Button from './Button'
+const Login = (props) => {
     return (
         <div>
-           < input className='input' placeholder='User Name' />
-           < input  className='input' placeholder='Password'/>
+           < input className='input' placeholder='User Name:any' />
+           < input  className='input' placeholder='Password:test1234'/>
+           <Button onClick={props.onClick}/>
         </div>
     )
 }

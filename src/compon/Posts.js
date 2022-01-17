@@ -7,7 +7,7 @@ import Select from "./Select";
 import Input from "./Input";
 import Button from "./Button";
 
-const Posts = (props) => {
+const Posts = () => {
   const [valueInput, setValueInput] = useState("New Ticket");
   const [newPost, setNewPost] = useState({});
   const [value, setValue] = useState("Shop");
