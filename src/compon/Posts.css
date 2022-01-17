@@ -32,8 +32,7 @@
   margin-right: auto;
   font-size: 12px;
 }
-
-.input {
+.input{
   align-items: flex-end;
   border: 1px solid #0000ff;
   border-top: none ;
@@ -43,8 +42,8 @@
   height: 20px;
   margin-right: 3px;
   margin-left: auto;
-  background-color: rgb(255, 255, 255, 0.0);
-  color: #AFAFAF ;
+  background-color:inherit;
+  color:#2f4f4f;
 }
 input:focus {
   background-color: none;
