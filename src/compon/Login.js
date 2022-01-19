@@ -13,7 +13,7 @@ const Login = (props) => {
              onChange={(event)=>props.onChange(props,event)}/>
            <Button onClick={(event)=>props.onClick(props,event)}/>
            <h6> <i>
-               *UserName: any
+               *UserName: Your name
                *Password: test1234</i></h6>
         </div>
     )
