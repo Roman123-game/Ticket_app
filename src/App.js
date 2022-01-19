@@ -17,8 +17,9 @@ function App() {
     event.stopPropagation();
     console.log(props);
     console.log(event);
-   const lowerCasePass = password.toLowerCase();
-    if (lowerCasePass === "test1234") {
+   const lowerCasePassword = password.toLowerCase();
+   const removeWhiteSpacess = lowerCasePassword.split(' ').join('');
+    if (removeWhiteSpacess === "test1234") {
       setToken(true);
     } else alert("wrong password");
   }
