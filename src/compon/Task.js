@@ -1,5 +1,5 @@
 import React from "react";
-
+import {  FaRegTrashAlt} from "react-icons/fa";
 
 const Task = (props) => {
 
@@ -9,7 +9,7 @@ const Task = (props) => {
         <legend className="legend">{props.postId}</legend>
         <h4 className="title"><b>{props.listName}</b></h4>
         <h6 className="bodyPost"><i>{props.description}</i></h6>
-          <button className="buttonRem" onClick={()=>props.remove(props)}>&#x2421;</button>
+          <button className="buttonRem" onClick={()=>props.remove(props)}><FaRegTrashAlt/></button>
       </fieldset>
     </div>
   );
