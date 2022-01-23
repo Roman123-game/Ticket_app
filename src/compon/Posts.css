@@ -97,3 +97,8 @@ input::placeholder {
 .empty {
   font-size: 22px;
 }
+.messageBottom{
+  color: whitesmoke;
+ font-style: italic;
+  font-size: small;
+}

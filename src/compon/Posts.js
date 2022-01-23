@@ -90,6 +90,7 @@ const Posts = () => {
       />
       <Select className="select" onChange={onChangeSel} />
       <Button onClick={Add} className="buttonAdd" type="text" />
+      <h6 className="messageBottom">You have {posts.length} tickets totally</h6>
     </div>
   );
 };
