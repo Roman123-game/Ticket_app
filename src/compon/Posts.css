@@ -102,3 +102,7 @@ input::placeholder {
  font-style: italic;
   font-size: small;
 }
+.mark{
+  color:gold;
+  background: none;
+}
