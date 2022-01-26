@@ -7,6 +7,7 @@
   font-size: xx-large;
   border: 1px solid brown;
   display: grid;
+  border-radius: 5px;
 }
 
 .fieldset {
@@ -54,7 +55,7 @@ input::placeholder {
 
 .select {
   display: inline-grid;
-  background-color: rgb(255, 255, 255, 0.4);
+  background-color: lightgrey;
   font-size: 14px;
   width: 105px;
   height: 30px;
@@ -62,7 +63,14 @@ input::placeholder {
   border-radius: 5px;
   margin: 1px 1px 1px auto;
 }
+.select option{
+  background-color:rgb(255, 255, 255, 0.4);
+}
+select:focus{
+  border-radius: 5px;
+  order: 1px solid rgb(81, 0, 128);
 
+}
 .buttonAdd {
   align-items: flex-end;
   font-size: 14px;
@@ -82,7 +90,7 @@ input::placeholder {
   color: red;
   border: 1px solid red;
   border-radius: 5px;
-  margin: auto auto 1px 120px;
+  margin: auto 2px 1px 120px;
   padding: unset;
  
 }
@@ -91,10 +99,10 @@ input::placeholder {
 }
 
 .task {
-  height: 100px;
+  height: 40px;
   display: contents;
 }
-.empty {
+.noTasks{
   font-size: 22px;
 }
 .messageBottom{

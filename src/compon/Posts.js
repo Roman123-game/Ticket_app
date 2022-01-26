@@ -7,6 +7,7 @@ import Select from "./Select";
 import Input from "./Input";
 import Button from "./Button";
 
+
 const Posts = () => {
   const [valueInput, setValueInput] = useState("New Ticket");
   const [newPost, setNewPost] = useState({});
@@ -79,7 +80,7 @@ const Posts = () => {
           ))}{" "}
         </div>
       ) : (
-        <div className="empty">Add Your First Ticket</div>
+        <div className="noTasks">Add Your First Ticket</div>
       )}
       <Input
         value={valueInput}
