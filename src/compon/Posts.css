@@ -55,7 +55,7 @@ input::placeholder {
 
 .select {
   display: inline-grid;
-  background-color: lightgrey;
+  background-color: rgb(255, 255, 255, 0.4);
   font-size: 14px;
   width: 105px;
   height: 30px;
@@ -64,13 +64,10 @@ input::placeholder {
   margin: 1px 1px 1px auto;
 }
 .select option{
-  background-color:rgb(255, 255, 255, 0.4);
+  background-color:lightgrey;
 }
-select:focus{
-  border-radius: 5px;
-  order: 1px solid rgb(81, 0, 128);
 
-}
+
 .buttonAdd {
   align-items: flex-end;
   font-size: 14px;
