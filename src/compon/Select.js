@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { FaImage, FaRegTrashAlt} from "react-icons/fa";
 
 
 const Select = (props) => {
