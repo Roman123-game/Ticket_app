@@ -104,7 +104,7 @@ input::placeholder {
 }
 .image{
 display: grid;
-  color: rgb(81, 0, 128);
+color: silver;
  margin: -15px auto auto -2px;
 }
 
