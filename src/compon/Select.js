@@ -5,8 +5,8 @@ import React from 'react'
 const Select = (props) => {
     return (
         <select className={props.className} onChange={props.onChange}>
-        <option> Shop</option>
-        <option >Tech</option>
+        <option>Shop</option>
+        <option>Tech</option>
         <option>Rest</option>
       </select>
     )
@@ -14,4 +14,4 @@ const Select = (props) => {
 
 
 
-export default Select
+export default Select;

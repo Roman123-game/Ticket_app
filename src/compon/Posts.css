@@ -19,12 +19,14 @@
   font-size: large;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 5px;
+
 }
 .legend {
-  display: flex;
+  /* display: flex; */
   width: auto;
   font-size: 10px;
   color: silver;
+  margin-right: 35px;
 }
 .bodyPost {
   width: 100%;
@@ -93,7 +95,7 @@ input::placeholder {
   border-radius: 5px;
   margin: auto 1px 1px auto;
   padding: unset;
- 
+
 }
 .title {
   width: auto;
