@@ -13,7 +13,7 @@
 .fieldset {
   display: inline;
   width: auto;
-  background-color: rgb(255, 255, 255, 0.4);
+  background-color: rgb(255, 255, 255, 0.3);
   color: gold;
   border: 1px solid rgb(81, 0, 128);
   font-size: large;
@@ -22,11 +22,12 @@
 
 }
 .legend {
-  /* display: flex; */
+  display: flex;
   width: auto;
   font-size: 10px;
   color: silver;
   margin-right: 35px;
+  
 }
 .bodyPost {
   width: 100%;
@@ -34,7 +35,7 @@
   font-size: 14px;
   border-radius: 5px;
   display: flex;
-   margin: auto 25px -36px 1px;
+  margin: auto 25px -36px 1px;
 }
 .input {
   font-size: 14px;
@@ -99,13 +100,16 @@ input::placeholder {
 }
 .title {
   width: auto;
-  margin: -5px auto auto -2px;
+  margin: -11px auto auto -1px;
   color: rgb(81, 0, 128);
 }
 .image{
 display: grid;
+
 color: silver;
- margin: -15px auto auto -2px;
+ margin: -18px auto auto -1px;
+ height: 40px;
+ width:40px;
 }
 
 
