@@ -65,7 +65,8 @@ const Posts = () => {
 
   return (
     <div className="Posts">
-      Golden Tickets
+      <h1>
+      Golden Tickets</h1>
       {posts.length ? (
         <div>
           {" "}
