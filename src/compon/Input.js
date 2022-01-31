@@ -2,7 +2,7 @@ import React from 'react'
 
 const Input = props => {
     return (
-        <input maxlength="25"
+        <input maxLength="25"
         value={props.value}
         className={props.className}
         type={props.type}

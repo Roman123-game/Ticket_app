@@ -7,14 +7,14 @@ const Login = (props) => {
         <div>
         <h3>Welcome to </h3>
         <h1> Golden Tickets</h1>
-        <h5>Application that helping keep all your tasks organized</h5>
+        <h4>Application that helping keep all your tasks organized</h4>
            < input className={props.className} placeholder='User Name'/>
            < input  className={props.className} placeholder='Password' value={props.value} 
              onChange={(event)=>props.onChange(props,event)}/>
            <Button onClick={(event)=>props.onClick(props,event)}/>
-           <h6> <i>
+           <h5> <i>
                *UserName: any
-               *Password: test1234</i></h6>
+               *Password: test1234</i></h5>
         </div>
     )
 }

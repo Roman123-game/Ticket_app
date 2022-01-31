@@ -8,6 +8,8 @@
   border: 1px solid brown;
   display: grid;
   border-radius: 5px;
+  margin: 0;
+  padding: 0;
 }
 
 .fieldset {
@@ -26,14 +28,15 @@
   width: auto;
   font-size: 10px;
   color: silver;
-  margin-right: 35px;
+  margin-right: auto;
+  width: 178px;
   
 }
 .image{
 width: 40px;
 height: 40px;
 color: silver;
-margin:-18px auto auto -164px;
+margin:-18px auto auto -145px;
 }
 .bodyPost {
   width: 100%;
@@ -106,8 +109,8 @@ input::placeholder {
 
 }
 .title {
-  width: auto;
-  margin:-23px auto auto -1px;
+
+  margin:-16px auto auto auto;
   color: rgb(81, 0, 128);
 }
 
@@ -122,7 +125,7 @@ input::placeholder {
 .messageBottom{
   color: whitesmoke;
  font-style: italic;
-  font-size: small;
+  font-size: medium;
 }
 .mark{
   color:gold;
