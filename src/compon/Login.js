@@ -12,9 +12,9 @@ const Login = (props) => {
            < input  className={props.className} placeholder='Password' value={props.value} 
              onChange={(event)=>props.onChange(props,event)}/>
            <Button onClick={(event)=>props.onClick(props,event)}/>
-           <h5 className="loginMessage"> <i>
+           <h6 className="loginMessage"> <i>
                *UserName: any
-               *Password: test1234</i></h5>
+               *Password: test1234</i></h6>
         </div>
     )
 }
