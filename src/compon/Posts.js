@@ -69,7 +69,6 @@ const Posts = () => {
       Golden Tickets</h1>
       {posts.length ? (
         <div>
-          {" "}
           {posts.map((item) => (
             <Task
               key={item.id}
@@ -78,7 +77,7 @@ const Posts = () => {
               postId={item.id}
               description={item.description}
             />
-          ))}{" "}
+          ))}
         </div>
       ) : (
         <div className="noTasks">Add Your First Ticket</div>

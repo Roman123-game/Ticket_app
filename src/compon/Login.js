@@ -5,9 +5,9 @@ const Login = (props) => {
   
     return (
         <div className='login'>
-        <h3>Welcome to </h3>
+        <h2>Welcome to </h2>
         <h1> Golden Tickets</h1>
-        <h4>Application that helping keep all your tasks organized</h4>
+        <h3>Application that helping keep all your tasks organized</h3>
            < input className={props.className} placeholder='User Name'/>
            < input  className={props.className} placeholder='Password' value={props.value} 
              onChange={(event)=>props.onChange(props,event)}/>
