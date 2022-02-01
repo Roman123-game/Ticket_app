@@ -12,7 +12,7 @@
 }
 
 .fieldset {
-  display: inline;
+  display: flex;
   width: auto;
   background-color: rgb(255, 255, 255, 0.3);
   color: gold;
@@ -32,10 +32,11 @@
   
 }
 .image{
+  display: flex;
 width: 40px;
 height: 40px;
 color: silver;
-margin:-18px auto auto -145px;
+margin:-20px auto auto 1px;
 }
 .bodyPost {
   width: 100%;
@@ -43,7 +44,7 @@ margin:-18px auto auto -145px;
   font-size: 14px;
   border-radius: 5px;
   display: flex;
-  margin: auto 25px -36px 1px;
+  margin:auto auto -10px -130px;
 }
 .input {
   font-size: 14px;
@@ -84,7 +85,7 @@ input::placeholder {
 
 
 .buttonAdd {
-  align-items: flex-end;
+  align-items: grid;
   font-size: 14px;
   background: none;
   background-color: rgb(255, 255, 255, 0.4);
@@ -92,7 +93,7 @@ input::placeholder {
   height: 30px;
   border: 1px solid green;
   border-radius: 5px;
-  margin: 1px 1px 1px auto;
+  margin: auto 1px 1px auto;
 }
 
 .buttonRem {
@@ -108,9 +109,9 @@ input::placeholder {
 
 }
 .title {
-
-  margin:-16px auto auto auto;
   color: rgb(81, 0, 128);
+  font-size: large;
+  margin-left: 25px;
 }
 
 .task {
