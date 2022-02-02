@@ -36,7 +36,7 @@
 width: 40px;
 height: 40px;
 color: silver;
-margin:-20px auto auto 1px;
+margin:-16px auto auto 1px;
 }
 .bodyPost {
   width: 100%;
@@ -44,7 +44,7 @@ margin:-20px auto auto 1px;
   font-size: 14px;
   border-radius: 5px;
   display: flex;
-  margin:auto auto -10px -130px;
+  margin:auto auto -8px -120px;
 }
 .input {
   font-size: 14px;
