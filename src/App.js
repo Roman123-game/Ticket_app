@@ -10,6 +10,7 @@ function App() {
   const [password, setPassword] = useState("");
 
   function updatePassword(props, event) {
+    event.stopPropagation();
     console.log(password);
     setPassword(event.target.value);
   }
