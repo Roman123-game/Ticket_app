@@ -56,15 +56,12 @@ const Posts = () => {
     setValue(event.target.value);
      if(event.target.value === "Shop"){
     setImage (<FaCartArrowDown className="image"/>);
-    console.log(event.target.value)
      }
      else if(event.target.value ==="Tech"){
       setImage (<FaLaptopCode className="image"/>);
-      console.log(event.target.value)
      }
      else if(event.target.value=== "Rest"){
       setImage (<FaCocktail className="image"/>);
-      console.log(event.target.value)
      }
    
   }
@@ -74,7 +71,6 @@ const Posts = () => {
     setValueInput(event.target.value);
   }
   function Add() {
-
     setImage(image);
     setPosts([
       ...posts,

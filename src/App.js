@@ -11,13 +11,10 @@ function App() {
 
   function updatePassword(props, event) {
     event.stopPropagation();
-    console.log(password);
     setPassword(event.target.value);
   }
   function LoginFunc(props, event) {
     event.stopPropagation();
-    console.log(props);
-    console.log(event);
     const removeWhiteSpaces = password.split(' ').join('');
    const lowerCasePassword = removeWhiteSpaces.toLowerCase();
     if (lowerCasePassword === "test1234") {
