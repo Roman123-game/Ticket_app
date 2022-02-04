@@ -110,7 +110,7 @@ input::placeholder {
 }
 .title {
   color: rgb(81, 0, 128);
-  font-size: large;
+  font-size: 22px;
   margin-left: 25px;
 }
 

@@ -6,47 +6,48 @@ import Task from "./Task";
 import Select from "./Select";
 import Input from "./Input";
 import Button from "./Button";
-import {FaImage, FaAdversal, FaAccessibleIcon, FaAccusoft} from "react-icons/fa";
+import {FaImage, FaLaptopCode, FaCocktail, FaCartArrowDown} from "react-icons/fa";
 
 
 const Posts = () => {
   const [valueInput, setValueInput] = useState("New Ticket");
   const [newPost, setNewPost] = useState({});
   const [value, setValue] = useState("Shop");
-  const [image, setImage] = useState(<FaImage className="image"/>);
+  const [image, setImage] = useState(<FaCartArrowDown className="image"/>); 
   const [posts, setPosts] = useState([
     {
       id: uuidv4(),
-      image: <FaImage className="image"/>,
+      image: <FaLaptopCode className="image"/>,
       listName: "Tech",
       description: "Learn React.js",
     },
     {
       id: uuidv4(),
-      image: <FaImage className="image"/>,
-      listName: "Tech",
-      description: "Learn React.js",
+      image: <FaCocktail className="image"/>,
+      listName: "Rest",
+      description: "Walk 7 km",
     },
 
     {
       id: uuidv4(),
-      image: <FaImage className="image"/>,
+      image: <FaCartArrowDown className="image"/>,
+      listName: "Shop",
+      description: "Buy Orange",
+    },
+    {
+      id: uuidv4(),
+      image: <FaLaptopCode className="image"/>,
       listName: "Tech",
       description: "Learn React.js",
     },
     {
       id: uuidv4(),
       image: <FaImage className="image"/>,
-      listName: "Tech",
-      description: "Learn React.js",
-    },
-    {
-      id: uuidv4(),
-      image: <FaImage className="image"/>,
-      listName: "Tech",
-      description: "Learn React.js",
+      listName: "Test",
+      description: "Test task",
     },
   ]);
+
   function remove(props) {
     console.log("remove function");
     const afterFilter = posts.filter((val) => val.id !== props.postId);
@@ -55,30 +56,30 @@ const Posts = () => {
   function onChangeSel(event) {
     setValue(event.target.value);
      if(value === "Shop"){
-    setImage (<FaAdversal className="image"/>);
-    console.log("tech")
+    setImage (<FaCartArrowDown className="image"/>);
+    console.log("shop")
      }
      else if(value === "Tech"){
-      setImage (<FaAccessibleIcon className="image"/>);
+      setImage (<FaLaptopCode className="image"/>);
+      console.log("tech")
      }
      else if(value === "Rest"){
-      setImage (<FaAccusoft className="image"/>);
+      setImage (<FaCocktail className="image"/>);
+      console.log("rest")
      }
-     else {
-      setImage (<FaImage className="image"/>);
-     }
+   
   }
   function changInp(event) {
     event.stopPropagation();
     setValueInput(event.target.value);
   }
   function Add() {
-    // setImage (<FaLaptopCode className ="image"/>);
     setNewPost({});
     setPosts([
       ...posts,
       { ...newPost, id: uuidv4(),image : image ,listName: value, description: valueInput },
     ]);
+    
   }
   useMemo(() => {
     console.log("cashing");
