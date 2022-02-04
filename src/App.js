@@ -20,7 +20,7 @@ function App() {
     console.log(event);
     const removeWhiteSpaces = password.split(' ').join('');
    const lowerCasePassword = removeWhiteSpaces.toLowerCase();
-    if (lowerCasePassword === "") {
+    if (lowerCasePassword === "test1234") {
       setToken(true);
     } else alert("wrong password");
   }
