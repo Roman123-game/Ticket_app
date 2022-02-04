@@ -36,7 +36,7 @@ const Posts = () => {
       id: uuidv4(),
       image: <FaLaptopCode className="image"/>,
       listName: "Tech",
-      description:"Learn React.js",
+      description:"Learn Angular",
     },
     {
       id: uuidv4(),
