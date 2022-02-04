@@ -6,39 +6,45 @@ import Task from "./Task";
 import Select from "./Select";
 import Input from "./Input";
 import Button from "./Button";
-import {FaImage} from "react-icons/fa";
+import {FaImage,FaLaptopCode} from "react-icons/fa";
 
 
 const Posts = () => {
   const [valueInput, setValueInput] = useState("New Ticket");
   const [newPost, setNewPost] = useState({});
   const [value, setValue] = useState("Shop");
+  const [image, setImage] = useState(<FaImage className="image"/>);
   const [posts, setPosts] = useState([
     {
       id: uuidv4(),
+      image: <FaImage className="image"/>,
       listName: "Tech",
       description: "Learn React.js",
     },
     {
       id: uuidv4(),
-      listName: "Shop",
-      description: "Buy Milk",
+      image: <FaImage className="image"/>,
+      listName: "Tech",
+      description: "Learn React.js",
     },
 
     {
       id: uuidv4(),
-      listName: "Rest",
-      description: "Walk 7 km",
+      image: <FaImage className="image"/>,
+      listName: "Tech",
+      description: "Learn React.js",
     },
     {
       id: uuidv4(),
+      image: <FaImage className="image"/>,
       listName: "Tech",
-      description: "Learn Angular",
+      description: "Learn React.js",
     },
     {
       id: uuidv4(),
+      image: <FaImage className="image"/>,
       listName: "Tech",
-      description: "Learn Python",
+      description: "Learn React.js",
     },
   ]);
   function remove(props) {
@@ -54,10 +60,11 @@ const Posts = () => {
     setValueInput(event.target.value);
   }
   function Add() {
+    setImage (<FaLaptopCode className ="image"/>);
     setNewPost({});
     setPosts([
       ...posts,
-      { ...newPost, id: uuidv4(), listName: value, description: valueInput },
+      { ...newPost, id: uuidv4(),image : image ,listName: value, description: valueInput },
     ]);
   }
   useMemo(() => {
@@ -72,7 +79,7 @@ const Posts = () => {
         <div>
           {posts.map((item) => (
             <Task
-              image = {<FaImage className="image"/>}
+              image = {item.image}
               key={item.id}
               remove={remove}
               listName={item.listName}
