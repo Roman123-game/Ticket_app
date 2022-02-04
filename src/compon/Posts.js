@@ -6,7 +6,7 @@ import Task from "./Task";
 import Select from "./Select";
 import Input from "./Input";
 import Button from "./Button";
-import {FaImage,FaLaptopCode} from "react-icons/fa";
+import {FaImage, FaAdversal, FaAccessibleIcon, FaAccusoft} from "react-icons/fa";
 
 
 const Posts = () => {
@@ -54,13 +54,26 @@ const Posts = () => {
   }
   function onChangeSel(event) {
     setValue(event.target.value);
+     if(value === "Shop"){
+    setImage (<FaAdversal className="image"/>);
+    console.log("tech")
+     }
+     else if(value === "Tech"){
+      setImage (<FaAccessibleIcon className="image"/>);
+     }
+     else if(value === "Rest"){
+      setImage (<FaAccusoft className="image"/>);
+     }
+     else {
+      setImage (<FaImage className="image"/>);
+     }
   }
   function changInp(event) {
     event.stopPropagation();
     setValueInput(event.target.value);
   }
   function Add() {
-    setImage (<FaLaptopCode className ="image"/>);
+    // setImage (<FaLaptopCode className ="image"/>);
     setNewPost({});
     setPosts([
       ...posts,
