@@ -6,6 +6,7 @@ import Task from "./Task";
 import Select from "./Select";
 import Input from "./Input";
 import Button from "./Button";
+import {FaImage} from "react-icons/fa";
 
 
 const Posts = () => {
@@ -71,6 +72,7 @@ const Posts = () => {
         <div>
           {posts.map((item) => (
             <Task
+              image = {<FaImage className="image"/>}
               key={item.id}
               remove={remove}
               listName={item.listName}
