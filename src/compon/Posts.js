@@ -6,7 +6,7 @@ import Task from "./Task";
 import Select from "./Select";
 import Input from "./Input";
 import Button from "./Button";
-import {FaImage, FaLaptopCode, FaCocktail, FaCartArrowDown, FaCartPlus} from "react-icons/fa";
+import {FaImage, FaLaptopCode, FaCocktail,  FaCartPlus} from "react-icons/fa";
 
 
 const Posts = () => {
@@ -18,26 +18,25 @@ const Posts = () => {
       id: uuidv4(),
       image: <FaLaptopCode className="image"/>,
       listName: "Tech",
-      description: "Learn React.js",
+      description:"Learn React.js",
     },
     {
       id: uuidv4(),
       image: <FaCocktail className="image"/>,
       listName: "Rest",
-      description: "Walk 7 km",
+      description:"Walk 7 km",
     },
-
     {
       id: uuidv4(),
       image: <FaCartPlus className="image"/>,
       listName: "Shop",
-      description: "Buy Orange",
+      description:"Buy Orange",
     },
     {
       id: uuidv4(),
       image: <FaLaptopCode className="image"/>,
       listName: "Tech",
-      description: "Learn React.js",
+      description:"Learn React.js",
     },
     {
       id: uuidv4(),
