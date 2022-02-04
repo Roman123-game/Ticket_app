@@ -11,7 +11,6 @@ import {FaImage, FaLaptopCode, FaCocktail, FaCartArrowDown} from "react-icons/fa
 
 const Posts = () => {
   const [valueInput, setValueInput] = useState("New Ticket");
-  const [newPost, setNewPost] = useState({});
   const [value, setValue] = useState("Shop");
   const [image, setImage] = useState(<FaCartArrowDown className="image"/>); 
   const [posts, setPosts] = useState([
@@ -55,29 +54,31 @@ const Posts = () => {
   }
   function onChangeSel(event) {
     setValue(event.target.value);
-     if(value === "Shop"){
+     if(event.target.value === "Shop"){
     setImage (<FaCartArrowDown className="image"/>);
-    console.log("shop")
+    console.log(event.target.value)
      }
-     else if(value === "Tech"){
+     else if(event.target.value ==="Tech"){
       setImage (<FaLaptopCode className="image"/>);
-      console.log("tech")
+      console.log(event.target.value)
      }
-     else if(value === "Rest"){
+     else if(event.target.value=== "Rest"){
       setImage (<FaCocktail className="image"/>);
-      console.log("rest")
+      console.log(event.target.value)
      }
    
   }
   function changInp(event) {
+    
     event.stopPropagation();
     setValueInput(event.target.value);
   }
   function Add() {
-    setNewPost({});
+
+    setImage(image);
     setPosts([
       ...posts,
-      { ...newPost, id: uuidv4(),image : image ,listName: value, description: valueInput },
+      {  id: uuidv4(),image : image ,listName: value, description: valueInput },
     ]);
     
   }
