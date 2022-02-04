@@ -39,12 +39,12 @@ color: silver;
 margin:-16px auto auto -4px;
 }
 .bodyPost {
-  width: 100%;
+  width: auto;
   align-items: center;
   font-size: 14px;
   border-radius: 5px;
   display: flex;
-  margin:auto auto -8px -120px;
+  margin:auto auto -8px -132px;
 }
 .input {
   font-size: 14px;

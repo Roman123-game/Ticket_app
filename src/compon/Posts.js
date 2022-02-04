@@ -6,13 +6,13 @@ import Task from "./Task";
 import Select from "./Select";
 import Input from "./Input";
 import Button from "./Button";
-import {FaImage, FaLaptopCode, FaCocktail, FaCartArrowDown} from "react-icons/fa";
+import {FaImage, FaLaptopCode, FaCocktail, FaCartArrowDown, FaCartPlus} from "react-icons/fa";
 
 
 const Posts = () => {
   const [valueInput, setValueInput] = useState("New Ticket");
   const [value, setValue] = useState("Shop");
-  const [image, setImage] = useState(<FaCartArrowDown className="image"/>); 
+  const [image, setImage] = useState(<FaCartPlus className="image"/>); 
   const [posts, setPosts] = useState([
     {
       id: uuidv4(),
@@ -29,7 +29,7 @@ const Posts = () => {
 
     {
       id: uuidv4(),
-      image: <FaCartArrowDown className="image"/>,
+      image: <FaCartPlus className="image"/>,
       listName: "Shop",
       description: "Buy Orange",
     },
@@ -55,7 +55,7 @@ const Posts = () => {
   function onChangeSel(event) {
     setValue(event.target.value);
      if(event.target.value === "Shop"){
-    setImage (<FaCartArrowDown className="image"/>);
+    setImage (<FaCartPlus className="image"/>);
      }
      else if(event.target.value ==="Tech"){
       setImage (<FaLaptopCode className="image"/>);
