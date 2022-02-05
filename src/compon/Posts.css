@@ -14,9 +14,9 @@
 .fieldset {
   display: flex;
   width: auto;
-  background-color: rgb(255, 255, 255, 0.3);
+  background-color: rgb(255, 255, 255, 0.4);
   color: gold;
-  border: 1px solid rgb(81, 0, 128);
+  border: 1px solid #2c003f;
   font-size: large;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 5px;
@@ -109,7 +109,7 @@ input::placeholder {
 
 }
 .title {
-  color: rgb(81, 0, 128);
+  color: 	#3b0054;
   font-size: 22px;
   margin-left: 25px;
 }
