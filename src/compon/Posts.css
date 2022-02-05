@@ -32,11 +32,11 @@
   
 }
 .image{
-  display: flex;
-width: 40px;
-height: 40px;
-color: silver;
-margin:-16px auto auto -4px;
+ display: flex;
+ width: 40px;
+ height: 40px;
+ color: silver;
+ margin:-16px auto auto -4px;
 }
 .bodyPost {
   width: auto;
@@ -123,7 +123,6 @@ input::placeholder {
   font-size: 22px;
 }
 .messageBottom{
-
   color: whitesmoke;
  font-style: italic;
   font-size: medium;
@@ -132,8 +131,6 @@ input::placeholder {
   color:gold;
   background: none;
 }
-
-
 .loginMessage{
   margin-top: 250px;
 }

@@ -38,12 +38,7 @@ const Posts = () => {
       listName: "Tech",
       description:"Learn Angular",
     },
-    {
-      id: uuidv4(),
-      image: <FaImage className="image"/>,
-      listName: "Test",
-      description: "Test task",
-    },
+
   ]);
 
   function remove(props) {
