@@ -131,6 +131,9 @@ input::placeholder {
   color:gold;
   background: none;
 }
-.loginMessage{
+.loginMsg{
   margin-top: 250px;
+}
+.welcomeMsg{
+  font-size: 46px;
 }

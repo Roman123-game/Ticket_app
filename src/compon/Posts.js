@@ -6,7 +6,7 @@ import Task from "./Task";
 import Select from "./Select";
 import Input from "./Input";
 import Button from "./Button";
-import {FaImage, FaLaptopCode, FaCocktail,  FaCartPlus} from "react-icons/fa";
+import {FaLaptopCode, FaCocktail,  FaCartPlus} from "react-icons/fa";
 
 
 const Posts = () => {
@@ -38,7 +38,6 @@ const Posts = () => {
       listName: "Tech",
       description:"Learn Angular",
     },
-
   ]);
 
   function remove(props) {
