@@ -56,10 +56,9 @@ const Posts = () => {
      else if(event.target.value=== "Rest"){
       setImage (<FaCocktail className="image"/>);
      }
-   
   }
+
   function changInp(event) {
-    
     event.stopPropagation();
     setValueInput(event.target.value);
   }
@@ -69,8 +68,8 @@ const Posts = () => {
       ...posts,
       {  id: uuidv4(),image : image ,listName: value, description: valueInput },
     ]);
-    
   }
+  
   useMemo(() => {
     console.log("cashing");
   }, []);
