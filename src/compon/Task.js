@@ -1,9 +1,7 @@
 import React from "react";
 import {FaRegTrashAlt} from "react-icons/fa";
 
-
 const Task = (props) => {
-
   return (
     <div className="task">
       <fieldset className="fieldset">

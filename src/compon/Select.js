@@ -1,7 +1,5 @@
 import React from 'react'
 
-
-
 const Select = (props) => {
     return (
         <select className={props.className} onChange={props.onChange}>
@@ -11,7 +9,5 @@ const Select = (props) => {
       </select>
     )
 }
-
-
 
 export default Select;
