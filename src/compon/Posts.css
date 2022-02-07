@@ -8,6 +8,8 @@
   border: 1px solid brown;
   display: grid;
   border-radius: 5px;
+  margin: 0;
+  padding: 0px;
   cursor:default;
 }
 
@@ -32,7 +34,7 @@
   
 }
 .image{
- display: flex;
+ display: grid;
  width: 40px;
  height: 40px;
  color: silver;
@@ -114,6 +116,7 @@ input::placeholder {
   color:red;
 }
 .title {
+  display:grid;
   color: 	#3b0054;
   font-size: 22px;
   margin-left: 25px;
@@ -128,7 +131,7 @@ input::placeholder {
 .noTasks{
   font-size: 22px;
 }
-.messageBottom{
+.messageTotally{
   color: whitesmoke;
  font-style: italic;
   font-size: medium;
