@@ -32,10 +32,9 @@ function App() {
                 className="input"
                 value={password}
                 onClick={LoginFunc}
-                onChange={updatePassword}
-              />
+                onChange={updatePassword} />
             }
-          />
+            />
         </Routes>
       </BrowserRouter>
     );
