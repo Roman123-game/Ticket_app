@@ -98,8 +98,7 @@ const Posts = () => {
         type="text"
         placeholder="New Ticket"
         onChange={changInp}
-        maxLength = "29"
-        />
+        maxLength = "29"/>
 
       <Select className="select" onChange={onChangeSel}/>
       <Button onClick={Add} className="buttonAdd" type="text" />

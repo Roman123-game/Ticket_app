@@ -82,7 +82,7 @@ input::placeholder {
   background-color:lightgrey;
 }
 .select:hover{
-  cursor:help
+  color:#3b0054
 }
 .buttonAdd {
   align-items: grid;
@@ -94,8 +94,9 @@ input::placeholder {
   border-radius: 5px;
   margin: auto 2px 1px auto;
 }
-.buttonAdd{
-  cursor: pointer;
+.buttonAdd:hover{
+  cursor:default;
+  color:green;
 }
 .buttonRem {
   display:grid;
@@ -109,7 +110,7 @@ input::placeholder {
   padding: unset;
 }
 .buttonRem:hover{
-  cursor: pointer;
+  cursor:default;
   color:red;
 }
 .title {
