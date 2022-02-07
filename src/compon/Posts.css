@@ -96,6 +96,7 @@ input::placeholder {
 }
 .buttonAdd{
   cursor: pointer;
+
 }
 
 .buttonRem {
@@ -103,7 +104,7 @@ input::placeholder {
   align-items: flex-end;
   background: none;
   font-size: 10px;
-  color: red;
+  color: silver;
   border:none;
   border-radius: 5px;
   margin: auto 1px 1px auto;
@@ -111,6 +112,7 @@ input::placeholder {
 }
 .buttonRem:hover{
   cursor: pointer;
+  color:red;
 }
 .title {
   color: 	#3b0054;
