@@ -97,7 +97,9 @@ const Posts = () => {
         className="input"
         type="text"
         placeholder="New Ticket"
-        onChange={changInp}/>
+        onChange={changInp}
+        maxLength = "29"
+        />
 
       <Select className="select" onChange={onChangeSel}/>
       <Button onClick={Add} className="buttonAdd" type="text" />

@@ -96,9 +96,7 @@ input::placeholder {
 }
 .buttonAdd{
   cursor: pointer;
-
 }
-
 .buttonRem {
   display:grid;
   align-items: flex-end;
