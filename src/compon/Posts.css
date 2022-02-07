@@ -8,7 +8,7 @@
   border: 1px solid brown;
   display: grid;
   border-radius: 5px;
- 
+  cursor:default;
 }
 
 .fieldset {
@@ -59,6 +59,7 @@
   margin-right: 5px;
   margin-left: auto;
   background-color: inherit;
+  
 }
 input:focus {
   background-color: none;
@@ -66,9 +67,7 @@ input:focus {
 }
 input::placeholder {
   color: silver;
-  
 }
-
 .select {
   display: inline-grid;
   background-color: rgb(255, 255, 255, 0.4);
@@ -82,18 +81,21 @@ input::placeholder {
 .select option{
   background-color:lightgrey;
 }
-
-
+.select:hover{
+  cursor:help
+}
 .buttonAdd {
   align-items: grid;
   font-size: 14px;
-  background: none;
   background-color: rgb(255, 255, 255, 0.4);
   width: 105px;
   height: 30px;
   border: 1px solid green;
   border-radius: 5px;
   margin: auto 2px 1px auto;
+}
+.buttonAdd{
+  cursor: pointer;
 }
 
 .buttonRem {
@@ -102,11 +104,13 @@ input::placeholder {
   background: none;
   font-size: 10px;
   color: red;
-  border: 1px solid red;
+  border:none;
   border-radius: 5px;
   margin: auto 1px 1px auto;
   padding: unset;
-
+}
+.buttonRem:hover{
+  cursor: pointer;
 }
 .title {
   color: 	#3b0054;
@@ -118,6 +122,7 @@ input::placeholder {
   display: inline-flex;
   width: auto;
   height: 100px;
+  cursor:default;
 }
 .noTasks{
   font-size: 22px;
@@ -126,6 +131,7 @@ input::placeholder {
   color: whitesmoke;
  font-style: italic;
   font-size: medium;
+  cursor:default;
 }
 .mark{
   color:gold;
