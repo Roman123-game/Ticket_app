@@ -8,7 +8,6 @@ import Input from "./Input";
 import Button from "./Button";
 import {FaLaptopCode, FaCocktail,  FaCartPlus} from "react-icons/fa";
 
-
 const Posts = () => {
   const [valueInput, setValueInput] = useState("New Ticket");
   const [value, setValue] = useState("Shop");
@@ -87,8 +86,7 @@ const Posts = () => {
               remove={remove}
               listName={item.listName}
               postId={item.id}
-              description={item.description}
-            />
+              description={item.description} />
           ))}
         </div>
       ) : (
@@ -99,8 +97,8 @@ const Posts = () => {
         className="input"
         type="text"
         placeholder="New Ticket"
-        onChange={changInp}
-      />
+        onChange={changInp}/>
+
       <Select className="select" onChange={onChangeSel}/>
       <Button onClick={Add} className="buttonAdd" type="text" />
       <h6 className="messageBottom">You have<mark className="mark"> {posts.length} </mark>tickets totally</h6>
