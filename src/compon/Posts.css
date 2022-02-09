@@ -147,3 +147,7 @@ input::placeholder {
 .welcomeMsg{
   font-size: 38px;
 }
+.login{
+ background-image: url(/src/images/grey.png) ;
+ background-repeat:no-repeat
+}
