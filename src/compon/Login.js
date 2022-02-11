@@ -1,5 +1,5 @@
 import React from 'react'
-import Button from './Button'
+
 import "./Login.css";
 const Login = (props) => {
   
@@ -11,7 +11,10 @@ const Login = (props) => {
            < input className={props.className} placeholder='User Name'/>
            < input  className={props.className} placeholder='Password' value={props.value} 
              onChange={(event)=>props.onChange(props,event)}/>
-           <Button onClick={(event)=>props.onClick(props,event)}/>
+           <button className="loginBtn" onClick={(event)=>props.onClick(props,event)}>Login</button>
+           <h4 className="signUpMsg"> No Account? 
+           <button className="loginBtn">SignUp</button>
+           </h4>
            <h6 className="loginMsg"> <i>
                *UserName: any
                *Password: test1234</i></h6>
