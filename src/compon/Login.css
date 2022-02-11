@@ -24,7 +24,7 @@
 .signUpMsg {
   margin-top: 100px;
 }
-.loginBtn{
+.signUpBtn{
   background: none;
   border: 1px solid orangered;
   border-radius: 5px;
@@ -53,4 +53,7 @@
 input:focus {
   background-color: none;
   outline: none;
+}
+.signUpLink{
+  color:orangered;
 }

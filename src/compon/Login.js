@@ -13,9 +13,9 @@ const Login = (props) => {
            <label>Password </label>
            < input className="inputLogin" value={props.value} 
              onChange={(event)=>props.onChange(props,event)}/>
-           <button className="loginBtn" onClick={(event)=>props.onClick(props,event)}>Login</button>
+           <button className="signUpBtn" onClick={(event)=>props.onClick(props,event)}>Login</button>
            <h4 className="signUpMsg"> No Account? 
-           <button className="loginBtn">SignUp</button>
+           <button className="signUpBtn">SignUp</button>
            </h4>
            <h6 className="loginMsg"> <i>
                *UserName: any
