@@ -5,14 +5,16 @@
   font-size: 38px;
 }
 .login {
-  width: 340px;
+  width: 320px;
   border: 1px solid black;
   border-radius: 5px;
-  background-color: #c2fbd7;
+  background-color: rgb(241, 239, 239);
   box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
   margin: 0px auto 0px auto;
   text-align: center;
   align-items: center;
+ 
+  padding: 0;
 }
 .signUpMsg {
   margin-top: 100px;
@@ -22,4 +24,25 @@
   border: 1px solid cyan;
   border-radius: 5px;
   margin: 10px 80px 0px 20px;
+  padding: 5px;
+}
+
+.inputLogin{
+  font-size: 14px;
+  margin-top: 10px;
+  color: silver;
+  border: 1px solid cyan;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  width: 200px;
+  height: 20px;
+  background-color: inherit;
+}
+input:focus {
+  background-color: none;
+  outline: none;
+}
+input::placeholder {
+  color: silver;
 }

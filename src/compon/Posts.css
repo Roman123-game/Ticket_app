@@ -8,8 +8,6 @@
   border: 1px solid silver;
   display: grid;
   border-radius: 5px;
-  margin: 0;
-  padding: 0px;
   cursor:default;
 }
 
@@ -22,6 +20,7 @@
   font-size: large;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 5px;
+  margin: 3px;
 }
 
 .legend {
@@ -38,7 +37,7 @@
  width: 40px;
  height: 40px;
  color: silver;
- margin:-16px auto auto -4px;
+ margin:-2px auto auto 4px;
 }
 .bodyPost {
   width: auto;
@@ -46,7 +45,7 @@
   font-size: 14px;
   border-radius: 5px;
   display: flex;
-  margin:auto auto -8px -132px;
+  margin:auto auto 0px -108px;
 }
 .input {
   font-size: 14px;
@@ -104,11 +103,11 @@ input::placeholder {
   display:grid;
   align-items: flex-end;
   background: none;
-  font-size: 10px;
+  font-size: 12px;
   color: silver;
   border:none;
   border-radius: 5px;
-  margin: auto 1px 1px auto;
+  margin: auto 3px 3px auto;
   padding: unset;
 }
 .buttonRem:hover{
