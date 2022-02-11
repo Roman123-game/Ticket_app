@@ -1,10 +1,14 @@
 .loginMsg {
-  margin-top: 230px;
+  margin-top: 210px;
   color :black;
 }
-.welcomeMsg {
+.titleLogin{
   font-size: 38px;
 }
+.welcomeMsg{
+  margin-top: 20px;
+}
+
 .login {
   color:white;
   width: 300px;
