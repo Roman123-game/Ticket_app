@@ -1,6 +1,6 @@
 import React from 'react'
 import Button from './Button'
-import "./Posts.css";
+import "./Login.css";
 const Login = (props) => {
   
     return (
