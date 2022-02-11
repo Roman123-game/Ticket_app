@@ -1,19 +1,20 @@
 .loginMsg {
-  margin-top: 250px;
+  margin-top: 230px;
+  color :black;
 }
 .welcomeMsg {
   font-size: 38px;
 }
 .login {
+  color:white;
   width: 300px;
   border: 1px solid black;
   border-radius: 5px;
-  background-color: rgb(241, 239, 239);
-  box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
+  background-color: rgb(50, 241, 124);
+  box-shadow: 6px 6px 2px 1px rgba(0, 0, 255, .2);
   margin: auto;
   text-align: center;
   align-items: center;
- 
   padding: 0;
 }
 .signUpMsg {
@@ -21,9 +22,9 @@
 }
 .loginBtn{
   background: none;
-  border: 1px solid cyan;
+  border: 1px solid orangered;
   border-radius: 5px;
-  margin: 10px 80px 0px 20px;
+  margin: 10px auto auto 230px;
   padding: 5px;
 }
 .loginBtn:hover{
@@ -35,19 +36,17 @@
 .inputLogin{
   font-size: 14px;
   margin-top: 10px;
-  color: silver;
-  border: 1px solid cyan;
+  color: white;
+  border: 1px solid orangered;
   border-top: none;
   border-right: none;
   border-left: none;
   width: 200px;
   height: 20px;
   background-color: inherit;
+  
 }
 input:focus {
   background-color: none;
   outline: none;
-}
-input::placeholder {
-  color: silver;
 }
