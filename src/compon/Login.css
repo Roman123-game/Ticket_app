@@ -1,5 +1,5 @@
 .loginMsg {
-  margin-top: 210px;
+  margin-top: 10px;
   color :black;
 }
 .titleLogin{
@@ -8,7 +8,9 @@
 .welcomeMsg{
   margin-top: 20px;
 }
-
+.signUpMsg {
+  margin-top: 300px;
+}
 .login {
   color:white;
   width: 300px;
@@ -21,22 +23,16 @@
   align-items: center;
   padding: 0;
 }
-.signUpMsg {
-  margin-top: 100px;
+.logiinUpMsg {
+  margin-top: 50px;
 }
-.signUpBtn{
+.loginBtn{
   background: none;
   border: 1px solid orangered;
   border-radius: 5px;
   margin: 10px auto auto 230px;
   padding: 5px;
 }
-.loginBtn:hover{
-  color:cyan;
-  -webkit-transition-color:cyan;
-  -moz-transition-color:  cyan;
-}
-
 .inputLogin{
   font-size: 14px;
   margin-top: 10px;

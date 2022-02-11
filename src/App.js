@@ -4,6 +4,7 @@ import Login from "./compon/Login";
 import Posts from "./compon/Posts";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { useState } from "react";
+import SignUp from "./compon/SignUp";
 
 function App() {
   const [token, setToken] = useState(false);
@@ -35,6 +36,16 @@ function App() {
                 onChange={updatePassword} />
             }
             />
+                 <Route
+            path="/signup"
+            element={
+              <SignUp
+                className="signUp"
+                />
+            }
+            />
+      
+
         </Routes>
       </BrowserRouter>
     );
@@ -42,6 +53,7 @@ function App() {
     return (
       <BrowserRouter>
         <Routes>
+   
           <Route path="/" element={<Posts />} />
         </Routes>
       </BrowserRouter>

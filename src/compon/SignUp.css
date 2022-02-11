@@ -1,0 +1,49 @@
+
+.signUp {
+  color:white;
+  width: 300px;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: rgb(50, 53, 241);
+  box-shadow: 6px 6px 2px 1px rgba(0, 0, 255, .2);
+  margin: auto;
+  text-align: center;
+  align-items: center;
+  padding: 0;
+}
+
+.signUpBtn{
+  background: none;
+  border: 1px solid orangered;
+  border-radius: 5px;
+  margin: 10px auto auto 230px;
+  padding: 5px;
+}
+.signUpInput{
+  font-size: 14px;
+  margin-top: 10px;
+  color: white;
+  border: 1px solid orangered;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  width: 200px;
+  height: 20px;
+  background-color: inherit;
+  
+}
+.signUpInput:focus {
+  background-color: none;
+  outline: none;
+}
+.LoginLink{
+  color:orangered;
+}
+
+.commentMsg{
+  margin-top: 200px;
+}
+.backToLogin{
+  margin-top: 0px;
+  color:orangered;
+}
