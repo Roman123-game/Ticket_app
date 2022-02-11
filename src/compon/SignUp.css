@@ -41,9 +41,12 @@
 }
 
 .commentMsg{
-  margin-top: 200px;
+  margin-top: 300px;
 }
 .backToLogin{
   margin-top: 0px;
   color:orangered;
+}
+.titleSignUp{
+  margin-top: 50px;
 }
