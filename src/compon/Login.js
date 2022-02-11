@@ -15,7 +15,7 @@ const Login = (props) => {
              onChange={(event)=>props.onChange(props,event)}/>
            <button className="signUpBtn" onClick={(event)=>props.onClick(props,event)}>Login</button>
            <h4 className="signUpMsg"> No Account? 
-           <a href={"/signup"} className="signUpLink">SignUp</a>
+           <a href={"https://tickets-rb.netlify.app/signup"} className="signUpLink">SignUp</a>
            </h4>
            <h6 className="loginMsg"> <i>
                *UserName: any
