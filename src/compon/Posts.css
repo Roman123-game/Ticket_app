@@ -37,7 +37,7 @@
  width: 40px;
  height: 40px;
  color: silver;
- margin: -8px auto auto 0px;
+ margin: -10px auto auto -2px;
 }
 .bodyPost {
   width: auto;
@@ -115,7 +115,7 @@ input::placeholder {
   color:red;
 }
 .title {
-  display:grid;
+  display: grid;
   color: 	#3b0054;
   font-size: 22px;
   margin-left: 25px;
