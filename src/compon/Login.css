@@ -7,7 +7,7 @@
 }
 .login {
   color:white;
-  width: 300px;
+  width: 306px;
   border: 1px solid black;
   border-radius: 5px;
   background-color: rgb(50, 241, 124);
@@ -17,9 +17,7 @@
   align-items: center;
   padding: 0;
 }
-.loginUpMsg {
-  margin-top: 50px;
-}
+
 .loginBtn{
   background: none;
   border: 1px solid orangered;
@@ -38,19 +36,13 @@
   width: 200px;
   height: 20px;
   background-color: inherit;
-  
 }
 input:focus {
   background-color: none;
   outline: none;
 }
-.signUpLink{
-  color:orangered;
-}
-.signUpMsg {
-  margin-top: 100px;
-}
-.loginMsg {
-  margin-top: 10px;
+
+.loginBottomMsg {
+  margin-top: 110px;
   color :black;
 }

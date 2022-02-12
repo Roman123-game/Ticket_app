@@ -8,6 +8,7 @@ const Login = (props) => {
   const [password, setPassword] = useState("");
   const [openSignUp, setOpenSignUp] =useState(false);
   const { setToken } = useContext(LoginContext);
+
   function LoginFunc(e) {
     e.stopPropagation();
     const removeWhiteSpaces = password.split(" ").join("");
@@ -15,9 +16,10 @@ const Login = (props) => {
     if (lowerCasePassword === "test1234") {
       setToken(true);
     } else {
-      alert(`"${password}" is not right password , please correct`);
+      alert(`${password} \n  Not right password \n  Try again`);
     }
   }
+  
   function updatePassword(event) {
     event.stopPropagation();
     setPassword(event.target.value);
@@ -52,7 +54,7 @@ const Login = (props) => {
        <button className="signUpBtn"  onClick={()=>setOpenSignUp(!openSignUp)}>SignUp</button>
       </h4>
       {openSignUp && <SignUp/> }
-      <h6 className="loginMsg">
+      <h6 className="loginBottomMsg">
         {" "}
         <i>*UserName: any *Password: test1234</i>
       </h6>

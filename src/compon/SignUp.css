@@ -34,17 +34,7 @@
   background-color: none;
   outline: none;
 }
-.LoginLink{
-  color:orangered;
-}
 
-.commentMsg{
-  margin-top: 10px;
-}
-.backToLogin{
-  margin-top: 0px;
-  color:orangered;
-}
 .titleSignUp{
-  margin-top: 50px;
+  margin-top: 20px;
 }
