@@ -6,6 +6,7 @@ import SignUp from "./SignUp";
 
 const Login = (props) => {
   const [password, setPassword] = useState("");
+  const [openSignUp, setOpenSignUp] =useState(false);
   const { setToken } = useContext(LoginContext);
   function LoginFunc(e) {
     e.stopPropagation();
@@ -20,7 +21,6 @@ const Login = (props) => {
   function updatePassword(event) {
     event.stopPropagation();
     setPassword(event.target.value);
-    // console.log(event.target.value);
   }
 
   return (
@@ -49,11 +49,9 @@ const Login = (props) => {
       <h4 className="signUpMsg">
         {" "}
         No Account?
-        <a href={"/signup"} className="signUpLink">
-          SignUp
-        </a>
+       <button className="signUpBtn"  onClick={()=>setOpenSignUp(!openSignUp)}>SignUp</button>
       </h4>
-      <SignUp/>
+      {openSignUp && <SignUp/> }
       <h6 className="loginMsg">
         {" "}
         <i>*UserName: any *Password: test1234</i>

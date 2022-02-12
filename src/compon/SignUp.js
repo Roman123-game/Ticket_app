@@ -1,6 +1,6 @@
 import React from 'react'
 import "./SignUp.css";
-const  SignUp = () => {
+const  SignUp = (props) => {
   
     return (
         <div className='signUp'>
@@ -9,7 +9,7 @@ const  SignUp = () => {
            < input className="signUpInput"/>
            <label>Password </label>
            < input className="signUpInput" />
-           <button className="signUpBtn">SignUp</button>
+           <button className="signUpBtn" >SignUp</button>
         </div>
     )
 }
