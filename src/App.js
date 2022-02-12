@@ -5,36 +5,20 @@ import Posts from "./compon/Posts";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { useState } from "react";
 import SignUp from "./compon/SignUp";
+import LoginContext from "./compon/LoginContext";
 
 function App() {
   const [token, setToken] = useState(false);
-  const [password, setPassword] = useState("");
-
-  function updatePassword(props, event) {
-    event.stopPropagation();
-    setPassword(event.target.value);
-  }
-  function LoginFunc(props, event) {
-    event.stopPropagation();
-    const removeWhiteSpaces = password.split(' ').join('');
-   const lowerCasePassword = removeWhiteSpaces.toLowerCase();
-    if (lowerCasePassword === "test1234") {
-      setToken(true);
-    } else alert("wrong password");
-  }
+ 
   if (!token) {
     return (
+      
       <BrowserRouter>
+      <LoginContext.Provider value={{token,setToken}}>
         <Routes>
           <Route
             path="/"
-            element={
-              <Login
-                className="input"
-                value={password}
-                onClick={LoginFunc}
-                onChange={updatePassword} />
-            }
+            element={ <Login />}
             />
                  <Route
             path="/signup"
@@ -47,6 +31,7 @@ function App() {
       
 
         </Routes>
+        </LoginContext.Provider>
       </BrowserRouter>
     );
   } else {

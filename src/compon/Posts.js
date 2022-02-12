@@ -100,6 +100,7 @@ const Posts = () => {
         onChange={changInp}
         maxLength = "29"/>
 
+      
       <Select className="select" onChange={onChangeSel}/>
       <Button onClick={Add} className="buttonAdd" type="text" />
       <h6 className="messageTotally">You have<mark className="mark"> {posts.length} </mark>tickets totally</h6>
