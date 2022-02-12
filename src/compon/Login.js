@@ -14,8 +14,7 @@ const Login = (props) => {
     if (lowerCasePassword === "test1234") {
       setToken(true);
     } else {
-      alert("wrong password");
-      console.log(password);
+      alert(`"${password}" is not right password , please correct`);
     }
   }
   function updatePassword(event) {
