@@ -14,7 +14,7 @@ function App() {
       <BrowserRouter>
         <LoginContext.Provider value={{ token, setToken }}>
           <Routes>
-            <Route path="/" element={<Login />} />
+            <Route path="/" element={<Login/>} />
           </Routes>
         </LoginContext.Provider>
       </BrowserRouter>
@@ -23,7 +23,7 @@ function App() {
     return (
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Posts />} />
+          <Route path="/" element={<Posts/>} />
         </Routes>
       </BrowserRouter>
     );

@@ -8,7 +8,7 @@ import Input from "./Input";
 import Button from "./Button";
 import {FaLaptopCode, FaCocktail,  FaCartPlus} from "react-icons/fa";
 
-const Posts = () => {
+const Posts = (props) => {
   const [valueInput, setValueInput] = useState("New Ticket");
   const [value, setValue] = useState("Shop");
   const [image, setImage] = useState(<FaCartPlus className="image"/>); 

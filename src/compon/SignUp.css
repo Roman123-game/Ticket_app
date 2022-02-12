@@ -10,6 +10,9 @@
   align-items: center;
   padding: 0;
 }
+.titleSignUp{
+  margin-top: 20px;
+}
 .signUpBtn{
   background: none;
   border: 1px solid orangered;
@@ -35,6 +38,3 @@
   outline: none;
 }
 
-.titleSignUp{
-  margin-top: 20px;
-}
