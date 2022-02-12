@@ -11,7 +11,6 @@
   align-items: center;
   padding: 0;
 }
-
 .signUpBtn{
   background: none;
   border: 1px solid orangered;
@@ -41,7 +40,7 @@
 }
 
 .commentMsg{
-  margin-top: 200px;
+  margin-top: 10px;
 }
 .backToLogin{
   margin-top: 0px;

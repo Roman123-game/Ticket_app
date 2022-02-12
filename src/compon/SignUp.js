@@ -10,10 +10,6 @@ const  SignUp = () => {
            <label>Password </label>
            < input className="signUpInput" />
            <button className="signUpBtn">SignUp</button>
-           <h4 className="signUpMsg">Login Page
-           <a href={"/"} className="backToLogin">Login</a>
-           </h4>
-           <h5 className="commentMsg"> <i>for demonstration purpose only</i></h5>
         </div>
     )
 }

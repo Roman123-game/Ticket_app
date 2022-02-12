@@ -2,6 +2,7 @@ import React from "react";
 import "./Login.css";
 import { useContext, useState } from "react";
 import LoginContext from "./LoginContext";
+import SignUp from "./SignUp";
 
 const Login = (props) => {
   const [password, setPassword] = useState("");
@@ -53,6 +54,7 @@ const Login = (props) => {
           SignUp
         </a>
       </h4>
+      <SignUp/>
       <h6 className="loginMsg">
         {" "}
         <i>*UserName: any *Password: test1234</i>
