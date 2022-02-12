@@ -9,28 +9,16 @@ import LoginContext from "./compon/LoginContext";
 
 function App() {
   const [token, setToken] = useState(false);
- 
+
   if (!token) {
     return (
-      
       <BrowserRouter>
-      <LoginContext.Provider value={{token,setToken}}>
-        <Routes>
-          <Route
-            path="/"
-            element={ <Login />}
-            />
-                 <Route
-            path="/signup"
-            element={
-              <SignUp
-                className="signUp"
-                />
-            }
-            />
-      
+        <LoginContext.Provider value={{ token, setToken }}>
+          <Routes>
+            <Route path="/" element={<Login />} />
 
-        </Routes>
+            <Route path="/signup" element={<SignUp />} />
+          </Routes>
         </LoginContext.Provider>
       </BrowserRouter>
     );
@@ -38,7 +26,6 @@ function App() {
     return (
       <BrowserRouter>
         <Routes>
-   
           <Route path="/" element={<Posts />} />
         </Routes>
       </BrowserRouter>
