@@ -100,6 +100,7 @@ input::placeholder {
   cursor:default;
   color:green;
 }
+
 .buttonRem {
   display:grid;
   align-items: flex-end;
