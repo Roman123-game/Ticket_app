@@ -65,7 +65,7 @@ const Posts = (props) => {
     setImage(image);
     setPosts([
       ...posts,
-      {  id: uuidv4(),image : image ,listName: value, description: valueInput },
+      {  id: uuidv4(),image: image ,listName: value, description: valueInput },
     ]);
   }
   

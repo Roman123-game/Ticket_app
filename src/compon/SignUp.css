@@ -4,7 +4,7 @@
   width: 296px;
   border: 1px solid black;
   border-radius: 5px;
-  background-color: rgb(50, 53, 241);
+  background-color: #8562C5;
   margin: auto;
   text-align: center;
   align-items: center;
@@ -15,7 +15,7 @@
 }
 .signUpBtn{
   background: none;
-  border: 1px solid orangered;
+  border: 1px solid #C5C462;
   border-radius: 5px;
   margin: 10px auto auto 222px;
   padding: 5px;
@@ -24,7 +24,7 @@
   font-size: 14px;
   margin-top: 10px;
   color: white;
-  border: 1px solid orangered;
+  border: 1px solid #C5C462;
   border-top: none;
   border-right: none;
   border-left: none;
