@@ -2,13 +2,14 @@ import React from "react";
 import "./Login.css";
 import { useContext, useState } from "react";
 import LoginContext from "./LoginContext";
+import SignContext from "./SignContext";
 import SignUp from "./SignUp";
 
 const Login = (props) => {
   const [password, setPassword] = useState("");
   const [openSignUp, setOpenSignUp] =useState(false);
   const { setToken } = useContext(LoginContext);
-
+  
   function LoginFunc(e) {
     e.stopPropagation();
     const removeWhiteSpaces = password.split(" ").join("");
@@ -48,14 +49,16 @@ const Login = (props) => {
       >
         Login
       </button>
-      <h4 className="signUpMsg">
-        {" "}
+      <h4 className="signUpMsg" >
+        
         No Account?
        <button className="signUpBtn"  onClick={()=>setOpenSignUp(!openSignUp)}>SignUp</button>
       </h4>
+       <SignContext.Provider value={{openSignUp, setOpenSignUp}}>
       {openSignUp && <SignUp/> }
+      </SignContext.Provider>
       <h6 className="loginBottomMsg">
-        {" "}
+        
         <i>*UserName: any *Password: test1234</i>
       </h6>
     </div>
