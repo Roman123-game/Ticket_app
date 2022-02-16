@@ -52,7 +52,7 @@ const Posts = (props) => {
      else if(event.target.value ==="Tech"){
       setImage (<FaLaptopCode className="image"/>);
      }
-     else if(event.target.value=== "Rest"){
+     else if(event.target.value === "Rest"){
       setImage (<FaCocktail className="image"/>);
      }
   }
