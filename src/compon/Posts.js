@@ -3,11 +3,11 @@ import { useState, useMemo,useContext } from "react";
 import "./Posts.css";
 import { v4 as uuidv4 } from "uuid";
 import Task from "./Task";
-import Select from "./Select";
-import Input from "./Input";
-import Button from "./Button";
+import Select from "./UI/Select";
+import Input from "./UI/Input";
+import Button from "./UI/Button";
 import LoginContext from "./LoginContext";
-import {FaLaptopCode, FaCocktail,  FaCartPlus, FaUnlockAlt,FaStreetView} from "react-icons/fa";
+import {FaLaptopCode, FaCocktail,  FaCartPlus, FaUnlockAlt,FaStreetView,FaCogs, FaTv} from "react-icons/fa";
 import UserInfo from "./UserInfo";
 
 const Posts = (props) => {
@@ -80,12 +80,13 @@ const Posts = (props) => {
   return (
     <div className="Posts">
       <div className="gridContainer">
-     
       <button className="buttonAdd grid" onClick={()=>setShowInfo(!showInfo)}><FaStreetView/></button>
       {showInfo && <UserInfo/> }
+      <button className="buttonAdd grid" onClick=""><FaCogs/></button>
+      <button className="buttonAdd grid" onClick=""><FaTv/></button>
       <button className="buttonAdd grid" onClick={()=>setToken(false)}><FaUnlockAlt/></button>
-
       </div>
+      <hr className="hr"/>
       <h1>
       Golden Tickets</h1>
       {posts.length ? (
