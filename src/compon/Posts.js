@@ -1,14 +1,18 @@
 import React from "react";
-import { useState, useMemo } from "react";
+import { useState, useMemo,useContext } from "react";
 import "./Posts.css";
 import { v4 as uuidv4 } from "uuid";
 import Task from "./Task";
 import Select from "./Select";
 import Input from "./Input";
 import Button from "./Button";
-import {FaLaptopCode, FaCocktail,  FaCartPlus} from "react-icons/fa";
+import LoginContext from "./LoginContext";
+import {FaLaptopCode, FaCocktail,  FaCartPlus, FaUnlockAlt,FaStreetView} from "react-icons/fa";
+import UserInfo from "./UserInfo";
 
 const Posts = (props) => {
+  const { setToken } = useContext(LoginContext);
+  const [showInfo, setShowInfo] = useState(false);
   const [valueInput, setValueInput] = useState("New Ticket");
   const [value, setValue] = useState("Shop");
   const [image, setImage] = useState(<FaCartPlus className="image"/>); 
@@ -75,6 +79,13 @@ const Posts = (props) => {
 
   return (
     <div className="Posts">
+      <div className="gridContainer">
+     
+      <button className="buttonAdd grid" onClick={()=>setShowInfo(!showInfo)}><FaStreetView/></button>
+      {showInfo && <UserInfo/> }
+      <button className="buttonAdd grid" onClick={()=>setToken(false)}><FaUnlockAlt/></button>
+
+      </div>
       <h1>
       Golden Tickets</h1>
       {posts.length ? (
@@ -103,6 +114,7 @@ const Posts = (props) => {
       <Select className="select" onChange={onChangeSel}/>
       <Button onClick={Add} className="buttonAdd" type="text" />
       <h6 className="messageTotally">You have<mark className="mark"> {posts.length} </mark>tickets totally</h6>
+      
     </div>
   );
 };

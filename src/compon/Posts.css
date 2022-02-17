@@ -76,7 +76,7 @@ input::placeholder {
   font-size: 14px;
   width: 105px;
   height: 30px;
-  border: 1px solid rgb(81, 0, 128);
+  border: 1px solid silver;
   border-radius: 5px;
   margin: 1px 2px 1px auto;
 }
@@ -92,7 +92,7 @@ input::placeholder {
   background-color: rgb(255, 255, 255, 0.4);
   width: 105px;
   height: 30px;
-  border: 1px solid green;
+  border: 1px solid silver;
   border-radius: 5px;
   margin: auto 2px 1px auto;
 }

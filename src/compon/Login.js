@@ -12,6 +12,7 @@ const Login = (props) => {
   
   function LoginFunc(e) {
     e.stopPropagation();
+    e.preventDefault();
     const removeWhiteSpaces = password.split(" ").join("");
     const lowerCasePassword = removeWhiteSpaces.toLowerCase();
     if (lowerCasePassword === "test1234") {
@@ -23,6 +24,7 @@ const Login = (props) => {
   
   function updatePassword(event) {
     event.stopPropagation();
+    event.preventDefault();
     setPassword(event.target.value);
   }
 

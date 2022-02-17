@@ -1,0 +1,12 @@
+.userInfo {
+        color: black;
+        width: 296px;
+        border: 1px solid black;
+        border-radius: 5px;
+        background-color: silver;
+        margin: auto;
+        text-align: center;
+        align-items: center;
+        padding: 0;
+      }
+  

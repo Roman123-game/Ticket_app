@@ -23,9 +23,11 @@ function App() {
   } else {
     return (
       <BrowserRouter>
+        <LoginContext.Provider value={{ token, setToken }}>
         <Routes>
           <Route path="/" element={<Posts/>} />
         </Routes>
+        </LoginContext.Provider>
       </BrowserRouter>
     );
   }

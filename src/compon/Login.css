@@ -7,11 +7,11 @@
 }
 .login {
   color:white;
-  width: 306px;
+  width: 310px;
   border: 1px solid black;
   border-radius: 5px;
   background-color:  #71C562;
-  box-shadow: 6px 6px 2px 1px rgba(0, 0, 255, .2);
+  box-shadow: 3px 3px 1px 1px rgba(0, 0, 255, .2);
   margin: auto;
   text-align: center;
   align-items: center;
