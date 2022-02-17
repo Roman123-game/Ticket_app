@@ -9,11 +9,11 @@
         text-align: center;
         align-items: center;
         padding: 0;
-        position: fixed;
-        top:12px;
-        bottom:auto;
-        right:730px;
-        left:0px;
-        margin: 1px;
+        position: absolute;
+        top:550px;
+        bottom:0px;
+        right:10;
+        left:10px;
+        margin: 0;
       }
   
