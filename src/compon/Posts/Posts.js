@@ -6,7 +6,7 @@ import Task from "../Task/Task";
 import Select from "../UI/Select";
 import Input from "../UI/Input";
 import Button from "../UI/Button";
-import LoginContext from "../LoginContext";
+import LoginContext from "../Login/LoginContext";
 import {FaLaptopCode, FaCocktail,  FaCartPlus, FaUnlockAlt,FaStreetView,FaCogs, FaTv} from "react-icons/fa";
 import UserInfo from "../UserInfo/UserInfo";
 
