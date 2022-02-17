@@ -2,8 +2,8 @@ import React from "react";
 import "./Login.css";
 import { useContext, useState } from "react";
 import LoginContext from "./LoginContext";
-import SignContext from "./SignContext";
-import SignUp from "./SignUp";
+import SignContext from "./SignUp/SignContext";
+import SignUp from "./SignUp/SignUp";
 
 const Login = (props) => {
   const [password, setPassword] = useState("");

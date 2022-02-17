@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 import Login from "./compon/Login";
-import Posts from "./compon/Posts";
+import Posts from "./compon/Posts/Posts";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { useState } from "react";
 import LoginContext from "./compon/LoginContext";
