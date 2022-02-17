@@ -12,7 +12,7 @@ function App() {
   if (!token) {
     return (
       <BrowserRouter>
-        <LoginContext.Provider value={{ token, setToken }}>
+        <LoginContext.Provider value={{  setToken }}>
           
           <Routes>
             <Route path="/" element={<Login/>} />
@@ -23,7 +23,7 @@ function App() {
   } else {
     return (
       <BrowserRouter>
-        <LoginContext.Provider value={{ token, setToken }}>
+        <LoginContext.Provider value={{ setToken }}>
         <Routes>
           <Route path="/" element={<Posts/>} />
         </Routes>
