@@ -82,8 +82,8 @@ const Posts = (props) => {
       <div className="gridContainer">
       <button className="buttonAdd grid" onClick={()=>setShowInfo(!showInfo)}><FaStreetView/></button>
       {showInfo && <UserInfo/> }
-      <button className="buttonAdd grid" onClick=""><FaCogs/></button>
-      <button className="buttonAdd grid" onClick=""><FaTv/></button>
+      <button className="buttonAdd grid" ><FaCogs/></button>
+      <button className="buttonAdd grid" ><FaTv/></button>
       <button className="buttonAdd grid" onClick={()=>setToken(false)}><FaUnlockAlt/></button>
       </div>
       <hr className="hr"/>

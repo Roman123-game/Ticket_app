@@ -1,10 +1,10 @@
 .userInfo {
         color: black;
-        width: 296px;
+        width: 300px;
         height: auto;
         border: 1px solid black;
         border-radius: 5px;
-        background-color:rgba(192,192,192,0.6);
+        background-color:rgba(192,192,192,0.9);
         margin: auto;
         text-align: center;
         align-items: center;
@@ -14,5 +14,6 @@
         bottom:auto;
         right:730px;
         left:0px;
+        margin: 1px;
       }
   
