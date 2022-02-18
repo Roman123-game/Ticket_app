@@ -99,9 +99,6 @@ const Posts = (props) => {
         <button className="buttonAdd grid">
           <FaCogs />
         </button>
-        <button className="buttonAdd grid">
-          <FaTv />
-        </button>
         <button className="buttonAdd grid" onClick={() => setToken(false)}>
           <FaUnlockAlt />
         </button>
