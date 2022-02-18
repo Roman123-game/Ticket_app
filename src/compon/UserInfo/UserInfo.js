@@ -5,9 +5,10 @@ import "./UserInfo.modal.css";
 const UserInfo = () => {
   return (
     <div className="userInfo">
-      <div>Any</div>
-      <div>Any@email.com</div>
-      <div>test1234</div>
+      <div>UserInfo:</div>
+      <div>UserName:Any</div>
+      <div>Email:Any@email.com</div>
+      <div>Password:test1234</div>
     </div>
   );
 };
