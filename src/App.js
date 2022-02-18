@@ -11,24 +11,23 @@ function App() {
 
   if (!token) {
     return (
-      <BrowserRouter>
-        <LoginContext.Provider value={{  setToken }}>
-          
+      <LoginContext.Provider value={{ setToken }}>
+        <BrowserRouter>
           <Routes>
-            <Route path="/" element={<Login/>} />
+            <Route path="/" element={<Login />} />
           </Routes>
-        </LoginContext.Provider>
-      </BrowserRouter>
+        </BrowserRouter>
+      </LoginContext.Provider>
     );
   } else {
     return (
-      <BrowserRouter>
-        <LoginContext.Provider value={{ setToken }}>
-        <Routes>
-          <Route path="/" element={<Posts/>} />
-        </Routes>
-        </LoginContext.Provider>
-      </BrowserRouter>
+      <LoginContext.Provider value={{ setToken }}>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Posts />} />
+          </Routes>
+        </BrowserRouter>
+      </LoginContext.Provider>
     );
   }
 }

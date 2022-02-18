@@ -7,9 +7,9 @@ import SignUp from "../SignUp/SignUp";
 
 const Login = (props) => {
   const [password, setPassword] = useState("");
-  const [openSignUp, setOpenSignUp] =useState(false);
+  const [openSignUp, setOpenSignUp] = useState(false);
   const { setToken } = useContext(LoginContext);
-  
+
   function LoginFunc(e) {
     e.stopPropagation();
     e.preventDefault();
@@ -21,7 +21,7 @@ const Login = (props) => {
       alert(`${password} \n  Not right password \n  Try again`);
     }
   }
-  
+
   function updatePassword(event) {
     event.stopPropagation();
     event.preventDefault();
@@ -51,16 +51,19 @@ const Login = (props) => {
       >
         Login
       </button>
-      <h4 className="signUpMsg" >
-        
+      <h4 className="signUpMsg">
         No Account?
-       <button className="signUpBtn"  onClick={()=>setOpenSignUp(!openSignUp)}>SignUp</button>
+        <button
+          className="signUpBtn"
+          onClick={() => setOpenSignUp(!openSignUp)}
+        >
+          SignUp
+        </button>
       </h4>
-       <SignContext.Provider value={{openSignUp, setOpenSignUp}}>
-      {openSignUp && <SignUp/> }
+      <SignContext.Provider value={{ openSignUp, setOpenSignUp }}>
+        {openSignUp && <SignUp />}
       </SignContext.Provider>
       <h6 className="loginBottomMsg">
-        
         <i>*UserName: any *Password: test1234</i>
       </h6>
     </div>
