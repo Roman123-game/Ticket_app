@@ -14,13 +14,16 @@ import {
   FaUnlockAlt,
   FaStreetView,
   FaCogs,
-  FaTv,
+  
 } from "react-icons/fa";
+
 import UserInfo from "../UserInfo/UserInfo";
+import Settings from "../Settings/Settings";
 
 const Posts = (props) => {
   const { setToken } = useContext(LoginContext);
   const [showInfo, setShowInfo] = useState(false);
+  const [showSettings, setShowSettings] = useState(false);
   const [valueInput, setValueInput] = useState("New Ticket");
   const [value, setValue] = useState("Shop");
   const [image, setImage] = useState(<FaCartPlus className="image" />);
@@ -89,16 +92,14 @@ const Posts = (props) => {
   return (
     <div className="Posts">
       <div className="gridContainer">
-        <button
-          className="buttonAdd grid"
-          onClick={() => setShowInfo(!showInfo)}
-        >
+        <button className="buttonAdd grid" onClick={() => setShowInfo(!showInfo)}>
           <FaStreetView />
         </button>
         {showInfo && <UserInfo />}
-        <button className="buttonAdd grid">
+        <button className="buttonAdd grid" onClick={()=>setShowSettings(!showSettings)}>
           <FaCogs />
         </button>
+        {showSettings && <Settings />}
         <button className="buttonAdd grid" onClick={() => setToken(false)}>
           <FaUnlockAlt />
         </button>
