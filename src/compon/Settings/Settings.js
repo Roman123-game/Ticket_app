@@ -1,10 +1,13 @@
 import React from 'react';
-import "./Settings.css";
+import "./Settings.modal.css";
 const Settings = () => {
     return (
-      <div className="settings">Filters
+      <div className="settings">
+      <label>Shop filter</label>
+    <input type="radio" />
+    <label>Tech filter</label>
     <input type="radio" value="Shop filter"/>
-    <input type="radio" value="Shop filter"/>
+    <label>Rest filter</label>
     <input type="radio" value="Shop filter"/>
       </div>
     );
