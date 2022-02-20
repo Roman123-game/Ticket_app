@@ -7,7 +7,7 @@
 }
 .login {
   color:white;
-  width: 310px;
+  width: 316px;
   border: 1px solid black;
   border-radius: 5px;
   background-color:  #71C562;
@@ -50,7 +50,7 @@ input:focus {
   opacity: 0;
 }
 .item-enter-active {
-    opacity: 1;
+  opacity: 1;
   transition: all 1000ms ease-in;
 }
 .item-exit {
