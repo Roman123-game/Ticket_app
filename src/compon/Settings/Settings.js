@@ -6,9 +6,9 @@ const Settings = () => {
       <label>Shop filter</label>
     <input type="radio" />
     <label>Tech filter</label>
-    <input type="radio" value="Shop filter"/>
+    <input type="radio" />
     <label>Rest filter</label>
-    <input type="radio" value="Shop filter"/>
+    <input type="radio"/>
       </div>
     );
   };

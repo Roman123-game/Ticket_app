@@ -14,7 +14,6 @@ import {
   FaUnlockAlt,
   FaStreetView,
   FaCogs,
-  
 } from "react-icons/fa";
 
 import UserInfo from "../UserInfo/UserInfo";
@@ -90,13 +89,19 @@ const Posts = (props) => {
   }, []);
 
   return (
-    <div className="Posts">
+    <div className="posts">
       <div className="gridContainer">
-        <button className="buttonAdd grid" onClick={() => setShowInfo(!showInfo)}>
+        <button
+          className="buttonAdd grid"
+          onClick={() => setShowInfo(!showInfo)}
+        >
           <FaStreetView />
         </button>
         {showInfo && <UserInfo />}
-        <button className="buttonAdd grid" onClick={()=>setShowSettings(!showSettings)}>
+        <button
+          className="buttonAdd grid"
+          onClick={() => setShowSettings(!showSettings)}
+        >
           <FaCogs />
         </button>
         {showSettings && <Settings />}

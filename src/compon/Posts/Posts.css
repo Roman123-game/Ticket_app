@@ -1,4 +1,4 @@
-.Posts {
+.posts {
   background: #152238;
   color: gold;
   width: 100%;
@@ -146,3 +146,8 @@ input::placeholder {
 .hr{
   background-color: silver;
 }
+.gridContainer{
+position: static;
+display: block;
+}
+
