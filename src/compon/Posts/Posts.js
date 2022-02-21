@@ -17,8 +17,6 @@ import {
   FaCogs,
 } from "react-icons/fa";
 
-
-
 const Posts = (props) => {
   const { setToken } = useContext(LoginContext);
   const [showInfo, setShowInfo] = useState(false);
