@@ -1,4 +1,3 @@
-import React from "react";
 import "./SignUp.css";
 import { useContext } from "react";
 import SignContext from "./SignContext";

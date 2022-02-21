@@ -1,4 +1,3 @@
-import React from "react";
 import { FaFeatherAlt } from "react-icons/fa";
 const Button = (props) => {
   return (

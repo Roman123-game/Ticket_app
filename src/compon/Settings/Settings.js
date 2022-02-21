@@ -1,4 +1,3 @@
-import React from 'react';
 import "./Settings.modal.css";
 const Settings = () => {
     return (

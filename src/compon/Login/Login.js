@@ -1,4 +1,3 @@
-import React from "react";
 import "./Login.css";
 import { useContext, useState } from "react";
 import LoginContext from "./LoginContext";

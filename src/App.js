@@ -1,5 +1,3 @@
-import React from "react";
-import "./App.css";
 import Login from "./compon/Login/Login";
 import Posts from "./compon/Posts/Posts";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
