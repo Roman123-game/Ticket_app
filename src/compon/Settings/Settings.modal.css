@@ -1,20 +1,18 @@
 .settings {
-    display: inline-grid;
-    color: black;
-    width: 300px;
-    height: auto;
-    border: 1px solid black;
-    border-radius: 5px;
-    background-color:rgba(192,192,192,0.9);
-    margin: auto;
-    text-align: center;
-    align-items: center;
-    padding: 0;
-    position: absolute;
-    top:375px;
-
-    right:10px;
-    left:10px;
-    margin: 0;
-    
-  }
+  display: inline-grid;
+  color: black;
+  width: 300px;
+  height: auto;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: rgba(192, 192, 192, 0.9);
+  margin: auto;
+  text-align: center;
+  align-items: center;
+  padding: 0;
+  position: absolute;
+  top: 375px;
+  right: 10px;
+  left: 10px;
+  margin: 0;
+}
