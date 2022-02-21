@@ -1,7 +1,7 @@
 .settings {
   display: inline-grid;
   color: black;
-  width: 300px;
+  width: 200px;
   height: auto;
   border: 1px solid black;
   border-radius: 5px;
@@ -11,8 +11,8 @@
   align-items: center;
   padding: 0;
   position: absolute;
-  top: 375px;
-  right: 10px;
+  top: 250px;
+  right: 0px;
   left: 10px;
   margin: 0;
 }

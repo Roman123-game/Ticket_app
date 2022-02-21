@@ -8,6 +8,7 @@
 .login {
   color:white;
   width: 310px;
+  height: 640px;
   border: 1px solid black;
   border-radius: 5px;
   background-color:  #71C562;
@@ -43,7 +44,6 @@ input:focus {
 }
 
 .loginBottomMsg {
-  margin-top: 75px;
   color :black;
 }
 .item-enter {

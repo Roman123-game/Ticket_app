@@ -3,10 +3,7 @@ import { useContext, useState } from "react";
 import LoginContext from "./LoginContext";
 import SignContext from "../SignUp/SignContext";
 import SignUp from "../SignUp/SignUp";
-import {
-  CSSTransition,
-  TransitionGroup,
-} from 'react-transition-group';
+import { CSSTransition, TransitionGroup } from "react-transition-group";
 import { v4 as uuidv4 } from "uuid";
 
 const Login = (props) => {
@@ -17,7 +14,7 @@ const Login = (props) => {
   function LoginFunc(e) {
     e.preventDefault();
     e.stopPropagation();
-  
+
     const removeWhiteSpaces = password.split(" ").join("");
     const lowerCasePassword = removeWhiteSpaces.toLowerCase();
     if (lowerCasePassword === "test1234") {
@@ -30,7 +27,7 @@ const Login = (props) => {
   function updatePassword(event) {
     event.preventDefault();
     event.stopPropagation();
-   
+
     setPassword(event.target.value);
   }
 
@@ -66,18 +63,18 @@ const Login = (props) => {
           SignUp
         </button>
       </h4>
-      <TransitionGroup>
-    <CSSTransition key={uuidv4()}
-    timeout={500}
-    classNames="item">
-      <SignContext.Provider value={{ openSignUp, setOpenSignUp }}>
-        {openSignUp && <SignUp />}
-      </SignContext.Provider>
-      </CSSTransition>
-      </TransitionGroup>
       <h6 className="loginBottomMsg">
-        <i>*UserName: any *Password: test1234</i>
+        *UserName: any *Password: test1234
       </h6>
+    
+      <TransitionGroup>
+        <CSSTransition key={uuidv4()} timeout={500} classNames="item">
+          <SignContext.Provider value={{ openSignUp, setOpenSignUp }}>
+            {openSignUp && <SignUp />}
+          </SignContext.Provider>
+        </CSSTransition>
+      </TransitionGroup>
+      
     </div>
   );
 };
