@@ -6,6 +6,8 @@ import Select from "../UI/Select";
 import Input from "../UI/Input";
 import Button from "../UI/Button";
 import LoginContext from "../Login/LoginContext";
+import UserInfo from "../UserInfo/UserInfo";
+import Settings from "../Settings/Settings";
 import {
   FaLaptopCode,
   FaCocktail,
@@ -15,8 +17,7 @@ import {
   FaCogs,
 } from "react-icons/fa";
 
-import UserInfo from "../UserInfo/UserInfo";
-import Settings from "../Settings/Settings";
+
 
 const Posts = (props) => {
   const { setToken } = useContext(LoginContext);
