@@ -48,6 +48,7 @@ input:focus {
 }
 .item-enter {
   transform:translateX(-150px);
+  filter: blur(6px);
 
 }
 .item-enter-active {
@@ -56,6 +57,7 @@ input:focus {
 }
 .item-exit {
   opacity: 1;
+  filter: blur(6px);
 }
 .item-exit-active {
   transform:translateX(-350px);
