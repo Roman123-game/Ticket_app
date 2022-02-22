@@ -1,5 +1,5 @@
 .posts {
-  background: #152238;
+  background-image: url("/src/images/atoms.png");
   color: gold;
   width: 100%;
   height: 100%;
@@ -21,6 +21,8 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 5px;
   margin: 3px;
+  backdrop-filter:blur(6px);
+  -webkit-backdrop-filter: blur(6px);
 }
 
 .legend {
@@ -79,6 +81,8 @@ input::placeholder {
   border: 1px solid silver;
   border-radius: 5px;
   margin: 1px 2px 1px auto;
+  backdrop-filter:blur(4px);
+  -webkit-backdrop-filter: blur(4px);
 }
 .select option{
   background-color:lightgrey;
@@ -95,6 +99,8 @@ input::placeholder {
   border: 1px solid silver;
   border-radius: 5px;
   margin: auto 2px 1px auto;
+  backdrop-filter:blur(4px);
+  -webkit-backdrop-filter: blur(4px);
 }
 .buttonAdd:hover{
   cursor:default;
@@ -133,7 +139,7 @@ input::placeholder {
   font-size: 22px;
 }
 .messageTotally{
-  color: whitesmoke;
+  color: silver;
  font-style: italic;
   font-size: medium;
   cursor:default;
