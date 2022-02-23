@@ -1,6 +1,6 @@
 import "./SignUp.css";
 import { useContext } from "react";
-import LoginContext from "../Login/LoginContext";
+import LoginContext from "../Context/MainContext";
 const SignUp = () => {
   const { openSignUp, setOpenSignUp } = useContext(LoginContext);
   return (

@@ -1,13 +1,13 @@
 import "./Login.css";
 import { useContext, useState } from "react";
-import LoginContext from "./LoginContext";
+import LoginContext from "../Context/MainContext";
 import SignUp from "../SignUp/SignUp";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 import { v4 as uuidv4 } from "uuid";
 
 const Login = (props) => {
   const [password, setPassword] = useState("");
-  
+
   const { setToken,openSignUp, setOpenSignUp } = useContext(LoginContext);
 
   function LoginFunc(e) {

@@ -2,7 +2,7 @@ import Login from "./compon/Login/Login";
 import Posts from "./compon/Posts/Posts";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { useState } from "react";
-import LoginContext from "./compon/Login/LoginContext";
+import MainContext from "./compon/Context/MainContext";
 
 
 function App() {
@@ -10,23 +10,23 @@ function App() {
   const [openSignUp, setOpenSignUp ] = useState(false);
   if (!token) {
     return (
-      <LoginContext.Provider value={{ setToken, openSignUp, setOpenSignUp}}>
+      <MainContext.Provider value={{ setToken, openSignUp, setOpenSignUp}}>
           <BrowserRouter>
             <Routes>
               <Route path="/" element={<Login />} />
             </Routes>
           </BrowserRouter>
-      </LoginContext.Provider>
+      </MainContext.Provider>
     );
   } else {
     return (
-      <LoginContext.Provider value={{ setToken, openSignUp, setOpenSignUp }}>
+      <MainContext.Provider value={{ setToken, openSignUp, setOpenSignUp }}>
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Posts />} />
           </Routes>
         </BrowserRouter>
-      </LoginContext.Provider>
+      </MainContext.Provider>
     );
   }
 }

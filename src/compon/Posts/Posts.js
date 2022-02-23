@@ -5,14 +5,14 @@ import Task from "../Task/Task";
 import Select from "../UI/Select";
 import Input from "../UI/Input";
 import Button from "../UI/Button";
-import LoginContext from "../Login/LoginContext";
+import MainContext from "../Context/MainContext";
 import UserInfo from "../ModalWindows/UserInfo";
 import Settings from "../ModalWindows/Settings";
 import { FaLaptopCode,FaCocktail, FaCartPlus, 
   FaUnlockAlt, FaStreetView,FaCogs,} from "react-icons/fa";
 
 const Posts = (props) => {
-  const { setToken } = useContext(LoginContext);
+  const { setToken } = useContext(MainContext);
   const [showInfo, setShowInfo] = useState(false);
   const [showSettings, setShowSettings] = useState(false);
   const [valueInput, setValueInput] = useState("New Ticket");
