@@ -12,7 +12,7 @@ const Task = (props) => {
         <h6 className="bodyPost">
           <i>{props.description}</i>
         </h6>
-        <button className="buttonRem" onClick={() => props.remove(props)}>
+        <button className="buttonRem" onClick={()=>props.onClick({props})}>
           <FaRegTrashAlt />
         </button>
       </fieldset>

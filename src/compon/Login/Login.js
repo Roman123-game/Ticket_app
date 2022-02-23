@@ -7,15 +7,13 @@ import { v4 as uuidv4 } from "uuid";
 
 const Login = (props) => {
   const [password, setPassword] = useState("");
-
   const { setToken,openSignUp, setOpenSignUp } = useContext(LoginContext);
-
   function LoginFunc(e) {
     e.preventDefault();
     e.stopPropagation();
     const removeWhiteSpaces = password.split(" ").join("");
     const lowerCasePassword = removeWhiteSpaces.toLowerCase();
-    if (lowerCasePassword === "test1234") {
+    if (lowerCasePassword === "") {
       setToken(true);
     } else {
       alert(`${password} \n  Not right password \n  Try again`);
@@ -60,7 +58,6 @@ const Login = (props) => {
         </button>
       </h4>
       <h6 className="loginBottomMsg">*UserName: any *Password: test1234</h6>
-
       <TransitionGroup>
         <CSSTransition key={uuidv4()} timeout={500} classNames="item">
           <div>{openSignUp && <SignUp />}</div>

@@ -10,7 +10,7 @@ function App() {
   const [openSignUp, setOpenSignUp ] = useState(false);
   if (!token) {
     return (
-      <MainContext.Provider value={{ setToken, openSignUp, setOpenSignUp}}>
+      <MainContext.Provider value={{setToken,openSignUp,setOpenSignUp}}>
           <BrowserRouter>
             <Routes>
               <Route path="/" element={<Login />} />
@@ -20,7 +20,7 @@ function App() {
     );
   } else {
     return (
-      <MainContext.Provider value={{ setToken, openSignUp, setOpenSignUp }}>
+      <MainContext.Provider value={{setToken}}>
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Posts />} />

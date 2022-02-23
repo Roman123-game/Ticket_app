@@ -1,4 +1,4 @@
-import { useState, useMemo, useContext } from "react";
+import { useState, useMemo, useContext,useReducer } from "react";
 import "./Posts.css";
 import { v4 as uuidv4 } from "uuid";
 import Task from "../Task/Task";
@@ -16,9 +16,9 @@ const Posts = (props) => {
   const [showInfo, setShowInfo] = useState(false);
   const [showSettings, setShowSettings] = useState(false);
   const [valueInput, setValueInput] = useState("New Ticket");
-  const [value, setValue] = useState("Shop");
+  const [value,setValue] = useState("Shop");
   const [image, setImage] = useState(<FaCartPlus className="image" />);
-  const [posts, setPosts] = useState([
+  const initialPosts =[
     {
       id: uuidv4(),
       image: <FaLaptopCode className="image" />,
@@ -43,13 +43,30 @@ const Posts = (props) => {
       listName: "Tech",
       description: "Learn Angular",
     },
-  ]);
+  ];
 
-  function remove(props) {
-    console.log("remove function");
-    const afterFilter = posts.filter((val) => val.id !== props.postId);
-    setPosts(afterFilter);
-  }
+  const [posts , dispatch] = useReducer(counterReducer,initialPosts);
+
+  function counterReducer (posts, action){
+    switch(action.type){
+      case 'ADD_POST':
+      return [...posts,{ id: uuidv4(), image: image, listName: value, description: valueInput }];
+      case 'REMOVE_POST':
+        console.log('REMOVE_POST');
+        // console.log(posts.ind);
+        // const afterFilter = [posts].filter((itm,ind) => itm.id !== [posts].ind);
+      return posts;
+    default:
+    return console.log("default")
+    }};
+    
+  // (
+  //   ...posts,
+  //   { id: uuidv4(), image: image, listName: value, description: valueInput },
+  // );
+
+    // const afterFilter = posts.filter((val) => val.id !== props.postId);
+ 
   function onChangeSel(event) {
     event.stopPropagation();
     event.preventDefault();
@@ -68,14 +85,7 @@ const Posts = (props) => {
     event.preventDefault();
     setValueInput(event.target.value);
   }
-  function Add() {
-    setImage(image);
-    setPosts([
-      ...posts,
-      { id: uuidv4(), image: image, listName: value, description: valueInput },
-    ]);
-  }
-
+ 
   useMemo(() => {
     console.log("cashing");
   }, []);
@@ -103,22 +113,18 @@ const Posts = (props) => {
       </div>
       <hr className="hr" />
       <h1>Golden Tickets</h1>
-      {posts.length ? (
         <div>
           {posts.map((item) => (
             <Task
               image={item.image}
-              key={item.id}
-              remove={remove}
+              key={uuidv4()}
+              onClick={()=> dispatch({type: "REMOVE_POST"})}
               listName={item.listName}
               postId={item.id}
               description={item.description}
             />
           ))}
         </div>
-      ) : (
-        <div className="noTasks">Add Your First Ticket</div>
-      )}
       <Input
         value={valueInput}
         className="input"
@@ -127,14 +133,8 @@ const Posts = (props) => {
         onChange={changInp}
         maxLength="29"
       />
-
       <Select className="select" onChange={onChangeSel} />
-      <Button onClick={Add} className="buttonAdd" type="text" />
-      <h6 className="messageTotally">
-        You have
-        <mark className="mark"> {posts.length} </mark>
-        tickets totally
-      </h6>
+      <Button onClick={()=> dispatch({type: "ADD_POST"})} className="buttonAdd" type="text" />
     </div>
   );
 };
