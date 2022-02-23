@@ -7,10 +7,10 @@ import LoginContext from "./compon/Login/LoginContext";
 
 function App() {
   const [token, setToken] = useState(false);
-
+  const [openSignUp, setOpenSignUp ] = useState(false);
   if (!token) {
     return (
-      <LoginContext.Provider value={{ setToken }}>
+      <LoginContext.Provider value={{ setToken, openSignUp, setOpenSignUp}}>
           <BrowserRouter>
             <Routes>
               <Route path="/" element={<Login />} />
@@ -20,7 +20,7 @@ function App() {
     );
   } else {
     return (
-      <LoginContext.Provider value={{ setToken }}>
+      <LoginContext.Provider value={{ setToken, openSignUp, setOpenSignUp }}>
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Posts />} />

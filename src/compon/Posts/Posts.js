@@ -8,14 +8,8 @@ import Button from "../UI/Button";
 import LoginContext from "../Login/LoginContext";
 import UserInfo from "../ModalWindows/UserInfo";
 import Settings from "../ModalWindows/Settings";
-import {
-  FaLaptopCode,
-  FaCocktail,
-  FaCartPlus,
-  FaUnlockAlt,
-  FaStreetView,
-  FaCogs,
-} from "react-icons/fa";
+import { FaLaptopCode,FaCocktail, FaCartPlus, 
+  FaUnlockAlt, FaStreetView,FaCogs,} from "react-icons/fa";
 
 const Posts = (props) => {
   const { setToken } = useContext(LoginContext);

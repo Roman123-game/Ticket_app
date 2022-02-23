@@ -1,8 +1,8 @@
 import "./SignUp.css";
 import { useContext } from "react";
-import SignContext from "./SignContext";
+import LoginContext from "../Login/LoginContext";
 const SignUp = () => {
-  const { openSignUp, setOpenSignUp } = useContext(SignContext);
+  const { openSignUp, setOpenSignUp } = useContext(LoginContext);
   return (
     <div className="signUp">
       <h1 className="titleSignUp"> SignUp Form</h1>
