@@ -18,6 +18,7 @@ const Posts = (props) => {
   const [valueInput, setValueInput] = useState("New Ticket");
   const [value,setValue] = useState("Shop");
   const [image, setImage] = useState(<FaCartPlus className="image" />);
+  const [removeId, setRemoveId] = useState("0");
   const initialPosts =[
     {
       id: uuidv4(),
@@ -45,28 +46,19 @@ const Posts = (props) => {
     },
   ];
 
-  const [posts , dispatch] = useReducer(counterReducer,initialPosts);
-
-  function counterReducer (posts, action){
+  const [state , dispatch] = useReducer(counterReducer,{posts:initialPosts});
+  
+  function counterReducer (state, action,numer){
     switch(action.type){
       case 'ADD_POST':
-      return [...posts,{ id: uuidv4(), image: image, listName: value, description: valueInput }];
+      return {posts: [...state.posts , {id: uuidv4(), image: image, listName: value, description: valueInput} ]};
       case 'REMOVE_POST':
-        console.log('REMOVE_POST');
-        // console.log(posts.ind);
-        // const afterFilter = [posts].filter((itm,ind) => itm.id !== [posts].ind);
-      return posts;
+      console.log(removeId);
+      return {posts: state.posts.filter((itm,ind) => itm.id !== removeId)}
     default:
     return console.log("default")
     }};
-    
-  // (
-  //   ...posts,
-  //   { id: uuidv4(), image: image, listName: value, description: valueInput },
-  // );
-
-    // const afterFilter = posts.filter((val) => val.id !== props.postId);
- 
+   
   function onChangeSel(event) {
     event.stopPropagation();
     event.preventDefault();
@@ -79,7 +71,11 @@ const Posts = (props) => {
       setImage(<FaCocktail className="image" />);
     }
   }
-
+  function Add(eventId,props){
+    setRemoveId(eventId.postId);
+    dispatch({type: "REMOVE_POST"});
+  }
+  
   function changInp(event) {
     event.stopPropagation();
     event.preventDefault();
@@ -114,11 +110,11 @@ const Posts = (props) => {
       <hr className="hr" />
       <h1>Golden Tickets</h1>
         <div>
-          {posts.map((item) => (
+          {state.posts.map((item) => (
             <Task
               image={item.image}
               key={uuidv4()}
-              onClick={()=> dispatch({type: "REMOVE_POST"})}
+              onClick={Add}
               listName={item.listName}
               postId={item.id}
               description={item.description}
