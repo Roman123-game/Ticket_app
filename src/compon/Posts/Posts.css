@@ -9,7 +9,7 @@
   border: 1px solid silver;
   display: grid;
   border-radius: 5px;
-  cursor:default;
+  cursor: default;
 }
 
 .fieldset {
@@ -22,7 +22,7 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 5px;
   margin: 3px;
-  backdrop-filter:blur(6px);
+  backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
 }
 
@@ -32,15 +32,13 @@
   font-size: 10px;
   color: silver;
   margin-right: 20px;
-
-  
 }
-.image{
- display: grid;
- width: 40px;
- height: 40px;
- color: silver;
- margin: -10px auto auto -2px;
+.image {
+  display: grid;
+  width: 40px;
+  height: 40px;
+  color: silver;
+  margin: -8px auto auto -2px;
 }
 .bodyPost {
   width: auto;
@@ -48,7 +46,7 @@
   font-size: 14px;
   border-radius: 5px;
   display: flex;
-  margin:auto auto 0px -120px;
+  margin: auto auto 0px -120px;
 }
 .input {
   font-size: 14px;
@@ -62,8 +60,7 @@
   height: 20px;
   margin-right: 5px;
   margin-left: auto;
-  background-color:transparent;
-  
+  background-color: transparent;
 }
 input:focus {
   background-color: none;
@@ -82,14 +79,14 @@ input::placeholder {
   border: 1px solid silver;
   border-radius: 5px;
   margin: 1px 2px 1px auto;
-  backdrop-filter:blur(4px);
+  backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
 }
-.select option{
-  background-color:lightgrey;
+.select option {
+  background-color: lightgrey;
 }
-.select:hover{
-  color:#3b0054;
+.select:hover {
+  color: #3b0054;
 }
 .buttonAdd {
   align-items: grid;
@@ -100,32 +97,32 @@ input::placeholder {
   border: 1px solid silver;
   border-radius: 5px;
   margin: auto 2px 1px auto;
-  backdrop-filter:blur(4px);
+  backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
 }
-.buttonAdd:hover{
-  cursor:default;
-  color:green;
+.buttonAdd:hover {
+  cursor: default;
+  color: green;
 }
 
 .buttonRem {
-  display:grid;
+  display: grid;
   align-items: flex-end;
   background: none;
   font-size: 12px;
   color: silver;
-  border:none;
+  border: none;
   border-radius: 5px;
   margin: auto 3px 3px auto;
   padding: unset;
 }
-.buttonRem:hover{
-  cursor:default;
-  color:red;
+.buttonRem:hover {
+  cursor: default;
+  color: red;
 }
 .title {
   display: grid;
-  color: #152238;;
+  color: #152238;
   font-size: 22px;
   margin-left: 25px;
 }
@@ -134,27 +131,26 @@ input::placeholder {
   display: inline-flex;
   width: auto;
   height: 100px;
-  cursor:default;
+  cursor: default;
 }
-.noTasks{
+.noTasks {
   font-size: 22px;
 }
-.messageTotally{
+.messageTotally {
   color: silver;
- font-style: italic;
+  font-style: italic;
   font-size: medium;
-  cursor:default;
+  cursor: default;
 }
-.mark{
-  color:gold;
+.mark {
+  color: gold;
   background: none;
 }
 
-.hr{
+.hr {
   background-color: silver;
 }
-.gridContainer{
-position: static;
-display: block;
+.gridContainer {
+  position: static;
+  display: block;
 }
-
