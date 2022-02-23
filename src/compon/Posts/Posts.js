@@ -6,8 +6,8 @@ import Select from "../UI/Select";
 import Input from "../UI/Input";
 import Button from "../UI/Button";
 import LoginContext from "../Login/LoginContext";
-import UserInfo from "../UserInfo/UserInfo";
-import Settings from "../Settings/Settings";
+import UserInfo from "../ModalWindows/UserInfo";
+import Settings from "../ModalWindows/Settings";
 import {
   FaLaptopCode,
   FaCocktail,
