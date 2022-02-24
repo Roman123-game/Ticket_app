@@ -9,6 +9,8 @@
   border: 1px solid silver;
   display: grid;
   border-radius: 5px;
+  margin: 2px;
+  padding: 2px;
 }
 
 .fieldset {
@@ -17,9 +19,9 @@
   color: gold;
   border: 1px solid silver;
   border-radius: 5px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  height: 70px;
   font-size: medium;
-  margin: 3px 0 ;
+  margin: 2px;
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
 }
@@ -28,17 +30,23 @@
   color: silver;
   margin-right: 10px;
 }
+.title {
+  display: grid;
+  color: #152238;
+  font-size: 20px;
+  margin: 0px auto auto auto;
+}
 .image {
   width: 40px;
   height: 40px;
   color: silver;
-  margin: -8px auto auto -2px;
+  margin: -2px auto auto 1px;
 }
 .bodyPost {
   font-size: 14px;
   border-radius: 5px;
   display: flex;
-  margin: auto auto 0px -116px;
+  margin: auto auto 0px -139px;
 }
 .input {
   font-size: 14px;
@@ -106,12 +114,7 @@ input::placeholder {
   cursor: default;
   color: red;
 }
-.title {
-  display: grid;
-  color: #152238;
-  font-size: 20px;
-  margin-left: 25px;
-}
+
 .task {
   display: inline-flex;
   height: 100px;

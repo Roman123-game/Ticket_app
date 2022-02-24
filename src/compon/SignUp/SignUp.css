@@ -1,14 +1,15 @@
 
 .signUp {
   color:white;
-  width: 302px;
+  width: 306px;
   border: 1px solid white;
   border-radius: 5px;
   background-color: #8562C5;
   text-align: center;
   align-items: center;
-  padding: 0;
+  padding: 2px;
   position: fixed;
+  margin-top: 5px;
 }
 .titleSignUp{
   margin-top: 20px;
