@@ -19,13 +19,11 @@ import {
 } from "react-icons/fa";
 
 const Posts = (props) => {
-  const { setToken } = useContext(MainContext);
+  const { setToken,valueInput, setValueInput,value, 
+    setValue,image, setImage,removeId, setRemoveId } = useContext(MainContext);
   const [showInfo, setShowInfo] = useState(false);
   const [showSettings, setShowSettings] = useState(false);
-  const [valueInput, setValueInput] = useState("New Ticket");
-  const [value, setValue] = useState("Shop");
-  const [image, setImage] = useState(<FaCartPlus className="image" />);
-  const [removeId, setRemoveId] = useState("0");
+
   
   const [state, dispatch] = useReducer(counterReducer, { posts: initialPosts });
 
