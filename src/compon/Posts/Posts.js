@@ -31,7 +31,7 @@ const Posts = () => {
   const { state, dispatch } = useContext(ReducerContext);
   const [showInfo, setShowInfo] = useState(false);
   const [showSettings, setShowSettings] = useState(false);
-
+  
   function onChangeSel(event) {
     event.preventDefault();
     setValue(event.target.value);
