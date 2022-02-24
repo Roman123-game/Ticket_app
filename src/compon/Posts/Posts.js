@@ -1,4 +1,4 @@
-import { useState, useMemo, useContext,useReducer } from "react";
+import { useState, useMemo, useContext, useReducer } from "react";
 import "./Posts.css";
 import { v4 as uuidv4 } from "uuid";
 import Task from "../Task/Task";
@@ -8,18 +8,24 @@ import Button from "../UI/Button";
 import MainContext from "../Context/MainContext";
 import UserInfo from "../ModalWindows/UserInfo";
 import Settings from "../ModalWindows/Settings";
-import { FaLaptopCode,FaCocktail, FaCartPlus, 
-  FaUnlockAlt, FaStreetView,FaCogs,} from "react-icons/fa";
+import {
+  FaLaptopCode,
+  FaCocktail,
+  FaCartPlus,
+  FaUnlockAlt,
+  FaStreetView,
+  FaCogs,
+} from "react-icons/fa";
 
 const Posts = (props) => {
   const { setToken } = useContext(MainContext);
   const [showInfo, setShowInfo] = useState(false);
   const [showSettings, setShowSettings] = useState(false);
   const [valueInput, setValueInput] = useState("New Ticket");
-  const [value,setValue] = useState("Shop");
+  const [value, setValue] = useState("Shop");
   const [image, setImage] = useState(<FaCartPlus className="image" />);
   const [removeId, setRemoveId] = useState("0");
-  const initialPosts =[
+  const initialPosts = [
     {
       id: uuidv4(),
       image: <FaLaptopCode className="image" />,
@@ -38,27 +44,31 @@ const Posts = (props) => {
       listName: "Shop",
       description: "Buy Orange",
     },
-    {
-      id: uuidv4(),
-      image: <FaLaptopCode className="image" />,
-      listName: "Tech",
-      description: "Learn Angular",
-    },
   ];
 
-  const [state , dispatch] = useReducer(counterReducer,{posts:initialPosts});
-  
-  function counterReducer (state, action,numer){
-    switch(action.type){
-      case 'ADD_POST':
-      return {posts: [...state.posts , {id: uuidv4(), image: image, listName: value, description: valueInput} ]};
-      case 'REMOVE_POST':
-      console.log(removeId);
-      return {posts: state.posts.filter((itm,ind) => itm.id !== removeId)}
-    default:
-    return console.log("default")
-    }};
-   
+  const [state, dispatch] = useReducer(counterReducer, { posts: initialPosts });
+
+  function counterReducer(state, action) {
+    switch (action.type) {
+      case "ADD_POST":
+        return {
+          posts: [
+            ...state.posts,
+            {
+              id: uuidv4(),
+              image: image,
+              listName: value,
+              description: valueInput,
+            },
+          ],
+        };
+      case "REMOVE_POST":
+        return { posts: state.posts.filter((itm) => itm.id !== removeId) };
+      default:
+        return console.log("default");
+    }
+  }
+
   function onChangeSel(event) {
     event.stopPropagation();
     event.preventDefault();
@@ -71,17 +81,13 @@ const Posts = (props) => {
       setImage(<FaCocktail className="image" />);
     }
   }
-  function Add(eventId,props){
-    setRemoveId(eventId.postId);
-    dispatch({type: "REMOVE_POST"});
-  }
-  
+
   function changInp(event) {
     event.stopPropagation();
     event.preventDefault();
     setValueInput(event.target.value);
   }
- 
+
   useMemo(() => {
     console.log("cashing");
   }, []);
@@ -109,18 +115,22 @@ const Posts = (props) => {
       </div>
       <hr className="hr" />
       <h1>Golden Tickets</h1>
-        <div>
-          {state.posts.map((item) => (
-            <Task
-              image={item.image}
-              key={uuidv4()}
-              onClick={Add}
-              listName={item.listName}
-              postId={item.id}
-              description={item.description}
-            />
-          ))}
-        </div>
+      <div>
+        {state.posts.map((item) => (
+          <Task
+            image={item.image}
+            listName={item.listName}
+            postId={item.id}
+            description={item.description}
+            key={uuidv4()}
+            onClick={(eventId) =>{
+              setRemoveId(eventId.postId);
+              dispatch({ type: "REMOVE_POST" });
+            }}
+           
+          />
+        ))}
+      </div>
       <Input
         value={valueInput}
         className="input"
@@ -130,7 +140,11 @@ const Posts = (props) => {
         maxLength="29"
       />
       <Select className="select" onChange={onChangeSel} />
-      <Button onClick={()=> dispatch({type: "ADD_POST"})} className="buttonAdd" type="text" />
+      <Button
+        onClick={() => dispatch({ type: "ADD_POST" })}
+        className="buttonAdd"
+        type="text"
+      />
     </div>
   );
 };
