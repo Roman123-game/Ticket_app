@@ -8,6 +8,7 @@ import Button from "../UI/Button";
 import MainContext from "../Context/MainContext";
 import UserInfo from "../ModalWindows/UserInfo";
 import Settings from "../ModalWindows/Settings";
+import initialPosts from "../Data/initialPosts"
 import {
   FaLaptopCode,
   FaCocktail,
@@ -25,27 +26,7 @@ const Posts = (props) => {
   const [value, setValue] = useState("Shop");
   const [image, setImage] = useState(<FaCartPlus className="image" />);
   const [removeId, setRemoveId] = useState("0");
-  const initialPosts = [
-    {
-      id: uuidv4(),
-      image: <FaLaptopCode className="image" />,
-      listName: "Tech",
-      description: "Learn React.js",
-    },
-    {
-      id: uuidv4(),
-      image: <FaCocktail className="image" />,
-      listName: "Rest",
-      description: "Walk 7 km",
-    },
-    {
-      id: uuidv4(),
-      image: <FaCartPlus className="image" />,
-      listName: "Shop",
-      description: "Buy Orange",
-    },
-  ];
-
+  
   const [state, dispatch] = useReducer(counterReducer, { posts: initialPosts });
 
   function counterReducer(state, action) {
