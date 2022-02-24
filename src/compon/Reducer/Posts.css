@@ -9,8 +9,6 @@
   border: 1px solid silver;
   display: grid;
   border-radius: 5px;
-  margin: 2px;
-  padding: 2px;
 }
 
 .fieldset {
@@ -20,9 +18,8 @@
   border: 1px solid silver;
   border-radius: 5px;
   height: 70px;
-  width: max-content;
+  width: auto;
   font-size: medium;
-  margin:0px 2px;
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
 }
@@ -35,19 +32,20 @@
   display: grid;
   color: #152238;
   font-size: 20px;
-  margin: 0px auto auto auto;
+  margin: 0px 50px ;
+  position: fixed;
 }
 .image {
   width: 40px;
   height: 40px;
   color: silver;
-  margin: -2px auto auto 1px;
+  margin: -12px auto auto -5px;
 }
 .bodyPost {
   font-size: 14px;
   border-radius: 5px;
   display: flex;
-  margin: auto auto 0px -139px;
+  margin: 35px auto 0px -50px;
 }
 .input {
   font-size: 14px;
@@ -108,7 +106,7 @@ input::placeholder {
   color: silver;
   border: none;
   border-radius: 5px;
-  margin: auto 1px 1px auto;
+  margin: auto -4px -5px auto;
   padding: unset;
 }
 .buttonRem:hover {
