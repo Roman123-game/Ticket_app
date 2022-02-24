@@ -1,31 +1,21 @@
 import Login from "./compon/Login/Login";
 import Posts from "./compon/Reducer/Posts";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { useState } from "react";
 import MainContext from "./compon/Context/MainContext";
 
-
 function App() {
   const [token, setToken] = useState(false);
-  const [openSignUp, setOpenSignUp ] = useState(false);
+  const [openSignUp, setOpenSignUp] = useState(false);
   if (!token) {
     return (
-      <MainContext.Provider value={{setToken,openSignUp,setOpenSignUp}}>
-          <BrowserRouter>
-            <Routes>
-              <Route path="/" element={<Login />} />
-            </Routes>
-          </BrowserRouter>
+      <MainContext.Provider value={{ setToken, openSignUp, setOpenSignUp }}>
+        <Login />
       </MainContext.Provider>
     );
   } else {
     return (
-      <MainContext.Provider value={{setToken}}>
-        <BrowserRouter>
-          <Routes>
-            <Route path="/" element={<Posts />} />
-          </Routes>
-        </BrowserRouter>
+      <MainContext.Provider value={{ setToken }}>
+        <Posts />
       </MainContext.Provider>
     );
   }
