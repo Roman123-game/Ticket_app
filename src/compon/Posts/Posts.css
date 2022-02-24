@@ -5,44 +5,36 @@
   width: 100%;
   height: 100%;
   text-align: center;
-  font-size: large;
+  font-size:x-large;
   border: 1px solid silver;
   display: grid;
   border-radius: 5px;
-  cursor: default;
 }
 
 .fieldset {
   display: flex;
-  width: auto;
   background-color: rgb(255, 255, 255, 0.4);
   color: gold;
   border: 1px solid silver;
-  font-size: large;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 5px;
-  margin: 3px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  font-size: medium;
+  margin: 3px 0 ;
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
 }
-
 .legend {
-  display: flex;
-  width: auto;
-  font-size: 10px;
+  font-size:xx-small;
   color: silver;
-  margin-right: 20px;
+  margin-right: 10px;
 }
 .image {
-  display: grid;
   width: 40px;
   height: 40px;
   color: silver;
   margin: -8px auto auto -2px;
 }
 .bodyPost {
-  width: auto;
-  align-items: center;
   font-size: 14px;
   border-radius: 5px;
   display: flex;
@@ -73,14 +65,11 @@ input::placeholder {
 .select {
   display: inline-grid;
   background-color: rgb(255, 255, 255, 0.4);
-  font-size: 14px;
   width: 105px;
   height: 30px;
   border: 1px solid silver;
   border-radius: 5px;
   margin: 1px 2px 1px auto;
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
 }
 .select option {
   background-color: lightgrey;
@@ -89,16 +78,12 @@ input::placeholder {
   color: #3b0054;
 }
 .buttonAdd {
-  align-items: grid;
-  font-size: 14px;
   background-color: rgb(255, 255, 255, 0.4);
   width: 105px;
   height: 30px;
   border: 1px solid silver;
   border-radius: 5px;
   margin: auto 2px 1px auto;
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
 }
 .buttonAdd:hover {
   cursor: default;
@@ -126,30 +111,19 @@ input::placeholder {
   font-size: 22px;
   margin-left: 25px;
 }
-
 .task {
   display: inline-flex;
-  width: auto;
   height: 100px;
-  cursor: default;
 }
-.noTasks {
-  font-size: 22px;
-}
+
 .messageTotally {
   color: silver;
-  font-style: italic;
-  font-size: medium;
-  cursor: default;
 }
 .mark {
   color: gold;
   background: none;
 }
 
-.hr {
-  background-color: silver;
-}
 .gridContainer {
   position: static;
   display: block;

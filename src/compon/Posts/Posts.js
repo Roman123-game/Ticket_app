@@ -113,7 +113,7 @@ const Posts = (props) => {
           <FaUnlockAlt />
         </button>
       </div>
-      <hr className="hr" />
+      <hr />
       <h1>Golden Tickets</h1>
       <div>
         {state.posts.map((item) => (
@@ -123,11 +123,10 @@ const Posts = (props) => {
             postId={item.id}
             description={item.description}
             key={uuidv4()}
-            onClick={(eventId) =>{
+            onClick={(eventId) => {
               setRemoveId(eventId.postId);
               dispatch({ type: "REMOVE_POST" });
             }}
-           
           />
         ))}
       </div>
@@ -136,15 +135,19 @@ const Posts = (props) => {
         className="input"
         type="text"
         placeholder="New Ticket"
-        onChange={changInp}
         maxLength="29"
+        onChange={changInp}
       />
       <Select className="select" onChange={onChangeSel} />
       <Button
-        onClick={() => dispatch({ type: "ADD_POST" })}
         className="buttonAdd"
-        type="text"
+        onClick={() => dispatch({ type: "ADD_POST" })}
       />
+      <small className="messageTotally">
+        you have
+        <mark className="mark"> {state.posts.length} </mark>
+        tickets totally
+      </small>
     </div>
   );
 };
