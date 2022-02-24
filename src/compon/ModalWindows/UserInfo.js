@@ -5,10 +5,10 @@ const UserInfo = () => {
   return (
     <div className="userInfo">
       <FaUserCircle className="imageInfo"/>
-      <div>UserInfo:</div>
-      <div>UserName:Any</div>
-      <div>Email:Any@email.com</div>
-      <div>Password:test1234</div>
+      <h6>UserInfo:</h6>
+      <h6>UserName:Any</h6>
+      <h6>Email:Any@email.com</h6>
+      <h6>Password:test1234</h6>
     </div>
   );
 };

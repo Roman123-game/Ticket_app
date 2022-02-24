@@ -2,11 +2,11 @@ import "./Settings.modal.css";
 const Settings = () => {
   return (
     <div className="settings">
-      <label>Shop filter</label>
+      <h6>Shop filter</h6>
       <input type="radio" />
-      <label>Tech filter</label>
+      <h6>Tech filter</h6>
       <input type="radio" />
-      <label>Rest filter</label>
+      <h6>Rest filter</h6>
       <input type="radio" />
     </div>
   );
