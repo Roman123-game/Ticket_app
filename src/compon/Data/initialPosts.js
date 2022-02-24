@@ -10,20 +10,20 @@ import {
     {
       id: uuidv4(),
       image: <FaLaptopCode className="image" />,
-      listName: "Tech",
-      description: "Learn React.js",
+      listName:"Tech",
+      description:"Learn React.js",
     },
     {
       id: uuidv4(),
       image: <FaCocktail className="image" />,
-      listName: "Rest",
-      description: "Walk 7 km",
+      listName:"Rest",
+      description:"Walk 7km",
     },
     {
       id: uuidv4(),
       image: <FaCartPlus className="image" />,
-      listName: "Shop",
-      description: "Buy Orange",
+      listName:"Shop",
+      description:"Buy Orange",
     },
   ];
 

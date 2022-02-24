@@ -20,8 +20,9 @@
   border: 1px solid silver;
   border-radius: 5px;
   height: 70px;
+  width: max-content;
   font-size: medium;
-  margin: 2px;
+  margin:0px 2px;
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
 }
@@ -117,7 +118,6 @@ input::placeholder {
 
 .task {
   display: inline-flex;
-  height: 100px;
 }
 
 .messageTotally {
