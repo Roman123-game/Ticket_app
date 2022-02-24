@@ -1,5 +1,5 @@
 import Login from "./compon/Login/Login";
-import Posts from "./compon/Posts/Posts";
+import Posts from "./compon/Reducer/Posts";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { useState } from "react";
 import MainContext from "./compon/Context/MainContext";
