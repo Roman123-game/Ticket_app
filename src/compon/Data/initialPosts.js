@@ -6,7 +6,7 @@ import {
   
   } from "react-icons/fa";
 
- const initialPosts = [
+ const InitialPosts = [
     {
       id: uuidv4(),
       image: <FaLaptopCode className="image" />,
@@ -27,4 +27,4 @@ import {
     },
   ];
 
-  export default initialPosts;
+  export default InitialPosts;

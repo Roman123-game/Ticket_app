@@ -1,4 +1,4 @@
-import { useState, useMemo, useContext, useReducer } from "react";
+import { useState, useMemo, useContext } from "react";
 import "./Posts.css";
 import { v4 as uuidv4 } from "uuid";
 import Task from "../Task/Task";
@@ -8,7 +8,8 @@ import Button from "../UI/Button";
 import MainContext from "../Context/MainContext";
 import UserInfo from "../ModalWindows/UserInfo";
 import Settings from "../ModalWindows/Settings";
-import initialPosts from "../Data/initialPosts"
+import ReducerContext from "../Context/ReducerContext";
+
 import {
   FaLaptopCode,
   FaCocktail,
@@ -18,35 +19,18 @@ import {
   FaCogs,
 } from "react-icons/fa";
 
-const Posts = (props) => {
-  const { setToken,valueInput, setValueInput,value, 
-    setValue,image, setImage,removeId, setRemoveId } = useContext(MainContext);
+const Posts = () => {
+  const {
+    setToken,
+    valueInput,
+    setValueInput,
+    setValue,
+    setImage,
+    setRemoveId,
+  } = useContext(MainContext);
+  const { state, dispatch } = useContext(ReducerContext);
   const [showInfo, setShowInfo] = useState(false);
   const [showSettings, setShowSettings] = useState(false);
-
-  
-  const [state, dispatch] = useReducer(counterReducer, { posts: initialPosts });
-
-  function counterReducer(state, action) {
-    switch (action.type) {
-      case "ADD_POST":
-        return {
-          posts: [
-            ...state.posts,
-            {
-              id: uuidv4(),
-              image: image,
-              listName: value,
-              description: valueInput,
-            },
-          ],
-        };
-      case "REMOVE_POST":
-        return { posts: state.posts.filter((itm) => itm.id !== removeId) };
-      default:
-        return console.log("default");
-    }
-  }
 
   function onChangeSel(event) {
     event.preventDefault();
