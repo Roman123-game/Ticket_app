@@ -1,11 +1,12 @@
 import Login from "./compon/Login/Login";
 import Posts from "./compon/Posts/Posts";
-import { useState, useReducer } from "react";
+import { useState,useReducer } from "react";
 import MainContext from "./compon/Context/MainContext";
-import { FaCartPlus } from "react-icons/fa";
+import {FaCartPlus} from "react-icons/fa";
 import ReducerContext from "./compon/Context/ReducerContext";
 import { v4 as uuidv4 } from "uuid";
 import InitialPosts from "./compon/Data/InitialPosts";
+
 
 function App() {
   const [token, setToken] = useState(false);
@@ -38,31 +39,22 @@ function App() {
     }
   }
   return (
-    <div>
-      {token ? (
-        <MainContext.Provider value={{ setToken, openSignUp, setOpenSignUp }}>
-          <Login />
-        </MainContext.Provider>
-      ) : (
-        <MainContext.Provider
-          value={{
-            setToken,
-            valueInput,
-            setValueInput,
-            value,
-            setValue,
-            image,
-            setImage,
-            removeId,
-            setRemoveId,
-          }}
-        >
-          <ReducerContext.Provider value={{ state, dispatch }}>
-            <Posts />
-          </ReducerContext.Provider>
-        </MainContext.Provider>
-      )}
-    </div>
-  );
+     <div>
+    {token ? 
+      (
+      <MainContext.Provider value={{ setToken, openSignUp, setOpenSignUp }}>
+        <Login />
+      </MainContext.Provider>
+    ):(
+      <MainContext.Provider value={{ setToken,valueInput, setValueInput,value, 
+        setValue,image, setImage,removeId, setRemoveId }}>
+        <ReducerContext.Provider value={{state,dispatch}}>
+        <Posts />
+        </ReducerContext.Provider>
+      </MainContext.Provider>
+    )
+      }
+      </div>
+  )
 }
 export default App;
