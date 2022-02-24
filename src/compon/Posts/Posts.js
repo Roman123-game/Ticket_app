@@ -72,8 +72,6 @@ const Posts = (props) => {
     }
   }
   function Add(eventId,props){
-    eventId.preventDefault();
-    eventId.stopPropagation();
     setRemoveId(eventId.postId);
     dispatch({type: "REMOVE_POST"});
   }
