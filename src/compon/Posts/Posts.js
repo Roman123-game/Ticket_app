@@ -70,7 +70,6 @@ const Posts = (props) => {
   }
 
   function onChangeSel(event) {
-    event.stopPropagation();
     event.preventDefault();
     setValue(event.target.value);
     if (event.target.value === "Shop") {
@@ -143,11 +142,11 @@ const Posts = (props) => {
         className="buttonAdd"
         onClick={() => dispatch({ type: "ADD_POST" })}
       />
-      <small className="messageTotally">
-        you have
+      <h6 className="messageTotally">
+        You have
         <mark className="mark"> {state.posts.length} </mark>
         tickets totally
-      </small>
+      </h6>
     </div>
   );
 };
