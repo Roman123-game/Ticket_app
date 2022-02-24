@@ -75,7 +75,7 @@ const Posts = () => {
           <FaUnlockAlt />
         </button>
       </div>
-      <hr />
+      <hr style={{backgroundColor : "silver"}} />
       <h1>Golden Tickets</h1>
       <div>
         {state.posts.map((item) => (
