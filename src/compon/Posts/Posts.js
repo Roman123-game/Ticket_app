@@ -1,7 +1,7 @@
 import { useState, useMemo, useContext } from "react";
 import "./Posts.css";
 import { v4 as uuidv4 } from "uuid";
-import Task from "../Task/Task";
+import Task from "./Task/Task";
 import Select from "../UI/Select";
 import Input from "../UI/Input";
 import Button from "../UI/Button";

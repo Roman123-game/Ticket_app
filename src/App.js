@@ -42,15 +42,17 @@ function App() {
      <div>
     {token ? 
       (
-      <MainContext.Provider value={{ setToken, openSignUp, setOpenSignUp }}>
-        <Login />
-      </MainContext.Provider>
-    ):(
       <MainContext.Provider value={{ setToken,valueInput, setValueInput,value, 
         setValue,image, setImage,removeId, setRemoveId }}>
         <ReducerContext.Provider value={{state,dispatch}}>
         <Posts />
         </ReducerContext.Provider>
+      </MainContext.Provider>
+    )
+    :
+    (
+      <MainContext.Provider value={{ setToken, openSignUp, setOpenSignUp }}>
+        <Login />
       </MainContext.Provider>
     )
       }
