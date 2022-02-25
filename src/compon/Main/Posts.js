@@ -34,11 +34,11 @@ const Posts = () => {
   function onChangeSel(event) {
     event.preventDefault();
     setValue(event.target.value);
-    if (event.target.value === "Shop") {
+    if (event.target.value === "Shopping") {
       setImage(<FaCartPlus className="image" />);
-    } else if (event.target.value === "Tech") {
+    } else if (event.target.value === "Technology") {
       setImage(<FaLaptopCode className="image" />);
-    } else if (event.target.value === "Rest") {
+    } else{
       setImage(<FaCocktail className="image" />);
     }
   }
