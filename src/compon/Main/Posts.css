@@ -10,11 +10,16 @@
   display: grid;
   border-radius: 5px;
 }
+.task {
+  display: inline-flex;
+  margin: 0px;
+  padding: 0px;
+}
+
 
 .fieldset {
   display: flex;
   background-color: rgb(255, 255, 255, 0.4);
-  color: gold;
   border: 1px solid silver;
   border-radius: 5px;
   height: 70px;
@@ -45,7 +50,9 @@
   font-size: 14px;
   border-radius: 5px;
   display: flex;
-  margin: 35px auto 0px -50px;
+  margin: 35px auto auto -50px;
+  color: inherit;
+
 }
 .input {
   font-size: 14px;
@@ -114,9 +121,6 @@ input::placeholder {
   color: red;
 }
 
-.task {
-  display: inline-flex;
-}
 
 .messageTotally {
   color: silver;
