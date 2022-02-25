@@ -7,10 +7,10 @@ const Task = (props) => {
         <legend className="legend">{props.postId}</legend>
         <h3> {props.image}</h3>
         <h4 className="title">
-          <b>{props.listName}</b>
+        {props.listName}
         </h4>
         <h6 className="bodyPost">
-          <i>{props.description}</i>
+        {props.description}
         </h6>
         <button className="buttonRem" onClick={()=>props.onClick(props)}>
           <FaRegTrashAlt />

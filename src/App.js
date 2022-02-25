@@ -11,7 +11,7 @@ function App() {
   const [token, setToken] = useState(false);
   const [openSignUp, setOpenSignUp] = useState(false);
   const [valueInput, setValueInput] = useState("New Ticket");
-  const [value, setValue] = useState("Shop");
+  const [value, setValue] = useState("Shopping");
   const [image, setImage] = useState(<FaCartPlus className="image" />);
   const [removeId, setRemoveId] = useState();
   const [state, dispatch] = useReducer(counterReducer, {posts: Data});
