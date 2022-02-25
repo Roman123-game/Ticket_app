@@ -14,9 +14,7 @@ function App() {
   const [value, setValue] = useState("Shop");
   const [image, setImage] = useState(<FaCartPlus className="image" />);
   const [removeId, setRemoveId] = useState();
-  const [state, dispatch] = useReducer(counterReducer, {
-    posts: InitialPosts,
-  });
+  const [state, dispatch] = useReducer(counterReducer, {posts: InitialPosts});
 
   function counterReducer(state, action) {
     switch (action.type) {
@@ -42,7 +40,6 @@ function App() {
   }
   return (
     <div>
-      {" "}
       {token ? (
         <MainContext.Provider
           value={{
@@ -76,7 +73,7 @@ function App() {
         >
           <Login />
         </MainContext.Provider>
-      )}{" "}
+      )}
     </div>
   );
 }
