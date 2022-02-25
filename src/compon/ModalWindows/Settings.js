@@ -1,4 +1,5 @@
 import "./Settings.modal.css";
+
 const Settings = () => {
   return (
     <div className="settings">

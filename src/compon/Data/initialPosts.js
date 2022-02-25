@@ -1,9 +1,5 @@
 import { v4 as uuidv4 } from "uuid";
-import {
-    FaLaptopCode,
-    FaCocktail,
-    FaCartPlus,
-  } from "react-icons/fa";
+import { FaLaptopCode,  FaCocktail,  FaCartPlus} from "react-icons/fa";
 
  const InitialPosts = [
     {

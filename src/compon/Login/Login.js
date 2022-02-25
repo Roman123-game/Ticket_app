@@ -6,23 +6,23 @@ import { CSSTransition, TransitionGroup } from "react-transition-group";
 import { v4 as uuidv4 } from "uuid";
 
 const Login = (props) => {
-  const [password, setPassword] = useState("");
+  const [userPassword,setUserPassword] = useState("");
   const { setToken,openSignUp, setOpenSignUp } = useContext(MainContext);
   function LoginFunc(e) {
     e.preventDefault();
     e.stopPropagation();
-    const removeWhiteSpaces = password.split(" ").join("");
+    const removeWhiteSpaces = userPassword.split(" ").join("");
     const lowerCasePassword = removeWhiteSpaces.toLowerCase();
-    if (lowerCasePassword === "test1234") {
+    if (lowerCasePassword === "") {
       setToken(true);
     } else {
-      alert(`${password} \n  Not right password \n  Try again`);
+      alert(`${userPassword} \n  Not right userPassword \n  Try again`);
     }
   }
   function updatePassword(event) {
     event.preventDefault();
     event.stopPropagation();
-    setPassword(event.target.value);
+  setUserPassword(event.target.value);
   }
 
   return (
