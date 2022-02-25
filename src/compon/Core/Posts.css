@@ -1,0 +1,133 @@
+.posts {
+  background-color: #537895;
+  background-image: linear-gradient(315deg, #537895 0%, #09203f 74%);
+  color: gold;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 1.2em;
+  border: 1px solid silver;
+  display: grid;
+  border-radius: 5px;
+}
+
+.fieldset {
+  display: flex;
+  background-color: rgb(255, 255, 255, 0.4);
+  color: gold;
+  border: 1px solid silver;
+  border-radius: 5px;
+  height: 70px;
+  width: auto;
+  font-size: medium;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+.legend {
+  font-size:xx-small;
+  color: silver;
+  margin-right: 10px;
+}
+.title {
+  display: grid;
+  color: #152238;
+  font-size: 20px;
+  margin: 0px 50px ;
+  position: fixed;
+}
+.image {
+  width: 40px;
+  height: 40px;
+  color: silver;
+  margin: -12px auto auto -5px;
+}
+.bodyPost {
+  font-size: 14px;
+  border-radius: 5px;
+  display: flex;
+  margin: 35px auto 0px -50px;
+}
+.input {
+  font-size: 14px;
+  align-items: flex-end;
+  color: silver;
+  border: 1px solid cyan;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  width: 230px;
+  height: 20px;
+  margin-right: 5px;
+  margin-left: auto;
+  background-color: transparent;
+}
+input:focus {
+  background-color: none;
+  outline: none;
+}
+input::placeholder {
+  color: silver;
+}
+
+.select {
+  align-items: flex-end;
+  background-color: rgb(255, 255, 255, 0.4);
+  width: 90px;
+  height: 30px;
+  border: 1px solid silver;
+  border-radius: 5px;
+  margin: 1px 2px 1px auto;
+  padding: 5px;
+}
+.select option {
+  background-color: lightgrey;
+}
+.select:hover {
+  color: #3b0054;
+}
+.buttonAdd {
+  align-items: flex-end;
+  background-color: rgb(255, 255, 255, 0.4);
+  width: 90px;
+  height: 30px;
+  border: 1px solid silver;
+  border-radius: 5px;
+  margin: auto 2px 1px auto;
+}
+.buttonAdd:hover {
+  cursor: default;
+  color: green;
+}
+
+.buttonRem {
+  align-items: flex-end;
+  background: none;
+  font-size: 12px;
+  color: silver;
+  border: none;
+  border-radius: 5px;
+  margin: auto -4px -5px auto;
+  padding: unset;
+}
+.buttonRem:hover {
+  cursor: default;
+  color: red;
+}
+
+.task {
+  display: inline-flex;
+}
+
+.messageTotally {
+  color: silver;
+}
+.mark {
+  color: gold;
+  background: none;
+
+}
+
+.gridContainer {
+  position: static;
+  display: block;
+}

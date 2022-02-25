@@ -3,7 +3,6 @@ import {
     FaLaptopCode,
     FaCocktail,
     FaCartPlus,
-  
   } from "react-icons/fa";
 
  const InitialPosts = [
