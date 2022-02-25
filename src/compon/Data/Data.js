@@ -1,7 +1,7 @@
 import { v4 as uuidv4 } from "uuid";
 import { FaLaptopCode,  FaCocktail,  FaCartPlus} from "react-icons/fa";
 
- const InitialPosts = [
+ const Data = [
     {
       id: uuidv4(),
       image: <FaLaptopCode className="image" />,
@@ -22,4 +22,4 @@ import { FaLaptopCode,  FaCocktail,  FaCartPlus} from "react-icons/fa";
     },
   ];
 
-  export default InitialPosts;
+  export default Data;
