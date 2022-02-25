@@ -28,7 +28,7 @@ const Login = (props) => {
   return (
     <div className="login">
       <h2 className="welcomeMsg">Welcome to </h2>
-      <h1 className="titleLogin"> Golden Tickets</h1>
+      <h1 className="titleLogin">Digital Tickets</h1>
       <h3>Application that keeping all your tasks organized</h3>
       <label>UserName</label>
       <input className="inputLogin" />
