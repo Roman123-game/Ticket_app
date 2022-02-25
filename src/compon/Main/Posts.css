@@ -19,6 +19,7 @@
 
 .fieldset {
   display: flex;
+  color:silver;
   background-color: rgb(255, 255, 255, 0.4);
   border: 1px solid silver;
   border-radius: 5px;
@@ -43,7 +44,7 @@
 .image {
   width: 40px;
   height: 40px;
-  color: silver;
+  color: inherit;
   margin: -12px auto auto -5px;
 }
 .bodyPost {
@@ -51,8 +52,8 @@
   border-radius: 5px;
   display: flex;
   margin: 35px auto auto -50px;
-  color: inherit;
-
+  color: initial;
+  color: gold;
 }
 .input {
   font-size: 14px;
