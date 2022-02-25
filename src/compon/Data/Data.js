@@ -5,19 +5,19 @@ import { FaLaptopCode,  FaCocktail,  FaCartPlus} from "react-icons/fa";
     {
       id: uuidv4(),
       image: <FaLaptopCode className="image" />,
-      listName:"Tech",
+      listName:"Technology",
       description:"Learn React.js & Redux",
     },
     {
       id: uuidv4(),
       image: <FaCocktail className="image" />,
-      listName:"Rest",
+      listName:"Pleasure",
       description:"Walk distance 7 kilometre",
     },
     {
       id: uuidv4(),
       image: <FaCartPlus className="image" />,
-      listName:"Shop",
+      listName:"Shopping",
       description:"Buy Orange and Potato",
     },
   ];
