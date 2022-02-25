@@ -5,7 +5,7 @@ import MainContext from "./compon/Context/MainContext";
 import { FaCartPlus } from "react-icons/fa";
 import ReducerContext from "./compon/Context/ReducerContext";
 import { v4 as uuidv4 } from "uuid";
-import InitialPosts from "./compon/Data/InitialPosts";
+import Data from "./compon/Data/Data";
 
 function App() {
   const [token, setToken] = useState(false);
@@ -14,7 +14,7 @@ function App() {
   const [value, setValue] = useState("Shop");
   const [image, setImage] = useState(<FaCartPlus className="image" />);
   const [removeId, setRemoveId] = useState();
-  const [state, dispatch] = useReducer(counterReducer, {posts: InitialPosts});
+  const [state, dispatch] = useReducer(counterReducer, {posts: Data});
 
   function counterReducer(state, action) {
     switch (action.type) {

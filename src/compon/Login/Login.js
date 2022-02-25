@@ -13,7 +13,8 @@ const Login = (props) => {
     e.stopPropagation();
     const removeWhiteSpaces = userPassword.split(" ").join("");
     const lowerCasePassword = removeWhiteSpaces.toLowerCase();
-    if (lowerCasePassword === "") {
+    //////////////////Set PASSWORD////////////////////////
+    if (lowerCasePassword === "test1234") {
       setToken(true);
     } else {
       alert(`${userPassword} \n  Not right userPassword \n  Try again`);
