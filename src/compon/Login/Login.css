@@ -54,7 +54,7 @@ input:focus {
 
 }
 .item-enter-active {
-  transform:translateX(50px);
+  transform:translateX(150px);
   transition: all 1000ms ease-in-out;
 }
 .item-exit {
