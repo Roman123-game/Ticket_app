@@ -35,31 +35,32 @@
   margin-right: 10px;
 }
 .title {
-  display: grid;
+  align-self: center;
   color: #152238;
   font-size: 20px;
-  margin: 0px 50px ;
+  margin: -45px auto auto 60px ;
   position: fixed;
 }
 .image {
+  align-self: flex-start;
   width: 40px;
   height: 40px;
   color: inherit;
   margin: -12px auto auto -5px;
 }
 .bodyPost {
+  align-self: flex-start;
   font-family: 'Orbitron', sans-serif;
   font-size: 14px;
   border-radius: 5px;
-  display: flex;
   margin: 35px auto auto -50px;
   color: initial;
   color: greenyellow;
 }
 .input {
+  align-self: flex-end;
   font-family: 'Orbitron', sans-serif;
   font-size: 14px;
-  align-items: flex-end;
   color: silver;
   border: 1px solid cyan;
   border-top: none;
@@ -80,7 +81,7 @@ input::placeholder {
 }
 
 .select {
-  align-items: flex-end;
+  align-self: flex-end;
   background-color: rgb(255, 255, 255, 0.4);
   width: 90px;
   height: 30px;
@@ -96,7 +97,7 @@ input::placeholder {
   color: #3b0054;
 }
 .buttonAdd {
-  align-items: flex-end;
+  align-self: flex-end;
   background-color: rgb(255, 255, 255, 0.4);
   width: 90px;
   height: 30px;
@@ -126,6 +127,7 @@ input::placeholder {
 
 
 .messageTotally {
+  align-self: center;
   color: silver;
 }
 .mark {
