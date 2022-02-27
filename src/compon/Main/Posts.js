@@ -9,6 +9,8 @@ import MainContext from "../Context/MainContext";
 import UserInfo from "../ModalWindows/UserInfo";
 import Settings from "../ModalWindows/Settings";
 import ReducerContext from "../Context/ReducerContext";
+import Tippy from '@tippy.js/react';
+import 'tippy.js/dist/tippy.css'
 import {
   FaLaptopCode,
   FaCocktail,
@@ -56,23 +58,29 @@ const Posts = () => {
   return (
     <div className="posts">
       <div className="gridContainer">
+        <Tippy content='User Information'>
         <button
           className="buttonAdd grid"
           onClick={() => setShowInfo(!showInfo)}
         >
           <FaStreetView />
         </button>
+        </Tippy>
         {showInfo && <UserInfo />}
+        <Tippy content='Settings'>
         <button
           className="buttonAdd grid"
           onClick={() => setShowSettings(!showSettings)}
         >
           <FaCogs />
         </button>
+        </Tippy>
         {showSettings && <Settings />}
+        <Tippy content='Exit'>
         <button className="buttonAdd grid" onClick={() => setToken(false)}>
           <FaUnlockAlt />
         </button>
+        </Tippy>
       </div>
       <hr style={{ backgroundColor:"silver" }}/>
       <h1>Digital Tickets</h1>
