@@ -7,17 +7,18 @@ import Input from "../Main/UI/Input";
 import Button from "../Main/UI/Button";
 import MainContext from "../Context/MainContext";
 import UserInfo from "../ModalWindows/UserInfo";
-import Settings from "../ModalWindows/Settings";
+// import Settings from "../ModalWindows/Settings";
 import ReducerContext from "../Context/ReducerContext";
 import Tippy from '@tippy.js/react';
-import 'tippy.js/dist/tippy.css'
+import 'tippy.js/dist/tippy.css';
+import { SliderPicker} from "react-color";
 import {
   FaLaptopCode,
   FaCocktail,
   FaCartPlus,
   FaUnlockAlt,
   FaStreetView,
-  FaCogs,
+  FaHighlighter
 } from "react-icons/fa";
 
 const Posts = () => {
@@ -32,7 +33,8 @@ const Posts = () => {
   const { state, dispatch } = useContext(ReducerContext);
   const [showInfo, setShowInfo] = useState(false);
   const [showSettings, setShowSettings] = useState(false);
-
+  const [background, setBackground] = useState("#333333");
+ 
   function onChangeSel(event) {
     event.preventDefault();
     setValue(event.target.value);
@@ -56,8 +58,9 @@ const Posts = () => {
   }, []);
 
   return (
-    <div className="posts">
+    <div className="posts" style={{background: background}}>
       <div className="gridContainer">
+       
         <Tippy content='User Information'>
         <button
           className="buttonAdd grid"
@@ -72,10 +75,10 @@ const Posts = () => {
           className="buttonAdd grid"
           onClick={() => setShowSettings(!showSettings)}
         >
-          <FaCogs />
+          <FaHighlighter/>
         </button>
         </Tippy>
-        {showSettings && <Settings />}
+        {showSettings &&  <SliderPicker className = "colorPicker" color={background} onChange={updatedColor=>setBackground(updatedColor.hex)}/>}
         <Tippy content='Exit'>
         <button className="buttonAdd grid" onClick={() => setToken(false)}>
           <FaUnlockAlt />

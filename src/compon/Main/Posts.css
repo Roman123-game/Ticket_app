@@ -1,5 +1,5 @@
 .posts {
-  background-color: #537895;
+  /* background-color: #537895; */
   background-image: linear-gradient(315deg, #537895 0%, #09203f 74%);
   color: silver;
   width: 100%;
@@ -15,6 +15,25 @@
   margin: 0px;
   padding: 0px;
 }
+.colorPicker {
+  color: black;
+  width: 300px;
+  height: auto;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color:rgb(192,192,192);
+  margin: auto;
+  text-align: center;
+  align-items: center;
+  padding: 0;
+  position: absolute;
+  top:400px;
+  right:0px;
+  left:10px;
+  margin: 0;
+  z-index: 9;
+}
+
 
 
 .fieldset {
