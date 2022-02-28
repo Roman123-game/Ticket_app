@@ -70,7 +70,7 @@ const Posts = () => {
         </button>
         </Tippy>
         {showInfo && <UserInfo />}
-        <Tippy content='Settings'>
+        <Tippy content='Background Options'>
         <button
           className="buttonAdd grid"
           onClick={() => setShowSettings(!showSettings)}
