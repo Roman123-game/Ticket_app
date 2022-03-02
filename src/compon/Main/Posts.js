@@ -7,11 +7,10 @@ import Input from "../Main/UI/Input";
 import Button from "../Main/UI/Button";
 import MainContext from "../Context/MainContext";
 import UserInfo from "../ModalWindows/UserInfo";
-// import Settings from "../ModalWindows/Settings";
 import ReducerContext from "../Context/ReducerContext";
 import Tippy from '@tippy.js/react';
 import 'tippy.js/dist/tippy.css';
-import { SliderPicker} from "react-color";
+import { SliderPicker } from "react-color";
 import {
   FaLaptopCode,
   FaCocktail,
@@ -22,19 +21,13 @@ import {
 } from "react-icons/fa";
 
 const Posts = () => {
-  const {
-    setToken,
-    valueInput,
-    setValueInput,
-    setValue,
-    setImage,
-    setRemoveId,
+  const {setToken,valueInput, setValueInput, setValue, setImage,setRemoveId,
   } = useContext(MainContext);
   const { state, dispatch } = useContext(ReducerContext);
   const [showInfo, setShowInfo] = useState(false);
   const [showSettings, setShowSettings] = useState(false);
   const [background, setBackground] = useState("#333333");
- 
+
   function onChangeSel(event) {
     event.preventDefault();
     setValue(event.target.value);
@@ -42,7 +35,7 @@ const Posts = () => {
       setImage(<FaCartPlus className="image" />);
     } else if (event.target.value === "Technology") {
       setImage(<FaLaptopCode className="image" />);
-    } else{
+    } else {
       setImage(<FaCocktail className="image" />);
     }
   }
@@ -58,34 +51,37 @@ const Posts = () => {
   }, []);
 
   return (
-    <div className="posts" style={{background: background}}>
+    <div className="posts" style={{ background: background }}>
       <div className="gridContainer">
-       
+
         <Tippy content='User Information'>
-        <button
-          className="buttonAdd grid"
-          onClick={() => setShowInfo(!showInfo)}
-        >
-          <FaStreetView />
-        </button>
+          <button
+            className="buttonAdd grid"
+            onClick={() => setShowInfo(!showInfo)}
+          >
+            <FaStreetView />
+          </button>
         </Tippy>
         {showInfo && <UserInfo />}
         <Tippy content='Background Options'>
-        <button
-          className="buttonAdd grid"
-          onClick={() => setShowSettings(!showSettings)}
-        >
-          <FaHighlighter/>
-        </button>
+          <button
+            className="buttonAdd grid"
+            onClick={() => setShowSettings(!showSettings)}
+          >
+            <FaHighlighter />
+          </button>
         </Tippy>
-        {showSettings &&  <SliderPicker className = "colorPicker" color={background} onChange={updatedColor=>setBackground(updatedColor.hex)}/>}
+        {showSettings && <SliderPicker 
+        className="colorPicker" 
+        color={background} 
+        onChange={updatedColor => setBackground(updatedColor.hex)} /> }
         <Tippy content='Exit'>
-        <button className="buttonAdd grid" onClick={() => setToken(false)}>
-          <FaUnlockAlt />
-        </button>
+          <button className="buttonAdd grid" onClick={() => setToken(false)}>
+            <FaUnlockAlt />
+          </button>
         </Tippy>
       </div>
-      <hr style={{ backgroundColor:"silver" }}/>
+      <hr style={{ backgroundColor: "silver" }} />
       <h1>Digital Tickets</h1>
       <div>
         {state.posts.map((item) => (
