@@ -30,7 +30,7 @@ const Login = (props) => {
       <h2 className="welcomeMsg">Welcome to </h2>
       <h1 className="titleLogin">Digital Tickets</h1>
       <h3>Application that keeping all your tasks organized</h3>
-      <label>UserName</label>
+      <label>User Name</label>
       <input className="inputLogin" />
       <label>Password </label>
       <input

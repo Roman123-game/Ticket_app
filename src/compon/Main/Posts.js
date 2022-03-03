@@ -54,7 +54,7 @@ const Posts = () => {
     <div className="posts" style={{ background: background }}>
       <div className="gridContainer">
 
-        <Tippy content='User Information'>
+        <Tippy content='Information'>
           <button
             className="buttonAdd grid"
             onClick={() => setShowInfo(!showInfo)}
@@ -63,7 +63,7 @@ const Posts = () => {
           </button>
         </Tippy>
         {showInfo && <UserInfo />}
-        <Tippy content='Background Options'>
+        <Tippy content='Options'>
           <button
             className="buttonAdd grid"
             onClick={() => setShowSettings(!showSettings)}
