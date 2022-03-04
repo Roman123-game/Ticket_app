@@ -1,7 +1,7 @@
+import MainContext from "../Context/MainContext";
+import SignUp from "./SignUp/SignUp";
 import "./Login.css";
 import { useContext, useState } from "react";
-import MainContext from "../Context/MainContext";
-import SignUp from "./SignUp/SignUp"
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 import { v4 as uuidv4 } from "uuid";
 

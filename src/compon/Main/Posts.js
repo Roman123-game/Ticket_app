@@ -43,7 +43,8 @@ const Posts = () => {
   function changInp(event) {
     event.stopPropagation();
     event.preventDefault();
-    setValueInput(event.target.value);
+    setValueInput(event.target.value)
+
   }
 
   useMemo(() => {
