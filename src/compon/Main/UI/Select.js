@@ -5,6 +5,7 @@ const Select = (props) => {
       <option>Shopping</option>
       <option>Technology</option>
       <option>Pleasure</option>
+      <option>Economy</option>
     </select>
   );
 };

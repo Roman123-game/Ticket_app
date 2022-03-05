@@ -17,7 +17,8 @@ import {
   FaCartPlus,
   FaUnlockAlt,
   FaStreetView,
-  FaHighlighter
+  FaHighlighter,
+  FaMoneyBillAlt
 } from "react-icons/fa";
 
 const Posts = () => {
@@ -35,7 +36,10 @@ const Posts = () => {
       setImage(<FaCartPlus className="image" />);
     } else if (event.target.value === "Technology") {
       setImage(<FaLaptopCode className="image" />);
-    } else {
+    } else if (event.target.value === "Economy") {
+      setImage(<FaMoneyBillAlt className="image" />);
+    }
+     else {
       setImage(<FaCocktail className="image" />);
     }
   }

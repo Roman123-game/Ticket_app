@@ -1,5 +1,5 @@
 import { v4 as uuidv4 } from "uuid";
-import { FaLaptopCode,  FaCocktail,  FaCartPlus} from "react-icons/fa";
+import { FaLaptopCode,  FaCocktail,  FaCartPlus,FaMoneyBillAlt} from "react-icons/fa";
 
  const Data = [
     {
@@ -20,6 +20,12 @@ import { FaLaptopCode,  FaCocktail,  FaCartPlus} from "react-icons/fa";
       listName:"Shopping",
       description:"Buy Orange and Potato",
     },
+    {
+    id: uuidv4(),
+    image: <FaMoneyBillAlt className="image" />,
+    listName:"Economy",
+    description:"Chipest Tools at HomeCenter",
+  },
   ];
 
   export default Data;
