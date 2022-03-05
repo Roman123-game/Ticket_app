@@ -52,7 +52,7 @@ const Login = (props) => {
         No Account?
         <button
           className="signUpBtn"
-          onClick={() => setOpenSignUp(!openSignUp)}
+          onClick={() => setOpenSignUp(true)}
         >
           SignUp
         </button>

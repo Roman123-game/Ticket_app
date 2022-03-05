@@ -14,7 +14,7 @@ const SignUp = () => {
       <input className="signUpInput" />
       <label>Password</label>
       <input className="signUpInput" />
-      <button className="signUpBtn" onClick={() => setOpenSignUp(!openSignUp)}>
+      <button className="signUpBtn" onClick={() => setOpenSignUp(false)}>
         SignUp
       </button>
     </div>
