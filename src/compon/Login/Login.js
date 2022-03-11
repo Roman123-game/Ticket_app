@@ -49,7 +49,7 @@ const Login = (props) => {
         Login
       </button>
       <h4 className="signUpMsg">
-        No Account?
+        No Account Yet?
         <button
           className="signUpBtn"
           onClick={() => setOpenSignUp(!openSignUp)}
