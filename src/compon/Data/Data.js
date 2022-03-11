@@ -24,7 +24,7 @@ import { FaLaptopCode,  FaCocktail,  FaCartPlus,FaMoneyBillAlt} from "react-icon
     id: uuidv4(),
     image: <FaMoneyBillAlt className="image" />,
     listName:"Economy",
-    description:"Tools cost  99.99$",
+    description:"Tools cost    99.99$",
   },
   ];
 
