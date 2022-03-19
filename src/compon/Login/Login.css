@@ -10,13 +10,15 @@
 .login {
   color: white;
   width: 316px;
-  height: 640px;
+  height: 620px;
   border: 1px solid black;
   border-radius: 5px;
   background-color: #1D936E;
-  margin: auto;
+  margin: -10px auto;
+  padding: 0;
   text-align: center;
   align-items: center;
+  justify-content: center;
   padding: 2px;
 }
 
