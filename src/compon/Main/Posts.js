@@ -27,7 +27,7 @@ const Posts = () => {
   const { state, dispatch } = useContext(ReducerContext);
   const [showInfo, setShowInfo] = useState(false);
   const [showSettings, setShowSettings] = useState(false);
-  const [background, setBackground] = useState("#333333");
+  const [background, setBackground] = useState("#0b2545");
 
   function onChangeSel(event) {
     event.preventDefault();
