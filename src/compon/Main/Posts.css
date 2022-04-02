@@ -112,7 +112,7 @@ input::placeholder {
   background-color: lightgrey;
 }
 .select:hover {
-  color: #3b0054;
+  color: lightgreen;
 }
 .buttonAdd {
   align-self: flex-end;
@@ -125,7 +125,7 @@ input::placeholder {
 }
 .buttonAdd:hover {
   cursor: default;
-  color: green;
+  color: lightgreen;
 }
 
 .buttonRem {

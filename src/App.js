@@ -14,7 +14,7 @@ function App() {
   const [value, setValue] = useState("Shopping");
   const [image, setImage] = useState(<FaCartPlus className="image" />);
   const [removeId, setRemoveId] = useState();
-  const [state, dispatch] = useReducer(counterReducer, {posts: Data});
+  const [state, dispatch] = useReducer(counterReducer, { posts: Data });
 
   function counterReducer(state, action) {
     switch (action.type) {
@@ -61,7 +61,7 @@ function App() {
             }}
           >
             <Posts />
-          </ReducerContext.Provider>{" "}
+          </ReducerContext.Provider>
         </MainContext.Provider>
       ) : (
         <MainContext.Provider

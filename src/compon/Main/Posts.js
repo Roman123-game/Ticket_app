@@ -38,8 +38,7 @@ const Posts = () => {
       setImage(<FaLaptopCode className="image" />);
     } else if (event.target.value === "Economy") {
       setImage(<FaMoneyBillAlt className="image" />);
-    }
-     else {
+    } else {
       setImage(<FaCocktail className="image" />);
     }
   }
