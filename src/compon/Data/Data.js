@@ -12,7 +12,7 @@ import { FaLaptopCode,  FaCocktail,  FaCartPlus,FaMoneyBillAlt} from "react-icon
       id: uuidv4(),
       image: <FaCocktail className="image" />,
       listName:"Pleasure",
-      description:"Walk distance 7 kilometre",
+      description:"Walk distance 7.2 kilometre",
     },
     {
       id: uuidv4(),
