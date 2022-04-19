@@ -8,8 +8,8 @@ import Button from "../Main/UI/Button";
 import MainContext from "../Context/MainContext";
 import UserInfo from "../ModalWindows/UserInfo";
 import ReducerContext from "../Context/ReducerContext";
-import Tippy from '@tippy.js/react';
-import 'tippy.js/dist/tippy.css';
+import Tippy from "@tippy.js/react";
+import "tippy.js/dist/tippy.css";
 import { SliderPicker } from "react-color";
 import {
   FaLaptopCode,
@@ -18,11 +18,17 @@ import {
   FaUnlockAlt,
   FaStreetView,
   FaHighlighter,
-  FaMoneyBillAlt
+  FaMoneyBillAlt,
 } from "react-icons/fa";
 
 const Posts = () => {
-  const {setToken,valueInput, setValueInput, setValue, setImage,setRemoveId,
+  const {
+    setToken,
+    valueInput,
+    setValueInput,
+    setValue,
+    setImage,
+    setRemoveId,
   } = useContext(MainContext);
   const { state, dispatch } = useContext(ReducerContext);
   const [showInfo, setShowInfo] = useState(false);
@@ -46,8 +52,7 @@ const Posts = () => {
   function changInp(event) {
     event.stopPropagation();
     event.preventDefault();
-    setValueInput(event.target.value)
-
+    setValueInput(event.target.value);
   }
 
   useMemo(() => {
@@ -57,8 +62,7 @@ const Posts = () => {
   return (
     <div className="posts" style={{ background: background }}>
       <div className="gridContainer">
-
-        <Tippy content='Information'>
+        <Tippy content="Information">
           <button
             className="buttonAdd grid"
             onClick={() => setShowInfo(!showInfo)}
@@ -67,7 +71,7 @@ const Posts = () => {
           </button>
         </Tippy>
         {showInfo && <UserInfo />}
-        <Tippy content='Options'>
+        <Tippy content="Options">
           <button
             className="buttonAdd grid"
             onClick={() => setShowSettings(!showSettings)}
@@ -75,11 +79,14 @@ const Posts = () => {
             <FaHighlighter />
           </button>
         </Tippy>
-        {showSettings && <SliderPicker 
-        className="colorPicker" 
-        color={background} 
-        onChange={updatedColor => setBackground(updatedColor.hex)} /> }
-        <Tippy content='Exit'>
+        {showSettings && (
+          <SliderPicker
+            className="colorPicker"
+            color={background}
+            onChange={(updatedColor) => setBackground(updatedColor.hex)}
+          />
+        )}
+        <Tippy content="Exit">
           <button className="buttonAdd grid" onClick={() => setToken(false)}>
             <FaUnlockAlt />
           </button>
