@@ -17,7 +17,7 @@ const Login = (props) => {
     if (lowerCasePassword === "test1234") {
       setToken(true);
     } else {
-      alert(` ${warning.props.children} ${userPassword}}  \nIncorrect Password \nTry again`);
+      alert(` ${warning.props.children} ${userPassword} \nIncorrect Password \nTry again`);
     }
   }
   function updatePassword(event) {
