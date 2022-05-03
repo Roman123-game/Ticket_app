@@ -7,7 +7,9 @@ import { v4 as uuidv4 } from "uuid";
 
 const Login = (props) => {
   const [userPassword, setUserPassword] = useState("");
-  const { setToken,openSignUp, setOpenSignUp } = useContext(MainContext);
+  const { setToken} = useContext(MainContext);
+  const [openSignUp, setOpenSignUp] = useState(false);
+
   function LoginFunc(e) {
     e.preventDefault();
     e.stopPropagation();

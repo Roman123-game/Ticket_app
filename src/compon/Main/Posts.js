@@ -46,12 +46,6 @@ const Posts = () => {
     }
   }
 
-  function changInp(event) {
-    event.stopPropagation();
-    event.preventDefault();
-    setValueInput(event.target.value);
-  }
-
   useMemo(() => {
     console.log("cashing");
   }, []);
@@ -111,7 +105,7 @@ const Posts = () => {
         type="text"
         placeholder="New Ticket"
         maxLength="24"
-        onChange={changInp}
+        onChange={(e)=>setValueInput(e.target.value)}
       />
       <Select className="select" onChange={onChangeSel} />
       <Button

@@ -1,7 +1,6 @@
 import { v4 as uuidv4 } from "uuid";
 
 function CounterReducer(state, action) {
-    console.log(action)
     switch (action.type) {
       case "ADD_POST":
         return {
