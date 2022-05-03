@@ -1,4 +1,4 @@
-import { useState, useMemo, useContext } from "react";
+import { useState, useMemo, useContext, useReducer } from "react";
 import "./Posts.css";
 import { v4 as uuidv4 } from "uuid";
 import Task from "./Task/Task";
@@ -7,7 +7,8 @@ import Input from "../Main/UI/Input";
 import Button from "../Main/UI/Button";
 import MainContext from "../Context/MainContext";
 import UserInfo from "../ModalWindows/UserInfo";
-import ReducerContext from "../Context/ReducerContext";
+import Data from "../Data/Data";
+import CounterReducer from "../Reducer/CounteReducer";
 import Tippy from "@tippy.js/react";
 import "tippy.js/dist/tippy.css";
 import { SliderPicker } from "react-color";
@@ -22,18 +23,14 @@ import {
 } from "react-icons/fa";
 
 const Posts = () => {
-  const {
-    setToken,
-    valueInput,
-    setValueInput,
-    setValue,
-    setImage,
-    setRemoveId,
-  } = useContext(MainContext);
-  const { state, dispatch } = useContext(ReducerContext);
+  const { setToken } = useContext(MainContext);
   const [showInfo, setShowInfo] = useState(false);
   const [showSettings, setShowSettings] = useState(false);
   const [background, setBackground] = useState("#0b2545");
+  const [image, setImage] = useState(<FaCartPlus className="image" />);
+  const [value, setValue] = useState("Shopping");
+  const [valueInput, setValueInput] = useState("New Ticket");
+  const [state, dispatch] = useReducer(CounterReducer, { posts: Data });
 
   function onChangeSel(event) {
     event.preventDefault();
@@ -103,8 +100,7 @@ const Posts = () => {
             description={item.description}
             key={uuidv4()}
             onClick={(eventId) => {
-              setRemoveId(eventId.postId);
-              dispatch({ type: "REMOVE_POST" });
+              dispatch({ type: "REMOVE_POST", payload: eventId.postId });
             }}
           />
         ))}
@@ -120,7 +116,12 @@ const Posts = () => {
       <Select className="select" onChange={onChangeSel} />
       <Button
         className="buttonAdd"
-        onClick={() => dispatch({ type: "ADD_POST" })}
+        onClick={() =>
+          dispatch({
+            type: "ADD_POST",
+            payload: { image: image, value: value, valueInput: valueInput },
+          })
+        }
       />
       <h6 className="messageTotally">
         You have
