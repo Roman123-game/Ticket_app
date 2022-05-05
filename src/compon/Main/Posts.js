@@ -12,7 +12,14 @@ import CounterReducer from "../Reducer/CounteReducer";
 import Tippy from "@tippy.js/react";
 import "tippy.js/dist/tippy.css";
 import { SliderPicker } from "react-color";
-import {FaLaptopCode,FaCocktail,FaCartPlus,FaUnlockAlt,FaStreetView,FaHighlighter,FaMoneyBillAlt,
+import {
+  FaLaptopCode,
+  FaCocktail,
+  FaCartPlus,
+  FaUnlockAlt,
+  FaStreetView,
+  FaHighlighter,
+  FaMoneyBillAlt,
 } from "react-icons/fa";
 
 const Posts = () => {
@@ -88,6 +95,7 @@ const Posts = () => {
             key={uuidv4()}
             onClick={(eventId) => {
               dispatch({ type: "REMOVE_POST", payload: eventId.postId });
+              console.log("post removed");
             }}
           />
         ))}
@@ -98,7 +106,7 @@ const Posts = () => {
         type="text"
         placeholder="New Ticket"
         maxLength="24"
-        onChange={(e)=>setValueInput(e.target.value)}
+        onChange={(e) => setValueInput(e.target.value)}
       />
       <Select className="select" onChange={onChangeSel} />
       <Button
