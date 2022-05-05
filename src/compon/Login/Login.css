@@ -2,6 +2,9 @@
   font-size: 38px;
   letter-spacing:2px;
 }
+.titleLogin::first-letter{ 
+    color: greenyellow;
+}
 
 .welcomeMsg {
   margin-top: 20px;
