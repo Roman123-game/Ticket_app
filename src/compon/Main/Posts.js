@@ -12,14 +12,7 @@ import CounterReducer from "../Reducer/CounteReducer";
 import Tippy from "@tippy.js/react";
 import "tippy.js/dist/tippy.css";
 import { SliderPicker } from "react-color";
-import {
-  FaLaptopCode,
-  FaCocktail,
-  FaCartPlus,
-  FaUnlockAlt,
-  FaStreetView,
-  FaHighlighter,
-  FaMoneyBillAlt,
+import {FaLaptopCode,FaCocktail,FaCartPlus,FaUnlockAlt,FaStreetView,FaHighlighter,FaMoneyBillAlt,
 } from "react-icons/fa";
 
 const Posts = () => {

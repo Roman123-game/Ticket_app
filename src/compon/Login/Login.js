@@ -7,25 +7,21 @@ import { v4 as uuidv4 } from "uuid";
 
 const Login = (props) => {
   const [userPassword, setUserPassword] = useState("");
-  const { setToken} = useContext(MainContext);
+  const { setToken } = useContext(MainContext);
   const [openSignUp, setOpenSignUp] = useState(false);
 
   function LoginFunc(e) {
     e.preventDefault();
-    e.stopPropagation();
     const removeWhiteSpaces = userPassword.split(" ").join("");
     const lowerCasePassword = removeWhiteSpaces.toLowerCase();
     const warning = <div>&#x1F6AB;</div>;
     if (lowerCasePassword === "test1234") {
       setToken(true);
     } else {
-      alert(` ${warning.props.children} ${userPassword} \nIncorrect Password \nTry again`);
+      alert(
+        ` ${warning.props.children} ${userPassword} \nIncorrect Password \nTry again`
+      );
     }
-  }
-  function updatePassword(event) {
-    event.preventDefault();
-    event.stopPropagation();
-    setUserPassword(event.target.value);
   }
 
   return (
@@ -40,7 +36,7 @@ const Login = (props) => {
         className="inputLogin"
         value={props.value}
         onBlur={(event) => {
-          updatePassword(event);
+          setUserPassword(event.target.value);
         }}
       />
       <button
