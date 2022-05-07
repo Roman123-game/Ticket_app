@@ -1,6 +1,6 @@
 import { v4 as uuidv4 } from "uuid";
 
-function CounterReducer(state, action) {
+function PostsReducer(state, action) {
     switch (action.type) {
       case "ADD_POST":
         return {
@@ -23,4 +23,4 @@ function CounterReducer(state, action) {
     }
   }
 
-export default CounterReducer
+export default PostsReducer;
