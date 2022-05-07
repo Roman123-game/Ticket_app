@@ -26,7 +26,7 @@ const Login = (props) => {
 
   return (
     <div className="login">
-      <h2 className="welcomeMsg">Welcome to </h2>
+      <h2 className="welcomeMsg">Welcome to</h2>
       <h1 className="titleLogin">Tickets</h1>
       <h3>Application that keeping all your tasks organized</h3>
       <label>Username</label>
@@ -56,7 +56,7 @@ const Login = (props) => {
           SignUp
         </button>
       </h4>
-      <h6 className="loginBottomMsg">*UserName: any *Password: test1234</h6>
+      <h5 className="loginBottomMsg">*UserName: any *Password: test1234</h5>
       <TransitionGroup>
         <CSSTransition key={uuidv4()} timeout={500} classNames="item">
           <div>{openSignUp && <SignUp />}</div>
