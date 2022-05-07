@@ -2,12 +2,23 @@
   font-size: 38px;
   letter-spacing:2px;
 }
-.titleLogin::first-letter{ 
-    color: greenyellow;
+.titleLogin::before{ 
+  content: 'Digital';
+  color: lawngreen;
+  display: inline-block;
+  animation: spin 3s linear infinite ;
 }
 
-.welcomeMsg {
-  margin-top: 20px;
+
+
+@keyframes spin{
+  0% {
+    opacity: 100% ;
+  }
+
+  100% {
+    opacity: 0% ;
+  }
 }
 
 .login {
