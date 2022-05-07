@@ -4,14 +4,13 @@
 }
 .titleLogin::before{ 
   content: 'Digital';
-  color: lawngreen;
   display: inline-block;
-  animation: spin 3s ease-in-out infinite ;
+  animation: flick 3s ease-in-out infinite ;
 }
 
 
 
-@keyframes spin{
+@keyframes flick{
   0% {
     opacity: 0.4;
   }
