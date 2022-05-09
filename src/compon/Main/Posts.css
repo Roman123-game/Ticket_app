@@ -132,7 +132,7 @@ input::placeholder {
   color: silver;
   border: none;
   border-radius: 5px;
-  margin: auto -4px -5px auto;
+  margin: auto -3px -5px auto;
   padding: unset;
 }
 .buttonGlobe:hover {
