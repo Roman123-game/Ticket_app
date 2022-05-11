@@ -55,18 +55,16 @@ const Posts = () => {
       <div className="gridContainer">
         <Tippy content="Information">
           <button
-            className="buttonAdd grid"
-            onClick={() => setShowInfo(!showInfo)}
-          >
+            className="buttonAdd"
+            onClick={() => setShowInfo(!showInfo)}>
             <FaStreetView />
           </button>
         </Tippy>
         {showInfo && <UserInfo />}
         <Tippy content="Options">
           <button
-            className="buttonAdd grid"
-            onClick={() => setShowSettings(!showSettings)}
-          >
+            className="buttonAdd"
+            onClick={() => setShowSettings(!showSettings)}>
             <FaHighlighter />
           </button>
         </Tippy>
@@ -74,11 +72,10 @@ const Posts = () => {
           <SliderPicker
             className="colorPicker"
             color={background}
-            onChange={(updatedColor) => setBackground(updatedColor.hex)}
-          />
+            onChange={(updatedColor) => setBackground(updatedColor.hex)}/>
         )}
         <Tippy content="Exit">
-          <button className="buttonAdd grid" onClick={() => setToken(false)}>
+          <button className="buttonAdd" onClick={() => setToken(false)}>
             <FaUnlockAlt />
           </button>
         </Tippy>

@@ -13,6 +13,7 @@ const Task = (props) => {
         <h6 className="bodyPost">
         {props.description}
         </h6>
+        <div className="taskBtnGrid">
         <Tippy content="Users have same todo">
         <button className="buttonGlobe">
           <FaGlobe />
@@ -23,6 +24,7 @@ const Task = (props) => {
           <FaRegTrashAlt />
         </button>
         </Tippy>
+        </div>
       </fieldset>
     </div>
   );
