@@ -19,6 +19,7 @@
       width:40px;
       height: 40px;
       margin: -9px auto auto 1px;
+      filter: drop-shadow(10px 5px 2px darkgrey);
  
   }
 
