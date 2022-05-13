@@ -6,25 +6,25 @@ import { FaLaptopCode,  FaCocktail,  FaCartPlus,FaMoneyBillAlt} from "react-icon
       id: uuidv4(),
       image: <FaLaptopCode className="image" />,
       listName:"Technology",
-      description:"Learn React.js & Redux",
+      description:"learn react.js & redux",
     },
     {
       id: uuidv4(),
       image: <FaCocktail className="image" />,
       listName:"Pleasure",
-      description:"Walk distance 7.2 kilometre",
+      description:"walk distance 7.2 kilometre",
     },
     {
       id: uuidv4(),
       image: <FaCartPlus className="image" />,
       listName:"Shopping",
-      description:"Buy Orange and Potato",
+      description:"buy orange and potato",
     },
     {
     id: uuidv4(),
     image: <FaMoneyBillAlt className="image" />,
     listName:"Economy",
-    description:"Tools cost    99.99$",
+    description:"tools cost    99.99$",
   },
   ];
 
