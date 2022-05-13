@@ -18,6 +18,18 @@ function PostsReducer(state, action) {
         return {
           posts: state.posts.filter((itm) => itm.id !== action.payload),
         };
+        case "EDIT_POST":
+          return {
+            posts: [
+              ...state.posts,
+              {
+                id: uuidv4(),
+                image: action.payload.image,
+                listName: action.payload.value,
+                description: action.payload.edit,
+              },
+            ],
+          };
       default:
         return console.log("default");
     }

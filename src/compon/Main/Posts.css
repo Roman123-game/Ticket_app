@@ -154,6 +154,20 @@ input::placeholder {
   cursor: default;
   color: lightcoral;
 }
+.buttonEdit {
+  align-items: flex-end;
+  background: none;
+  font-size: 12px;
+  color: silver;
+  border: none;
+  border-radius: 5px;
+  margin: auto -4px -5px auto;
+  padding: unset;
+}
+.buttonEdit:hover {
+  cursor: default;
+  color: lightgreen;
+}
 
 
 .messageTotally {
@@ -166,7 +180,7 @@ input::placeholder {
 
 }
 
-.taskBtnGrid{
+.btnGrid{
   display: flex;
 margin-top: 0px;
 }

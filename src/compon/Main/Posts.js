@@ -18,7 +18,7 @@ import {
   FaCartPlus,
   FaUnlockAlt,
   FaStreetView,
-  FaHighlighter,
+  FaPalette,
   FaMoneyBillAlt,
 } from "react-icons/fa";
 
@@ -65,7 +65,7 @@ const Posts = () => {
           <button
             className="buttonAdd"
             onClick={() => setShowSettings(!showSettings)}>
-            <FaHighlighter />
+            <FaPalette />
           </button>
         </Tippy>
         {showSettings && (
@@ -90,8 +90,12 @@ const Posts = () => {
             postId={item.id}
             description={item.description}
             key={uuidv4()}
-            onClick={(eventId) => {
+            clickGlobeBtn={(eventId) => {
               dispatch({ type: "REMOVE_POST", payload: eventId.postId });
+            }}
+            clickEditBtn={(eventId) => {
+             const edit = prompt()
+              dispatch({ type: "EDIT_POST", payload: edit });
             }}
           />
         ))}
