@@ -93,9 +93,12 @@ const Posts = () => {
             clickGlobeBtn={(eventId) => {
               dispatch({ type: "REMOVE_POST", payload: eventId.postId });
             }}
-            clickEditBtn={(eventId) => {
-             const edit = prompt()
-              dispatch({ type: "EDIT_POST", payload: edit });
+            clickEditBtn={(ev) => {
+             const edit = prompt();
+             dispatch({
+              type: "EDIT_POST", 
+              payload : {edit, ev} 
+            })
             }}
           />
         ))}
