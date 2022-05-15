@@ -21,23 +21,21 @@
   height: auto;
   border: 1px solid black;
   border-radius: 5px;
-  background-color:rgb(192,192,192);
+  background-color: rgb(192, 192, 192);
   margin: auto;
   text-align: center;
   align-items: center;
   padding: 0;
   position: absolute;
-  top:300px;
-  left:10px;
+  top: 300px;
+  left: 10px;
   margin: 0;
   z-index: 9;
 }
 
-
-
 .fieldset {
   display: flex;
-  color:silver;
+  color: silver;
   background-color: rgb(255, 255, 255, 0.4);
   border: 1px solid silver;
   border-radius: 5px;
@@ -48,7 +46,7 @@
   -webkit-backdrop-filter: blur(6px);
 }
 .legend {
-  font-size:xx-small;
+  font-size: xx-small;
   color: silver;
   margin-right: 10px;
 }
@@ -56,7 +54,7 @@
   align-self: center;
   color: #152238;
   font-size: 20px;
-  margin: -35px auto auto 60px ;
+  margin: -45px auto auto 50px;
   position: fixed;
 }
 .image {
@@ -69,7 +67,7 @@
 .bodyPost {
   text-transform: capitalize;
   align-self: flex-start;
-  font-family: 'Orbitron', sans-serif;
+  font-family: "Orbitron", sans-serif;
   font-size: 12px;
   border-radius: 5px;
   margin: 35px auto auto -50px;
@@ -78,7 +76,7 @@
 }
 .input {
   align-self: flex-end;
-  font-family: 'Orbitron', sans-serif;
+  font-family: "Orbitron", sans-serif;
   font-size: 14px;
   color: silver;
   border: 1px solid cyan;
@@ -126,7 +124,7 @@ input::placeholder {
   cursor: default;
   color: lightgreen;
 }
-.buttonGlobe{
+.buttonGlobe {
   align-items: flex-end;
   background: none;
   font-size: 12px;
@@ -151,10 +149,12 @@ input::placeholder {
   margin: auto -4px -5px auto;
   padding: unset;
 }
+
 .buttonRem:hover {
   cursor: default;
   color: lightcoral;
 }
+
 .buttonEdit {
   align-items: flex-end;
   background: none;
@@ -165,23 +165,24 @@ input::placeholder {
   margin: auto -4px -5px auto;
   padding: unset;
 }
+
 .buttonEdit:hover {
   cursor: default;
   color: lightgreen;
 }
 
-
 .messageTotally {
   align-self: center;
   color: silver;
 }
+
 .mark {
   color: goldenrod;
   background: none;
-
 }
 
-.btnGrid{
+.btnGrid {
+  flex-direction: column;
   display: flex;
-margin-top: 0px;
+  margin: 0;
 }
