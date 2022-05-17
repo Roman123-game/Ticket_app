@@ -14,7 +14,7 @@ const Login = (props) => {
     e.preventDefault();
     const removeWhiteSpaces = userPassword.split(" ").join("");
     const lowerCasePassword = removeWhiteSpaces.toLowerCase();
-    const warning = <div>&#x1F6AB;</div>;
+    const warning = <p>&#x2718;</p>;
     if (lowerCasePassword === "test1234") {
       setToken(true);
     } else {
@@ -38,7 +38,6 @@ const Login = (props) => {
         onChange={(event) => {
           setUserPassword(event.target.value);
         }}
-     
       />
       <button
         className="loginBtn"
