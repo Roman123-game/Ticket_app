@@ -1,44 +1,39 @@
-
-
 .signUp {
-  color:white;
-  
+  color: white;
   width: 298px;
-  border: 1px solid white;
+  border: 1px solid whitesmoke;
   border-radius: 5px;
-  background-color: #8562C5;
+  background-color: #8562c5;
   text-align: center;
   align-items: center;
   padding: 2px;
   position: fixed;
   margin: 5px auto;
 }
-.titleSignUp{
+.titleSignUp {
   margin-top: 20px;
 }
-.signUpBtn{
+.signUpBtn {
   background: none;
-  border: 1px solid #C5C462;
+  border: 1px solid burlywood;
   border-radius: 5px;
   margin: 10px auto 2px 222px;
   padding: 5px;
 }
-.signUpInput{
-  font-family: 'Orbitron', sans-serif;
+.signUpInput {
+  font-family: "Orbitron", sans-serif;
   font-size: 14px;
   margin-top: 10px;
   color: white;
-  border: 1px solid #C5C462;
+  border: 1px solid burlywood;
   border-top: none;
   border-right: none;
   border-left: none;
   width: 200px;
   height: 20px;
   background-color: inherit;
-  
 }
 .signUpInput:focus {
   background-color: none;
   outline: none;
 }
-

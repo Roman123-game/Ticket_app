@@ -1,6 +1,5 @@
 .posts {
-  /* background-color: #537895; */
-  background-image: linear-gradient(315deg, #537895 0%, #09203f 74%);
+  background-color: linear-gradient(315deg, #537895 0%, #09203f 74%);
   color: silver;
   width: 100%;
   height: 100%;
@@ -10,11 +9,13 @@
   display: grid;
   border-radius: 5px;
 }
+
 .task {
   display: inline-flex;
   margin: 0px;
   padding: 0px;
 }
+
 .colorPicker {
   color: black;
   width: 300px;
@@ -45,11 +46,13 @@
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
 }
+
 .legend {
   font-size: xx-small;
   color: silver;
   margin-right: 10px;
 }
+
 .title {
   align-self: center;
   color: #152238;
@@ -57,6 +60,7 @@
   margin: -45px auto auto 50px;
   position: fixed;
 }
+
 .image {
   align-self: flex-start;
   width: 40px;
@@ -64,8 +68,8 @@
   color: inherit;
   margin: -12px auto auto -5px;
 }
+
 .bodyPost {
-  text-transform: capitalize;
   align-self: flex-start;
   font-family: "Orbitron", sans-serif;
   font-size: 12px;
@@ -73,7 +77,9 @@
   margin: 35px auto auto -50px;
   color: initial;
   color: greenyellow;
+  text-transform: capitalize;
 }
+
 .input {
   align-self: flex-end;
   font-family: "Orbitron", sans-serif;
@@ -89,28 +95,17 @@
   margin-left: auto;
   background-color: transparent;
 }
+
 input:focus {
   background-color: none;
   outline: none;
 }
+
 input::placeholder {
   color: silver;
 }
 
-.select {
-  align-self: flex-end;
-  background-color: rgb(255, 255, 255, 0.4);
-  width: 102px;
-  height: 28px;
-  border: 1px solid silver;
-  border-radius: 5px;
-  margin: 1px 2px 1px auto;
-  padding: 5px;
-}
-.select option {
-  background-color: lightgrey;
-}
-
+.select,
 .buttonAdd {
   align-self: flex-end;
   background-color: rgb(255, 255, 255, 0.4);
@@ -118,13 +113,29 @@ input::placeholder {
   height: 28px;
   border: 1px solid silver;
   border-radius: 5px;
+}
+.select {
+  margin: 1px 2px 1px auto;
+  padding: 5px;
+}
+
+.select option {
+  background-color: lightgrey;
+}
+
+.buttonAdd {
   margin: auto 2px 1px auto;
 }
-.buttonAdd:hover {
-  cursor: default;
-  color: lightgreen;
+
+.btnGrid {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
 }
-.buttonGlobe {
+
+.buttonGlobe,
+.buttonRem,
+.buttonEdit {
   align-items: flex-end;
   background: none;
   font-size: 12px;
@@ -134,41 +145,17 @@ input::placeholder {
   margin: auto -3px -5px auto;
   padding: unset;
 }
-.buttonGlobe:hover {
-  cursor: default;
-  color: lightseagreen;
-}
 
-.buttonRem {
-  align-items: flex-end;
-  background: none;
-  font-size: 12px;
-  color: silver;
-  border: none;
-  border-radius: 5px;
-  margin: auto -4px -5px auto;
-  padding: unset;
+.buttonGlobe:hover,
+.buttonEdit:hover,
+.buttonAdd:hover {
+  cursor: default;
+  color: lightgreen;
 }
 
 .buttonRem:hover {
   cursor: default;
   color: lightcoral;
-}
-
-.buttonEdit {
-  align-items: flex-end;
-  background: none;
-  font-size: 12px;
-  color: silver;
-  border: none;
-  border-radius: 5px;
-  margin: auto -4px -5px auto;
-  padding: unset;
-}
-
-.buttonEdit:hover {
-  cursor: default;
-  color: lightgreen;
 }
 
 .messageTotally {
@@ -179,10 +166,4 @@ input::placeholder {
 .mark {
   color: goldenrod;
   background: none;
-}
-
-.btnGrid {
-  flex-direction: column;
-  display: flex;
-  margin: 0;
 }
