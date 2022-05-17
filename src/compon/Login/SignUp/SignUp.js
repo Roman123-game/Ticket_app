@@ -1,8 +1,6 @@
 import "./SignUp.css";
-import { useContext } from "react";
-import MainContext from "../../Context/MainContext";
+
 const SignUp = () => {
-  const {openSignUp, setOpenSignUp } = useContext(MainContext);
   return (
     <div className="signUp">
       <h1 className="titleSignUp"> SignUp Form</h1>
@@ -14,9 +12,7 @@ const SignUp = () => {
       <input className="signUpInput" />
       <label>Password</label>
       <input className="signUpInput" />
-      <button className="signUpBtn" onClick={() => setOpenSignUp(!openSignUp)}>
-        SignUp
-      </button>
+      <button className="signUpBtn" > SignUp </button>
     </div>
   );
 };
