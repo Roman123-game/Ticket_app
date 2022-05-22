@@ -71,12 +71,16 @@
 }
 
 .loginBtn {
+  color: white;
   background: none;
   border: 1px solid violet;
   border-radius: 5px;
   margin: 10px auto auto 220px;
   padding: 5px;
   width: 70px;
+}
+.loginBtn:hover{
+  color: burlywood;
 }
 
 .inputLogin {
@@ -99,7 +103,7 @@ input:focus {
 }
 
 .loginBottomMsg {
-  color: black;
+  color: whitesmoke;
 }
 
 .item-enter {
