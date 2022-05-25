@@ -86,12 +86,11 @@
 .inputLogin {
   font-family: 'Orbitron', sans-serif;
   font-size: 12px;
-  margin-top: 10px;
+  margin-top: 5px;
+  padding:6px;
   color: white;
   border: 1px solid  violet;
-  border-top: none;
-  border-right: none;
-  border-left: none;
+border-radius: 25px;
   width: 200px;
   height: 20px;
   background-color: inherit;
