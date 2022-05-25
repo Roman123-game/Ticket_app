@@ -35,7 +35,7 @@ const Login = (props) => {
       <input
         className="inputLogin"
         value={props.value}
-        onChange={(event) => {
+        onBlur={(event) => {
           setUserPassword(event.target.value);
         }}
       />
