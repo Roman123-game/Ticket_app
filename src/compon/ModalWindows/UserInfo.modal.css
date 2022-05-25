@@ -1,29 +1,28 @@
 .userInfo {
   color: black;
-  width: 200px;
+  width: 250px;
   border: 1px solid black;
-  border-radius: 5px;
+  border-radius: 6px;
   background-color: rgb(192, 192, 192);
-  margin: auto;
   text-align: center;
   align-items: center;
-  padding: 0;
+  padding: 0px;
+  margin: 0px;
   position: absolute;
   top: 420px;
   left: 10px;
-  margin: 0;
   z-index: 9;
 }
 
 .imageInfo {
   display: flex;
   width: 40px;
-  height: 40px;
+  height:auto;
   margin: -9px auto auto 1px;
   filter: drop-shadow(10px 5px 2px lightblue);
 }
 
 .user {
   text-decoration: underline;
-  margin-top: -30px;
+  margin: 0px;
 }

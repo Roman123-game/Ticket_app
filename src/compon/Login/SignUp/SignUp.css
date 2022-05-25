@@ -8,11 +8,11 @@
   align-items: center;
   padding: 2px;
   position: fixed;
-  margin: 5px auto;
+  margin: -18px auto;
 }
 
 .titleSignUp {
-  margin-top: 10px;
+  margin-top: 0px;
 }
 
 .signUpBtn {
@@ -20,7 +20,7 @@
   background: none;
   border: 1px solid burlywood;
   border-radius: 5px;
-  margin: 10px auto 2px 222px;
+  margin: 20px auto 2px 222px;
   padding: 5px;
   width: 70px;
 }
@@ -32,7 +32,7 @@
 .signUpInput {
   font-family: 'Orbitron', sans-serif;
   font-size: 12px;
-  margin-top: 5px;
+  margin: 2px auto;
   padding: 6px;
   color: white;
   border: 1px solid burlywood;

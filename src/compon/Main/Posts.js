@@ -11,7 +11,7 @@ import Data from "../Data/Data";
 import PostsReducer from "../Reducer/PostsReducer";
 import Tippy from "@tippy.js/react";
 import "tippy.js/dist/tippy.css";
-import { SliderPicker } from "react-color";
+import { SliderPicker} from "react-color";
 import {
   FaLaptopCode,
   FaCocktail,
@@ -70,7 +70,7 @@ const Posts = () => {
         </Tippy>
         {showSettings && (
           <SliderPicker
-            className="colorPicker"
+            className="colorPicker" style={{margin: "0"}}
             color={background}
             onChange={(updatedColor) => setBackground(updatedColor.hex)}/>
         )}
@@ -80,8 +80,8 @@ const Posts = () => {
           </button>
         </Tippy>
       </div>
-      <hr style={{ backgroundColor: "silver" }} />
-      <h1>Digital Tickets</h1>
+      <hr id="hr" />
+      <h1 className="digital">Digital Tickets</h1>
       <div>
         {state.posts.map((item) => (
           <Task

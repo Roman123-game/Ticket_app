@@ -11,26 +11,20 @@
 
 .task {
   display: inline-flex;
-  margin: 0px;
+  margin-top: -20px;
   padding: 0px;
 }
 
 .colorPicker {
-  color: black;
-  width: 300px;
-  height: auto;
+  width: 250px;
+  height:70px;
   border: 1px solid black;
-  border-radius: 5px;
+  border-radius: 6px;
   background-color: rgb(192, 192, 192);
-  margin: auto;
-  text-align: center;
-  align-items: center;
-  padding: 0;
   position: absolute;
-  top: 300px;
+  top: 330px;
   left: 10px;
-  margin: 0;
-  z-index: 9;
+  z-index: 1;
 }
 
 .fieldset {
@@ -65,7 +59,7 @@
   width: 40px;
   height: 40px;
   color: inherit;
-  margin: -12px auto auto -5px;
+  margin: -30px auto auto -5px;
 }
 
 .bodyPost {
@@ -73,7 +67,7 @@
   font-family: "Orbitron", sans-serif;
   font-size: 12px;
   border-radius: 5px;
-  margin: 35px auto auto -50px;
+  margin: 40px auto auto -44px;
   color: initial;
   color: greenyellow;
   text-transform: capitalize;
@@ -90,8 +84,7 @@
   border-left: none;
   width: 230px;
   height: 20px;
-  margin-right: 5px;
-  margin-left: auto;
+  margin: 1px 5px 1px auto;
   background-color: transparent;
 }
 
@@ -112,9 +105,9 @@ input::placeholder {
   height: 28px;
   border: 1px solid silver;
   border-radius: 6px;
+  margin: 1px 2px 1px auto;
 }
 .select {
-  margin: 1px 2px 1px auto;
   padding: 5px;
 }
 
@@ -157,11 +150,18 @@ input::placeholder {
 }
 
 .messageTotally {
-  align-self: center;
+  align-self: flex-end;
   color: silver;
 }
 
 .mark {
   color: goldenrod;
   background: none;
+}
+#hr{
+  width:99%;
+  background-color: silver 
+}
+.digital{
+  margin-top: -16px;
 }

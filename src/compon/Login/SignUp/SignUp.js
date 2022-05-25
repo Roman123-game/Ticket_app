@@ -8,9 +8,9 @@ const SignUp = () => {
       <input className="signUpInput" />
       <label>UserEmail</label>
       <input className="signUpInput" />
-      <label>Password</label>
+      <label>Password </label>
       <input className="signUpInput" />
-      <label>Password</label>
+      <label>Password </label>
       <input className="signUpInput" />
       <button className="signUpBtn" > SignUp </button>
     </div>

@@ -1,64 +1,7 @@
-.titleLogin {
-  font-size: 38px;
-  letter-spacing:2px;
-}
-.titleLogin::before{ 
-  content: 'Digital';
-  display: inline-block;
-  animation: flick 3s ease-in-out infinite ;
-}
-
-
-
-@keyframes flick{
-  0% {
-    opacity: 0.4;
-  }
-  5% {
-    opacity: 0.5;
-  }
-  10% {
-    opacity: 0.6;
-  }
-  15% {
-    opacity: 0.85;
-  }
-  25% {
-    opacity: 0.5;
-  }
-  30% {
-    opacity: 1;
-  }
-  35% {
-    opacity: 0.1;
-  }
-  40% {
-    opacity: 0.25;
-  }
-  45% {
-    opacity: 0.5;
-  }
-  60% {
-    opacity: 1;
-  }
-  70% {
-    opacity: 0.85;
-  }
-  80% {
-    opacity: 0.4;
-  }
-  90% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 .login {
   color: white;
   width: 316px;
-  height: 620px;
+  height: 634px;
   border: 1px solid violet;
   border-radius: 5px;
   background-color: #1D936E;
@@ -67,7 +10,86 @@
   text-align: center;
   align-items: center;
   justify-content: center;
-  padding: 2px;
+  padding: 4px;
+}
+
+.titleLogin {
+  font-size: 38px;
+  letter-spacing: 2px;
+  margin-top: -25px;
+}
+
+.titleLogin::before {
+  content: 'Digital';
+  display: inline-block;
+  animation: flick 3s ease-in-out infinite;
+}
+
+.titleMsg{
+  margin-top: inherit;
+}
+
+@keyframes flick {
+  0% {
+    opacity: 0.4;
+  }
+
+  5% {
+    opacity: 0.5;
+  }
+
+  10% {
+    opacity: 0.6;
+  }
+
+  15% {
+    opacity: 0.85;
+  }
+
+  25% {
+    opacity: 0.5;
+  }
+
+  30% {
+    opacity: 1;
+  }
+
+  35% {
+    opacity: 0.1;
+  }
+
+  40% {
+    opacity: 0.25;
+  }
+
+  45% {
+    opacity: 0.5;
+  }
+
+  60% {
+    opacity: 1;
+  }
+
+  70% {
+    opacity: 0.85;
+  }
+
+  80% {
+    opacity: 0.4;
+  }
+
+  90% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
+.noAccountMsg{
+  margin-top: -27px;
 }
 
 .loginBtn {
@@ -79,18 +101,19 @@
   padding: 5px;
   width: 70px;
 }
-.loginBtn:hover{
+
+.loginBtn:hover {
   color: burlywood;
 }
 
 .inputLogin {
   font-family: 'Orbitron', sans-serif;
   font-size: 12px;
-  margin-top: 5px;
-  padding:6px;
+  margin: 2px;
+  padding: 6px;
   color: white;
-  border: 1px solid  violet;
-border-radius: 25px;
+  border: 1px solid violet;
+  border-radius: 25px;
   width: 200px;
   height: 20px;
   background-color: inherit;
@@ -102,6 +125,7 @@ input:focus {
 }
 
 .loginBottomMsg {
+  margin-top: -20px;
   color: whitesmoke;
 }
 

@@ -28,7 +28,7 @@ const Login = (props) => {
     <div className="login">
       <h2 className="welcomeMsg">Welcome to</h2>
       <h1 className="titleLogin">Tickets</h1>
-      <h3>Application that keeping all your tasks organized</h3>
+      <h3 className="titleMsg">Application that keeping all your tasks organized</h3>
       <label>Username</label>
       <input className="inputLogin" />
       <label>Password </label>
@@ -47,7 +47,7 @@ const Login = (props) => {
       >
         Login
       </button>
-      <h4 className="signUpMsg">
+      <h4 className="noAccountMsg">
         No Account ?
         <button
           className="signUpBtn"
