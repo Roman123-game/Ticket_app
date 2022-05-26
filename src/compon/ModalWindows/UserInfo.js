@@ -5,10 +5,10 @@ const UserInfo = () => {
   return (
     <div className="userInfo">
       <FaIdCardAlt className="imageInfo"/>
-      <h4 className="user">UserInfo</h4>
-      <h6>UserName:Any</h6>
-      <h6>Email:Any@email.com</h6>
-      <h6>Password:test1234</h6>
+      <h2 className="user">UserInfo</h2>
+      <h4>UserName:Any</h4>
+      <h4>Email:Any@email.com</h4>
+      <h4>Password:test1234</h4>
     </div>
   );
 };
