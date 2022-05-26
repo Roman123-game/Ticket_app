@@ -107,6 +107,7 @@
 }
 
 .inputLogin {
+  align-self: center;
   font-family: 'Orbitron', sans-serif;
   font-size: 12px;
   margin: 2px;
@@ -125,7 +126,7 @@ input:focus {
 }
 
 .loginBottomMsg {
-  margin-top: -20px;
+  margin-top: -10px;
   color: whitesmoke;
 }
 

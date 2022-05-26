@@ -3,16 +3,16 @@ import "./SignUp.css";
 const SignUp = () => {
   return (
     <div className="signUp">
-      <h1 className="titleSignUp"> SignUp Form</h1>
+      <h1 className="titleSignUp">SignUp Form</h1>
       <label>UserName</label>
       <input className="signUpInput" />
       <label>UserEmail</label>
       <input className="signUpInput" />
-      <label>Password </label>
+      <label >Password .</label>
       <input className="signUpInput" />
-      <label>Password </label>
+      <label> Password..</label>
       <input className="signUpInput" />
-      <button className="signUpBtn" > SignUp </button>
+      <button className="signUpBtn">SignUp </button>
     </div>
   );
 };

@@ -8,7 +8,6 @@
   align-items: center;
   padding: 2px;
   position: fixed;
-  margin: -18px auto;
 }
 
 .titleSignUp {
@@ -30,9 +29,10 @@
 }
 
 .signUpInput {
+  align-self: center;
   font-family: 'Orbitron', sans-serif;
   font-size: 12px;
-  margin: 3px auto;
+  margin: 1px  1px 1px auto;
   padding: 4px;
   color: white;
   border: 1px solid burlywood;
