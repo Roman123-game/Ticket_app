@@ -49,9 +49,9 @@ const Posts = () => {
   useMemo(() => {
     console.log("cashing");
   }, []);
-
+  // 
   return (
-    <div className="posts" style={{ background: background }}>
+    <div className="posts" style={{ background: background }} >
       <div className="gridContainer">
         <Tippy content="Information">
           <button
