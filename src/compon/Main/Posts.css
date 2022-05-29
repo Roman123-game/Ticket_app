@@ -17,7 +17,7 @@
 
 .colorPicker {
   width: 200px;
-  height:70px;
+  height: 70px;
   border: 1px solid black;
   border-radius: 6px;
   background-color: rgb(192, 192, 192);
@@ -107,6 +107,7 @@ input::placeholder {
   border-radius: 6px;
   margin: 1px 2px 1px auto;
 }
+
 .select {
   padding: 5px;
 }
@@ -158,10 +159,12 @@ input::placeholder {
   color: cyan;
   background: none;
 }
-#hr{
-  width:99%;
-  background-color: silver 
+
+#hr {
+  width: 99%;
+  background-color: silver
 }
-.digital{
+
+.digital {
   margin-top: -16px;
 }
