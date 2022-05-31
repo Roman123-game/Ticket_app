@@ -10,6 +10,7 @@
     "follow-redirects": "^1.14.7",
     "minimist": "^1.2.6",
     "node-forge": "^1.0.0",
+    "nodemo": "^1.0.0",
     "nth-check": "^2.0.1",
     "postcss": "^8.4.6",
     "react": "^17.0.2",
@@ -25,7 +26,7 @@
     "web-vitals": "^2.1.2"
   },
   "scripts": {
-    "start": "nodemon index.js",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -57,5 +58,6 @@
   "author": "",
   "license": "ISC",
   "homepage": "",
-  "keywords": []
+  "keywords": [],
+  "devDependencies": {}
 }
