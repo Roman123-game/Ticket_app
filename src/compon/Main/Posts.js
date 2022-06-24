@@ -1,4 +1,4 @@
-import { useState, useMemo, useContext, useReducer } from "react";
+import { useState, useContext, useReducer } from "react";
 import "./Posts.css";
 import { v4 as uuidv4 } from "uuid";
 import Task from "./Task/Task";
@@ -32,24 +32,21 @@ const Posts = () => {
   const [valueInput, setValueInput] = useState("New Ticket");
   const [state, dispatch] = useReducer(PostsReducer, { posts: Data });
 
-  function onChangeSel(event) {
+  function onChangeSelect(event) {
     event.preventDefault();
-    setValue(event.target.value);
-    if (event.target.value === "Shopping") {
+    const targetValue = event.target.value;
+    setValue(targetValue);
+    if (targetValue === "Shopping") {
       setImage(<FaCartPlus className="image" />);
-    } else if (event.target.value === "Technology") {
+    } else if (targetValue === "Technology") {
       setImage(<FaLaptopCode className="image" />);
-    } else if (event.target.value === "Economy") {
+    } else if (targetValue === "Economy") {
       setImage(<FaMoneyBillAlt className="image" />);
     } else {
       setImage(<FaCocktail className="image" />);
     }
   }
 
-  useMemo(() => {
-    console.log("cashing");
-  }, []);
-  // 
   return (
     <div className="posts" style={{ background: background }} >
       <div className="gridContainer">
@@ -111,7 +108,7 @@ const Posts = () => {
         maxLength="24"
         onChange={(e) => setValueInput(e.target.value)}
       />
-      <Select className="select" onChange={onChangeSel} />
+      <Select className="select" onChange={onChangeSelect} />
       <Button
         className="buttonAdd"
         onClick={() =>
