@@ -11,7 +11,7 @@ import Data from "../Data/Data";
 import PostsReducer from "../Reducer/PostsReducer";
 import Tippy from "@tippy.js/react";
 import "tippy.js/dist/tippy.css";
-import { SliderPicker} from "react-color";
+import { SliderPicker } from "react-color";
 import {
   FaLaptopCode,
   FaCocktail,
@@ -67,9 +67,9 @@ const Posts = () => {
         </Tippy>
         {showSettings && (
           <SliderPicker
-            className="colorPicker" style={{margin: "0"}}
+            className="colorPicker" style={{ margin: "0" }}
             color={background}
-            onChange={(updatedColor) => setBackground(updatedColor.hex)}/>
+            onChange={(updatedColor) => setBackground(updatedColor.hex)} />
         )}
         <Tippy content="Exit">
           <button className="buttonAdd" onClick={() => setToken(false)}>
@@ -91,11 +91,11 @@ const Posts = () => {
               dispatch({ type: "REMOVE_POST", payload: eventId.postId });
             }}
             clickEditBtn={(ev) => {
-             const edit = prompt("Enter new value",ev.description);
-             dispatch({
-              type: "EDIT_POST", 
-              payload : {edit, ev} 
-            })
+              const edit = prompt("Enter new value", ev.description);
+              dispatch({
+                type: "EDIT_POST",
+                payload: { edit, ev }
+              })
             }}
           />
         ))}
