@@ -91,7 +91,7 @@ const Posts = () => {
               dispatch({ type: "REMOVE_POST", payload: eventId.postId });
             }}
             clickEditBtn={(ev) => {
-             const edit = prompt("enter new value",ev.description);
+             const edit = prompt("Enter new value",ev.description);
              dispatch({
               type: "EDIT_POST", 
               payload : {edit, ev} 
