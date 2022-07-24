@@ -1,8 +1,8 @@
 import { FaRegTrashAlt,FaGlobe,FaPencilAlt } from "react-icons/fa";
 import Tippy from "@tippy.js/react";
-import React from "react";
+import {memo} from "react";
 
-const Task = React.memo((props) => {
+const Task = (props) => {
   return (
     <div className="task">
       <fieldset className="fieldset">
@@ -34,6 +34,6 @@ const Task = React.memo((props) => {
       </fieldset>
     </div>
   );
-});
+};
 
-export default Task;
+export default memo(Task);

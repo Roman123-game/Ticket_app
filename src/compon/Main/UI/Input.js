@@ -1,16 +1,17 @@
-import React from "react";
+import {memo} from "react";
 
 
-const Input = React.memo((props) => {
+const Input = (props) => {
+  const {maxLength,value,className,type,placeholder,onChange} = props;
   return (
     <input
-      maxLength={props.maxLength}
-      value={props.value}
-      className={props.className}
-      type={props.type}
-      placeholder={props.placeholder}
-      onChange={props.onChange}
+      maxLength={maxLength}
+      value={value}
+      className={className}
+      type={type}
+      placeholder={placeholder}
+      onChange={onChange}
     />
   );
-});
-export default Input;
+};
+export default memo(Input);

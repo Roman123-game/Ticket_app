@@ -1,7 +1,7 @@
 import "./SignUp.css";
-import React from "react";
+import {memo} from "react";
 
-const SignUp = React.memo(() => {
+const SignUp = () => {
   return (
     <div className="signUp">
       <h1 className="titleSignUp">SignUp Form</h1>
@@ -16,6 +16,6 @@ const SignUp = React.memo(() => {
       <button className="signUpBtn">SignUp </button>
     </div>
   );
-});
+};
 
-export default SignUp;
+export default memo(SignUp);

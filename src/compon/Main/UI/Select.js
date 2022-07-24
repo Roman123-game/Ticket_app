@@ -1,14 +1,15 @@
-import React from "react";
+import {memo} from "react";
 
-const Select = React.memo((props) => {
+const Select = (props) => {
+  const {className,onChange} = props;
   return (
-    <select className={props.className} onChange={props.onChange}>
+    <select className={className} onChange={onChange}>
       <option>Shopping</option>
       <option>Technology</option>
       <option>Pleasure</option>
       <option>Economy</option>
     </select>
   );
-});
+};
 
-export default Select;
+export default memo(Select);

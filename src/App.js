@@ -2,6 +2,7 @@ import Login from "./compon/Login/Login";
 import Posts from "./compon/Main/Posts";
 import { useState } from "react";
 import MainContext from "./compon/Context/MainContext";
+import {memo} from "react"
 
 function App() {
   const [token, setToken] = useState(false);
@@ -19,4 +20,4 @@ function App() {
     </div>
   );
 }
-export default App;
+export default memo(App);

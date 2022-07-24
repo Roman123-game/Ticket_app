@@ -4,6 +4,7 @@ import "./Login.css";
 import { useCallback, useContext, useState } from "react";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 import { v4 as uuidv4 } from "uuid";
+import {memo} from "react";
 
 const Login = (props) => {
   const [userPassword, setUserPassword] = useState("");
@@ -22,7 +23,7 @@ const Login = (props) => {
         ` ${warning.props.children} ${userPassword} \nIncorrect Password \nTry again`
       );
     }
-  },[userPassword])
+  },[userPassword, setToken])
 
   return (
     <div className="login">
@@ -66,4 +67,4 @@ const Login = (props) => {
   );
 }
 
-export default Login;
+export default memo(Login);
