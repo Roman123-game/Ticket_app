@@ -1,5 +1,8 @@
 import { FaFeatherAlt } from "react-icons/fa";
-const Button = (props) => {
+import React from "react";
+
+
+const Button = React.memo((props) => {
   return (
     <button
       onClick={props.onClick}
@@ -9,5 +12,5 @@ const Button = (props) => {
       <FaFeatherAlt />
     </button>
   );
-};
+});
 export default Button;

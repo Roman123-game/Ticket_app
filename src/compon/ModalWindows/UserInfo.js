@@ -1,7 +1,9 @@
 import {FaIdCardAlt } from "react-icons/fa";
 import "./UserInfo.modal.css";
+import React from "react";
 
-const UserInfo = () => {
+
+const UserInfo = React.memo(() => {
   return (
     <div className="userInfo">
       <FaIdCardAlt className="imageInfo"/>
@@ -11,6 +13,6 @@ const UserInfo = () => {
       <h4>Password:test1234</h4>
     </div>
   );
-};
+});
 
 export default UserInfo;

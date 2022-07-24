@@ -1,4 +1,7 @@
-const Input = (props) => {
+import React from "react";
+
+
+const Input = React.memo((props) => {
   return (
     <input
       maxLength={props.maxLength}
@@ -9,5 +12,5 @@ const Input = (props) => {
       onChange={props.onChange}
     />
   );
-};
+});
 export default Input;

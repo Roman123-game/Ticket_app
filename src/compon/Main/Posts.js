@@ -21,8 +21,10 @@ import {
   FaPalette,
   FaMoneyBillAlt,
 } from "react-icons/fa";
+import React from "react";
 
-const Posts = () => {
+
+const Posts = React.memo(() => {
   const { setToken } = useContext(MainContext);
   const [showInfo, setShowInfo] = useState(false);
   const [showSettings, setShowSettings] = useState(false);
@@ -125,6 +127,6 @@ const Posts = () => {
       </h6>
     </div>
   );
-};
+});
 
 export default Posts;

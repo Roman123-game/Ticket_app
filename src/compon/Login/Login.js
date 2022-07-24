@@ -1,7 +1,7 @@
 import MainContext from "../Context/MainContext";
 import SignUp from "./SignUp/SignUp";
 import "./Login.css";
-import { useContext, useState } from "react";
+import { useCallback, useContext, useState } from "react";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 import { v4 as uuidv4 } from "uuid";
 
@@ -10,7 +10,7 @@ const Login = (props) => {
   const { setToken } = useContext(MainContext);
   const [openSignUp, setOpenSignUp] = useState(false);
 
-  function LoginFunc(e) {
+  const LoginFunc= useCallback((e)=> {
     e.preventDefault();
     const removeWhiteSpaces = userPassword.split(" ").join("");
     const lowerCasePassword = removeWhiteSpaces.toLowerCase();
@@ -22,7 +22,7 @@ const Login = (props) => {
         ` ${warning.props.children} ${userPassword} \nIncorrect Password \nTry again`
       );
     }
-  }
+  },[userPassword])
 
   return (
     <div className="login">
@@ -64,6 +64,6 @@ const Login = (props) => {
       </TransitionGroup>
     </div>
   );
-};
+}
 
 export default Login;
