@@ -8,7 +8,7 @@ import Button from "../Main/UI/Button";
 import MainContext from "../Context/MainContext";
 import UserInfo from "../ModalWindows/UserInfo";
 import Data from "../Data/Data";
-import PostsReducer from "../Reducer/PostsReducer";
+import rootReducer from "../Reducer/PostsReducer";
 import Tippy from "@tippy.js/react";
 import "tippy.js/dist/tippy.css";
 import { SliderPicker } from "react-color";
@@ -32,7 +32,7 @@ const Posts = () => {
   const [image, setImage] = useState(<FaCartPlus className="image" />);
   const [value, setValue] = useState("Shopping");
   const [valueInput, setValueInput] = useState("New Ticket");
-  const [state, dispatch] = useReducer(PostsReducer, { posts: Data });
+  const [state, dispatch] = useReducer(rootReducer, { posts: Data });
 
   function onChangeSelect(event) {
     event.preventDefault();
