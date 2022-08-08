@@ -26,7 +26,15 @@ function PostsReducer(state, action) {
             ...state.posts,
           ],
       };
-    default:
+      case "GLOBE_POST":
+        const listusers =  [...state.posts.map(post=>{console.log(post.username)})];
+        return {
+          posts: [
+            ...state.posts,
+          ],
+      };
+
+    default: 
       return console.log("default");
   }
 }

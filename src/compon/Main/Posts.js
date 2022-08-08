@@ -84,12 +84,13 @@ const Posts = () => {
       <div>
         {state.posts.map((item) => (
           <Task
+            username = {item.username}
             image={item.image}
             listName={item.listName}
             postId={item.id}
             description={item.description}
             key={uuidv4()}
-            clickGlobeBtn={(eventId) => {
+            clickRemoveBtn={(eventId) => {
               dispatch({ type: "REMOVE_POST", payload: eventId.postId });
             }}
             clickEditBtn={(ev) => {
@@ -97,6 +98,12 @@ const Posts = () => {
               dispatch({
                 type: "EDIT_POST",
                 payload: { edit, ev }
+              })
+            }}
+            clickGlobeBtn={(ev) => {
+              dispatch({
+                type: "GLOBE_POST",
+             
               })
             }}
           />

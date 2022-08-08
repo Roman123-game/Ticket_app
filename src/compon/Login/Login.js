@@ -8,7 +8,7 @@ import {memo} from "react";
 
 const Login = (props) => {
   const [userPassword, setUserPassword] = useState("");
-  const { setToken } = useContext(MainContext);
+  const { setToken, username, setUsername } = useContext(MainContext);
   const [openSignUp, setOpenSignUp] = useState(false);
 
   const LoginFunc= useCallback((e)=> {
@@ -31,7 +31,13 @@ const Login = (props) => {
       <h1 className="titleLogin">Tickets</h1>
       <h3 className="titleMsg">Application that keeping all your tasks organized</h3>
       <label>Username</label>
-      <input className="inputLogin" />
+      <input className="inputLogin" minLength={3}
+        onBlur={(event) => {
+          console.log(event.target.value);
+          setUsername(event.target.value)
+     
+        }}
+      />
       <label>Password </label>
       <input
         className="inputLogin"

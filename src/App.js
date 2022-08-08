@@ -8,6 +8,7 @@ import {memo} from "react";
 
 function App() {
   const [token, setToken] = useState(false);
+ const [username, setUsername] = useState("")
   return (
     <div>
       {token ? (
@@ -15,7 +16,7 @@ function App() {
           <Posts />
         </MainContext.Provider>
       ) : (
-        <MainContext.Provider value={{setToken}}>
+        <MainContext.Provider value={{setToken,setUsername, username}}>
           <Login />
         </MainContext.Provider>
       )}

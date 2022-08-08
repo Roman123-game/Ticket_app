@@ -6,17 +6,21 @@ const Task = (props) => {
   return (
     <div className="task">
       <fieldset className="fieldset">
+        
         <legend className="legend">{props.postId}</legend>
+        
         <h3> {props.image}</h3>
+    
         <h4 className="title">
         {props.listName}
         </h4>
+ 
         <h6 className="bodyPost">
         {props.description}
         </h6>
         <div className="btnGrid">
         <Tippy content="Users have same todo">
-        <button className="buttonGlobe">
+        <button className="buttonGlobe"  onClick={()=>props.clickGlobeBtn(props)}>
           <FaGlobe />
         </button>
         </Tippy>
@@ -26,7 +30,7 @@ const Task = (props) => {
         </button>
         </Tippy>
         <Tippy content="Remove">
-        <button className="buttonRem" onClick={()=>props.clickGlobeBtn(props)}>
+        <button className="buttonRem" onClick={()=>props.clickRemoveBtn(props)}>
           <FaRegTrashAlt />
         </button>
         </Tippy>

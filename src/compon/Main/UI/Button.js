@@ -1,9 +1,9 @@
 import { FaFeatherAlt } from "react-icons/fa";
-import {memo} from "react";
+import { memo } from "react";
 
 
-const Button =(props) => {
-  const {onClick,className,typ} = props
+const Button = (props) => {
+  const { onClick, className, typ } = props
   return (
     <button
       onClick={onClick}
