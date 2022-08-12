@@ -16,14 +16,16 @@ const Login = (props) => {
     const removeWhiteSpaces = userPassword.split(" ").join("");
     const lowerCasePassword = removeWhiteSpaces.toLowerCase();
     const warning = <p>&#x2718;</p>;
-    if (lowerCasePassword === "test1234") {
+    const removeWhiteSpacesUSer = username.split(" ").join("");
+    const lowerCaseUsername = removeWhiteSpacesUSer.toLowerCase();
+    if (lowerCasePassword === "test1234" & lowerCaseUsername !== "") {
       setToken(true);
     } else {
       alert(
-        ` ${warning.props.children} ${userPassword} \nIncorrect Password \nTry again`
+        ` ${warning.props.children} ${userPassword} \n Incorrect Password or Empty Username field \nTry again`
       );
     }
-  },[userPassword, setToken])
+  },[userPassword, setToken,username])
 
   return (
     <div className="login">
@@ -32,9 +34,10 @@ const Login = (props) => {
       <h3 className="titleMsg">Application that keeping all your tasks organized</h3>
       <label>Username</label>
       <input className="inputLogin"
-        onBlur={(event) => {
-          console.log(event.target.value);
+        onInput={(event) => {
+        
           setUsername(event.target.value)
+          console.log(username)
      
         }}
       />
