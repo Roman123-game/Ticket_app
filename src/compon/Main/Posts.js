@@ -31,7 +31,7 @@ const Posts = () => {
   const [background, setBackground] = useState("#0b2545");
   const [image, setImage] = useState(<FaCartPlus className="image" />);
   const [value, setValue] = useState("Shopping");
-  const [valueInput, setValueInput] = useState("New Ticket");
+  const [valueInput, setValueInput] = useState("Please add New Ticket ");
   const [state, dispatch] = useReducer(rootReducer, { posts: Data });
 
   function onChangeSelect(event) {
