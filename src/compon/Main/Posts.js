@@ -25,7 +25,7 @@ import {memo}from "react";
 
 
 const Posts = () => {
-  const { setToken } = useContext(MainContext);
+  const { setToken,username} = useContext(MainContext);
   const [showInfo, setShowInfo] = useState(false);
   const [showSettings, setShowSettings] = useState(false);
   const [background, setBackground] = useState("#0b2545");
@@ -84,7 +84,7 @@ const Posts = () => {
       <div>
         {state.posts.map((item) => (
           <Task
-            username = {item.username}
+            username = {username}
             image={item.image}
             listName={item.listName}
             postId={item.id}
@@ -101,8 +101,9 @@ const Posts = () => {
               })
             }}
             clickGlobeBtn={(ev) => {
+              console.log(ev)
               dispatch({
-                type: "GLOBE_POST",
+                type: "GLOBE_POST",    payload:  ev.description
              
               })
             }}
@@ -123,7 +124,7 @@ const Posts = () => {
         onClick={() =>
           dispatch({
             type: "ADD_POST",
-            payload: { image: image, value: value, valueInput: valueInput },
+            payload: { image: image, value: value, valueInput: valueInput, username:username },
           })
         }
       />

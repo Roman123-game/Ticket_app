@@ -11,6 +11,7 @@ function PostsReducer(state, action) {
             image: action.payload.image,
             listName: action.payload.value,
             description: action.payload.valueInput,
+            username: action.payload.username
           },
         ],
       };
@@ -27,13 +28,9 @@ function PostsReducer(state, action) {
           ],
       };
       case "GLOBE_POST":
-        const listusers =  [...state.posts.map(post=>{console.log(post.username)})];
         return {
-          posts: [
-            ...state.posts,
-          ],
-      };
-
+          posts: state.posts.filter((itm) => itm.description === action.payload),
+        };
     default: 
       return console.log("default");
   }

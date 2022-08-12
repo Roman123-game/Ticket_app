@@ -31,7 +31,7 @@ const Login = (props) => {
       <h1 className="titleLogin">Tickets</h1>
       <h3 className="titleMsg">Application that keeping all your tasks organized</h3>
       <label>Username</label>
-      <input className="inputLogin" minLength={3}
+      <input className="inputLogin"
         onBlur={(event) => {
           console.log(event.target.value);
           setUsername(event.target.value)

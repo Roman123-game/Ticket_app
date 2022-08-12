@@ -12,7 +12,7 @@ function App() {
   return (
     <div>
       {token ? (
-        <MainContext.Provider value={{setToken}}>
+        <MainContext.Provider value={{setToken,setUsername, username}}>
           <Posts />
         </MainContext.Provider>
       ) : (

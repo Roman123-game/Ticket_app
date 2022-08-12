@@ -1,6 +1,6 @@
 .posts {
   color: silver;
-  width: 100%;
+  width: auto;
   height: 100%;
   text-align: center;
   font-size: 1.2em;
@@ -41,7 +41,7 @@
 }
 
 .legend {
-  font-size: xx-small;
+  font-size: x-small;
   color: silver;
   margin-right: 10px;
 }
