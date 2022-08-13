@@ -66,7 +66,7 @@ const Login = (props) => {
           SignUp
         </button>
       </h4>
-      <h5 className="loginBottomMsg">*UserName: any *Password: test1234</h5>
+      <h5 className="loginBottomMsg">*UserName: Your Name *Password: test1234</h5>
       <TransitionGroup>
         <CSSTransition key={uuidv4()} timeout={500} classNames="item">
           <div>{openSignUp && <SignUp />}</div>
