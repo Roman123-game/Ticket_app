@@ -1,4 +1,4 @@
-import { useState, useContext, useReducer, useEffect } from "react";
+import { useState, useContext, useReducer } from "react";
 import "./Posts.css";
 import { v4 as uuidv4 } from "uuid";
 import Task from "./Task/Task";
@@ -36,7 +36,7 @@ const Posts = () => {
   const [valueInput, setValueInput] = useState("Please add New Ticket ");
   const { setToken, username } = useContext(MainContext);
   const [state, dispatch] = useReducer(PostsReducer, { posts: Data });
-  const [newPosts, newDispatch] = useReducer(newPostsReducer, { newPosts: state});
+  const [newPosts, newDispatch] = useReducer(newPostsReducer, { newPosts: Data});
 
   function onChangeSelect(event) {
     event.preventDefault();
