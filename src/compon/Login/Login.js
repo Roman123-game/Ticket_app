@@ -40,7 +40,7 @@ const Login = (props) => {
       <label>Username</label>
       <input
         className="inputLogin"
-        onInput={(event) => {
+        onBlurCapture={(event) => {
           setUsername(event.target.value);
         }}
       />
@@ -48,7 +48,7 @@ const Login = (props) => {
       <input
         className="inputLogin"
         value={props.value}
-        onBlur={(event) => {
+        onBlurCapture={(event) => {
           setUserPassword(event.target.value);
         }}
       />

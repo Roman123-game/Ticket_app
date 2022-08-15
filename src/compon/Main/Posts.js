@@ -26,15 +26,15 @@ import { memo } from "react";
 
 
 const Posts = () => {
- 
+
   const [toggleGlobalPosts, setToggleGlobalPosts] = useState(false)
-  const { setToken, username } = useContext(MainContext);
   const [showInfo, setShowInfo] = useState(false);
   const [showSettings, setShowSettings] = useState(false);
   const [background, setBackground] = useState("#0b2545");
   const [image, setImage] = useState(<FaCartPlus className="image" />);
   const [value, setValue] = useState("Shopping");
   const [valueInput, setValueInput] = useState("Please add New Ticket ");
+  const { setToken, username } = useContext(MainContext);
   const [state, dispatch] = useReducer(PostsReducer, { posts: Data });
   const [newPosts, newDispatch] = useReducer(newPostsReducer, { newPosts: Data });
 
@@ -144,11 +144,11 @@ const Posts = () => {
       </h6>
       {toggleGlobalPosts &&
         <div>
-          {console.log(newPosts)}
+          {console.log(newPosts.newPosts)}
           <hr className="hr" />
-          {newPosts.newPosts.map((item) => (
+          {newPosts.newPosts[0].map((item) => (
             <Task
-              username={username}
+              username={item.username}
               image={item.image}
               listName={item.listName}
               postId={item.id}

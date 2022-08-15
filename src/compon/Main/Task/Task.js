@@ -3,6 +3,7 @@ import Tippy from "@tippy.js/react";
 import { memo } from "react";
 
 const Task = (props) => {
+  const {username, image, listName, description} = props
   return (
     <div className="task">
       <fieldset className="fieldset">
