@@ -27,13 +27,16 @@ function PostsReducer(state, action) {
             ...state.posts,
           ],
       };
-      case "GLOBE_POST":
-        return {
-          posts: state.posts.filter((itm) => itm.description === action.payload),
-        };
+        case "RETURN_POST":
+          return {
+            posts: [
+              ...state.posts,
+            ],
+          }
     default: 
       return console.log("default");
   }
 }
 
 export default PostsReducer;
+

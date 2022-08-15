@@ -129,7 +129,8 @@ input::placeholder {
 
 .buttonGlobe,
 .buttonRem,
-.buttonEdit {
+.buttonEdit,
+.buttonReturn{
   align-items: flex-end;
   background: none;
   font-size: 12px;
@@ -141,7 +142,8 @@ input::placeholder {
 
 .buttonGlobe:hover,
 .buttonEdit:hover,
-.buttonAdd:hover {
+.buttonAdd:hover,
+.buttonReturn:hover {
   cursor: default;
   color: lightgreen;
 }
@@ -161,7 +163,7 @@ input::placeholder {
   background: none;
 }
 
-#hr {
+.hr {
   width: 99%;
   background-color: silver
 }

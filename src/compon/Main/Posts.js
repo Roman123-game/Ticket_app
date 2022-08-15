@@ -8,7 +8,8 @@ import Button from "../Main/UI/Button";
 import MainContext from "../Context/MainContext";
 import UserInfo from "../ModalWindows/UserInfo";
 import Data from "../Data/Data";
-import rootReducer from "../Reducer/PostsReducer";
+import PostsReducer from "../Reducer/PostsReducer";
+import newPostsReducer from "../Reducer/newPostsReducer";
 import Tippy from "@tippy.js/react";
 import "tippy.js/dist/tippy.css";
 import { SliderPicker } from "react-color";
@@ -21,18 +22,21 @@ import {
   FaPalette,
   FaMoneyBillAlt,
 } from "react-icons/fa";
-import {memo}from "react";
+import { memo } from "react";
 
 
 const Posts = () => {
-  const { setToken,username} = useContext(MainContext);
+ 
+  const [toggleGlobalPosts, setToggleGlobalPosts] = useState(false)
+  const { setToken, username } = useContext(MainContext);
   const [showInfo, setShowInfo] = useState(false);
   const [showSettings, setShowSettings] = useState(false);
   const [background, setBackground] = useState("#0b2545");
   const [image, setImage] = useState(<FaCartPlus className="image" />);
   const [value, setValue] = useState("Shopping");
   const [valueInput, setValueInput] = useState("Please add New Ticket ");
-  const [state, dispatch] = useReducer(rootReducer, { posts: Data });
+  const [state, dispatch] = useReducer(PostsReducer, { posts: Data });
+  const [newPosts, newDispatch] = useReducer(newPostsReducer, { newPosts: Data });
 
   function onChangeSelect(event) {
     event.preventDefault();
@@ -79,12 +83,12 @@ const Posts = () => {
           </button>
         </Tippy>
       </div>
-      <hr id="hr" />
+      <hr className="hr" />
       <h1 className="digital">Digital Tickets</h1>
       <div>
         {state.posts.map((item) => (
           <Task
-            username = {username}
+            username={username}
             image={item.image}
             listName={item.listName}
             postId={item.id}
@@ -101,11 +105,16 @@ const Posts = () => {
               })
             }}
             clickGlobeBtn={(ev) => {
-              console.log(ev)
-              dispatch({
-                type: "GLOBE_POST",    payload:  ev.description
-             
+              newDispatch({
+                type: "GLOBE_POST", payload: ev.description
               })
+              setToggleGlobalPosts(true)
+            }}
+            clickReturnBtn={() => {
+              dispatch({
+                type: "RETURN_POST",
+              })
+              setToggleGlobalPosts(false)
             }}
           />
         ))}
@@ -124,7 +133,7 @@ const Posts = () => {
         onClick={() =>
           dispatch({
             type: "ADD_POST",
-            payload: { image: image, value: value, valueInput: valueInput, username:username },
+            payload: { image: image, value: value, valueInput: valueInput, username: username },
           })
         }
       />
@@ -133,6 +142,22 @@ const Posts = () => {
         <mark className="mark"> {state.posts.length} </mark>
         tickets totally
       </h6>
+      {toggleGlobalPosts &&
+        <div>
+          {console.log(newPosts)}
+          <hr className="hr" />
+          {newPosts.newPosts.map((item) => (
+            <Task
+              username={username}
+              image={item.image}
+              listName={item.listName}
+              postId={item.id}
+              description={item.description}
+              key={uuidv4()}
+            />
+          ))}
+        </div>
+      }
     </div>
   );
 };
