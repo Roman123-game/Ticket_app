@@ -36,7 +36,7 @@ const Posts = () => {
   const [valueInput, setValueInput] = useState("Please add New Ticket ");
   const { setToken, username } = useContext(MainContext);
   const [state, dispatch] = useReducer(PostsReducer, { posts: Data });
-  const [newPosts, newDispatch] = useReducer(newPostsReducer, { newPosts: Data });
+  const [newPosts, newDispatch] = useReducer(newPostsReducer, { newPosts: state});
 
   function onChangeSelect(event) {
     event.preventDefault();
@@ -114,7 +114,8 @@ const Posts = () => {
               dispatch({
                 type: "RETURN_POST",
               })
-              setToggleGlobalPosts(false)
+              setToggleGlobalPosts(false);
+              console.log(newPosts)
             }}
           />
         ))}
@@ -144,9 +145,9 @@ const Posts = () => {
       </h6>
       {toggleGlobalPosts &&
         <div>
-          {console.log(newPosts.newPosts)}
+          {console.log(newPosts)}
           <hr className="hr" />
-          {newPosts.newPosts[0].map((item) => (
+          {newPosts.newPosts.map((item) => (
             <Task
               username={item.username}
               image={item.image}
