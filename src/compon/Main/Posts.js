@@ -1,4 +1,4 @@
-import { useState, useContext, useReducer } from "react";
+import { useState, useContext, useReducer, useEffect } from "react";
 import "./Posts.css";
 import { v4 as uuidv4 } from "uuid";
 import Task from "./Task/Task";
@@ -115,7 +115,7 @@ const Posts = () => {
                 type: "RETURN_POST",
               })
               setToggleGlobalPosts(false);
-              console.log(newPosts)
+       
             }}
           />
         ))}
