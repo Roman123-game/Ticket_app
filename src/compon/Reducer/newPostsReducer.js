@@ -4,7 +4,7 @@ function newPostsReducer(newPosts, action) {
       case "GLOBE_POST":   
      console.log(newPosts.newPosts)
         return {
-         newPosts:[...newPosts.newPosts.filter((itm) => itm.description === action.payload)]
+         newPosts: newPosts.newPosts.filter((itm) => itm.description === action.payload)
         };
     default: 
       return console.log("default");
