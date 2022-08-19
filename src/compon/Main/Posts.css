@@ -49,11 +49,10 @@
 }
 
 .title {
-  align-self: center;
+  align-self: flex-end;
   color: #152238;
   font-size: 20px;
-  margin: -45px auto auto 50px;
-  position: fixed;
+  margin: -10px auto auto 0px;
 }
 
 .image {
@@ -66,10 +65,12 @@
 
 .bodyPost {
   align-self: flex-start;
+  justify-self: center;
   font-family: "Orbitron", sans-serif;
   font-size: 12px;
   border-radius: 5px;
-  margin: 40px auto auto -44px;
+  width:fit-content;
+  margin: 40px  auto auto -120px;
   color: cyan;
   text-transform: capitalize;
   text-shadow: -1px 0 indigo, 0 1px indigo, 1px 0 indigo, 0 -1px indigo;

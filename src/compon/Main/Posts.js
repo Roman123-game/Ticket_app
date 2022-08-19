@@ -36,7 +36,7 @@ const Posts = () => {
   const [valueInput, setValueInput] = useState("Please add New Ticket ");
   const { setToken, username } = useContext(MainContext);
   const [state, dispatch] = useReducer(PostsReducer, { posts: Data });
-  const [newPosts, newDispatch] = useReducer(newPostsReducer, { newPosts: Data});
+  const [newPosts, newDispatch] = useReducer(newPostsReducer, { newPosts: state.posts});
 
   function onChangeSelect(event) {
     event.preventDefault();
