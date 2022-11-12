@@ -24,10 +24,8 @@ import {
 } from "react-icons/fa";
 import { memo } from "react";
 
-
 const Posts = () => {
-
-  const [toggleGlobalPosts, setToggleGlobalPosts] = useState(false)
+  const [toggleGlobalPosts, setToggleGlobalPosts] = useState(false);
   const [showInfo, setShowInfo] = useState(false);
   const [showSettings, setShowSettings] = useState(false);
   const [background, setBackground] = useState("#0b2545");
@@ -36,7 +34,9 @@ const Posts = () => {
   const [valueInput, setValueInput] = useState("Please add New Ticket ");
   const { setToken, username } = useContext(MainContext);
   const [state, dispatch] = useReducer(PostsReducer, { posts: Data });
-  const [newPosts, newDispatch] = useReducer(newPostsReducer, { newPosts: Data});
+  const [newPosts, newDispatch] = useReducer(newPostsReducer, {
+    newPosts: Data,
+  });
 
   function onChangeSelect(event) {
     event.preventDefault();
@@ -54,12 +54,10 @@ const Posts = () => {
   }
 
   return (
-    <div className="posts" style={{ background: background }} >
+    <div className="posts" style={{ background: background }}>
       <div className="gridContainer">
         <Tippy content="Information">
-          <button
-            className="buttonAdd"
-            onClick={() => setShowInfo(!showInfo)}>
+          <button className="buttonAdd" onClick={() => setShowInfo(!showInfo)}>
             <FaStreetView />
           </button>
         </Tippy>
@@ -67,15 +65,18 @@ const Posts = () => {
         <Tippy content="Options">
           <button
             className="buttonAdd"
-            onClick={() => setShowSettings(!showSettings)}>
+            onClick={() => setShowSettings(!showSettings)}
+          >
             <FaPalette />
           </button>
         </Tippy>
         {showSettings && (
           <SliderPicker
-            className="colorPicker" style={{ margin: "0" }}
+            className="colorPicker"
+            style={{ margin: "0" }}
             color={background}
-            onChange={(updatedColor) => setBackground(updatedColor.hex)} />
+            onChange={(updatedColor) => setBackground(updatedColor.hex)}
+          />
         )}
         <Tippy content="Exit">
           <button className="buttonAdd" onClick={() => setToken(false)}>
@@ -101,21 +102,21 @@ const Posts = () => {
               const edit = prompt("Enter new value", ev.description);
               dispatch({
                 type: "EDIT_POST",
-                payload: { edit, ev }
-              })
+                payload: { edit, ev },
+              });
             }}
             clickGlobeBtn={(ev) => {
               newDispatch({
-                type: "GLOBE_POST", payload: ev.description
-              })
-              setToggleGlobalPosts(true)
+                type: "GLOBE_POST",
+                payload: ev.description,
+              });
+              setToggleGlobalPosts(true);
             }}
             clickReturnBtn={() => {
               dispatch({
                 type: "RETURN_POST",
-              })
+              });
               setToggleGlobalPosts(false);
-       
             }}
           />
         ))}
@@ -134,7 +135,12 @@ const Posts = () => {
         onClick={() =>
           dispatch({
             type: "ADD_POST",
-            payload: { image: image, value: value, valueInput: valueInput, username: username },
+            payload: {
+              image: image,
+              value: value,
+              valueInput: valueInput,
+              username: username,
+            },
           })
         }
       />
@@ -143,7 +149,7 @@ const Posts = () => {
         <mark className="mark"> {state.posts.length} </mark>
         tickets totally
       </h6>
-      {toggleGlobalPosts &&
+      {toggleGlobalPosts && (
         <div>
           {console.log(newPosts)}
           <hr className="hr" />
@@ -158,7 +164,7 @@ const Posts = () => {
             />
           ))}
         </div>
-      }
+      )}
     </div>
   );
 };
