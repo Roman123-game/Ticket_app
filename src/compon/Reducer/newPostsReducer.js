@@ -8,6 +8,11 @@ function newPostsReducer(newPosts, action) {
         return {
          newPosts : [...filterArray,...postsArray]
         };
+
+        case "RETURN_POST":
+          return {
+            newPosts: [...newPosts.newPosts],
+          }
     default: 
       return console.log("default");
   }

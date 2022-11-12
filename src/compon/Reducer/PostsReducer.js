@@ -25,10 +25,7 @@ function PostsReducer(state, action) {
       return {
           posts: [...state.posts],
       };
-        case "RETURN_POST":
-          return {
-            posts: [...state.posts],
-          }
+       
     default: 
       return console.log("default");
   }
