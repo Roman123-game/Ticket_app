@@ -23,15 +23,11 @@ function PostsReducer(state, action) {
       const editedID = [...state.posts.filter((itm) => itm.id === action.payload.ev.postId)]
       editedID[0].description = action.payload.edit
       return {
-          posts: [
-            ...state.posts,
-          ],
+          posts: [...state.posts],
       };
         case "RETURN_POST":
           return {
-            posts: [
-              ...state.posts,
-            ],
+            posts: [...state.posts],
           }
     default: 
       return console.log("default");

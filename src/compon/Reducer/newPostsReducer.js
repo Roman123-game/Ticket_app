@@ -6,7 +6,7 @@ function newPostsReducer(newPosts, action) {
      const postsArray = newPosts.newPosts.map(itm=>itm);
  
         return {
-         newPosts : postsArray.filter((itm) => itm.description === action.payload)
+         newPosts :[...postsArray.filter((itm) => itm.description === action.payload)]
         };
     default: 
       return console.log("default");
