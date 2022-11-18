@@ -3,10 +3,10 @@ function newPostsReducer(newPosts, action) {
   switch (action.type) {
       case "GLOBE_POST":   
      console.log(newPosts.newPosts,'globe btn')
-     const postsArray = newPosts.newPosts.map(itm=>itm);
+     const postsArray = [...newPosts.newPosts.map(itm=>itm)];
      const filterArray = postsArray.filter((itm) => itm.description === action.payload)
         return {
-         newPosts : [...filterArray,...postsArray]
+         newPosts : [...filterArray]
         };
 
         case "RETURN_POST":
