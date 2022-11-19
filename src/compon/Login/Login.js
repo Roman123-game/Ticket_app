@@ -23,7 +23,8 @@ const Login = (props) => {
         setToken(true);
       } else {
         alert(
-          ` ${warning.props.children} ${userPassword} \n Incorrect Password or Empty Username field \nTry again`
+          ` ${warning.props.children} ${userPassword} 
+          \n Incorrect Password or Empty Username field \nTry again`
         );
       }
     },
