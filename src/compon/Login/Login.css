@@ -1,16 +1,18 @@
 .login {
   color: white;
-  width: 330px;
-  height: 6310px;
+  width: 318px;
+  height: 630px;
   border: 1px solid violet;
   border-radius: 5px;
-  background-color: #1D935E;
+  background-color: #1d925d;
   margin: -10px auto;
   padding: 0;
   text-align: center;
   align-items: center;
   justify-content: center;
   padding: 4px;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
 }
 
 .titleLogin {
