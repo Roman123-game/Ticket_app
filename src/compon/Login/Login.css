@@ -1,17 +1,32 @@
+.container{
+  background-color: grey;
+  border: 1px solid violet;
+  margin:1px;
+  width:auto;
+  padding: 0;
+}
+@media(max-width: 959px){
+  .container{
+    background-color: none;
+  border: none;
+    
+  }
+ 
+}
+
 .login {
   color: white;
   width: 320px;
-  height: 630px;
+  min-height: 630px;
   border: 1px solid violet;
   border-radius: 5px;
   background-color: #1d925d;
-  margin: -10px auto;
+  margin: 1px auto;
   padding: 0;
   text-align: center;
   align-items: center;
   justify-content: center;
-  padding: 4px;
- 
+
 }
 
 .titleLogin {

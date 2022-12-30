@@ -32,6 +32,7 @@ const Login = (props) => {
   );
 
   return (
+    <div className="container">
     <div className="login">
       <h2 className="welcomeMsg">Welcome to</h2>
       <h1 className="titleLogin">Tickets</h1>
@@ -76,6 +77,7 @@ const Login = (props) => {
           <div>{openSignUp && <SignUp />}</div>
         </CSSTransition>
       </TransitionGroup>
+    </div>
     </div>
   );
 };
