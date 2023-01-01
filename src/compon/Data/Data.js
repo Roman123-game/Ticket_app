@@ -7,14 +7,21 @@ import { FaLaptopCode,  FaCocktail,  FaCartPlus,FaMoneyBillAlt} from "react-icon
       username: "Will Smith",
       image: <FaLaptopCode className="image" />,
       listName:"Technology",
-      description:"learn react.js & redux",
+      description:"sidebar make for mobile less < 959",
     },
     {
       id: uuidv4(),
       username: "Will Smith",
       image: <FaLaptopCode className="image" />,
       listName:"Technology",
-      description:"buy orange and potato",
+      description:"redux-slice not getting state",
+    },
+    {
+      id: uuidv4(),
+      username: "Will Smith",
+      image: <FaLaptopCode className="image" />,
+      listName:"Technology",
+      description:"bring more data from BU and backend",
     },
     {
       id: uuidv4(),
