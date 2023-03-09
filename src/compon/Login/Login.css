@@ -1,17 +1,18 @@
-.container{
+.container {
   background-color: lightgrey;
   border: 1px solid violet;
-  margin:1px;
-  width:auto;
+  margin: 1px;
+  width: auto;
   padding: 0;
 }
-@media(max-width: 959px){
-  .container{
+
+@media(max-width: 959px) {
+  .container {
     background-color: none;
-  border: none;
-    
+    border: none;
+
   }
- 
+
 }
 
 .login {
@@ -41,70 +42,29 @@
   animation: flick 3s ease-in-out infinite;
 }
 
-.titleMsg{
+.titleMsg {
   margin-top: inherit;
 }
 
 @keyframes flick {
-  0% {
-    opacity: 0.4;
-  }
-
-  5% {
-    opacity: 0.5;
-  }
-
-  10% {
-    opacity: 0.6;
-  }
-
-  15% {
-    opacity: 0.85;
-  }
-
-  25% {
-    opacity: 0.5;
-  }
-
-  30% {
-    opacity: 1;
-  }
-
-  35% {
-    opacity: 0.1;
-  }
-
-  40% {
-    opacity: 0.25;
-  }
-
-  45% {
-    opacity: 0.5;
-  }
-
-  60% {
-    opacity: 1;
-  }
-
-  70% {
-    opacity: 0.85;
-  }
-
-  80% {
-    opacity: 0.4;
-  }
-
-  90% {
-    opacity: 0.5;
-  }
-
-  100% {
-    opacity: 1;
-  }
+0% {opacity: 0.4}
+5% {opacity: 0.5}
+10% { opacity: 0.6}
+15% {opacity: 0.85}
+25% { opacity: 0.5}
+30% {opacity: 1}
+35% { opacity: 0.1}
+40% {opacity: 0.25}
+45% {opacity: 0.5}
+60% {opacity: 1}
+70% {opacity: 0.85}
+80% {opacity: 0.4}
+90% {opacity: 0.5}
+100% {opacity: 1}
 }
 
 
-.noAccountMsg{
+.noAccountMsg {
   margin-top: 0px;
 }
 
@@ -127,7 +87,7 @@
   font-family: 'Orbitron', sans-serif;
   font-size: 12px;
   margin: 2px auto;
-  padding: 4px;
+  padding: 4px 6px;
   color: white;
   border: 1px solid violet;
   border-radius: 25px;
@@ -147,18 +107,18 @@ input:focus {
 }
 
 .item-enter {
-  opacity:0.7;
+  opacity: 0.7;
   filter: blur(4px);
 
 }
 
 .item-enter-active {
- opacity:1;
+  opacity: 1;
   transition: all 1000ms ease-in-out;
 }
 
 .item-exit {
- opacity: 0.6;
+  opacity: 0.6;
   filter: blur(4px);
 }
 
