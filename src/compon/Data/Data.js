@@ -18,13 +18,6 @@ import { FaLaptopCode,  FaCocktail,  FaCartPlus,FaMoneyBillAlt} from "react-icon
     },
     {
       id: uuidv4(),
-      username: "Will Smith",
-      image: <FaLaptopCode className="image" />,
-      listName:"Technology",
-      description:"bring more data from BU and backend",
-    },
-    {
-      id: uuidv4(),
       username: "Sandra Bullok",
       image: <FaCocktail className="image" />,
       listName:"Pleasure",
