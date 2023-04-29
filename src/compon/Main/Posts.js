@@ -54,6 +54,8 @@ const Posts = () => {
   return (
     <div className="posts" style={{ background: background }}>
       <div className="gridContainer">
+      <h1 className="digital">Digital Tickets</h1>
+
         <Tippy content="Information">
           <button className="buttonAdd" onClick={() => setShowInfo(!showInfo)}>
             <FaStreetView />
@@ -83,7 +85,6 @@ const Posts = () => {
         </Tippy>
       </div>
       <hr className="hr" />
-      <h1 className="digital">Digital Tickets</h1>
       <div>
         {state.posts.map((item) => (
           <Task
