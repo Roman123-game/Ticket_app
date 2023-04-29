@@ -13,8 +13,6 @@
   display: inline-flex;
   margin-top: 1px;
   padding: 0px;
-
-
 }
 
 .colorPicker {
@@ -171,5 +169,5 @@ input::placeholder {
 }
 
 .digital {
-  margin-top: -16px;
+  margin-top: 1px;
 }

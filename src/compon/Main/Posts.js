@@ -55,7 +55,6 @@ const Posts = () => {
     <div className="posts" style={{ background: background }}>
       <div className="gridContainer">
       <h1 className="digital">Digital Tickets</h1>
-
         <Tippy content="Information">
           <button className="buttonAdd" onClick={() => setShowInfo(!showInfo)}>
             <FaStreetView />
