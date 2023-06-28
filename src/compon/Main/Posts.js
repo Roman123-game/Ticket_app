@@ -2,9 +2,10 @@ import { useState, useContext, useReducer } from "react";
 import "./Posts.css";
 import { v4 as uuidv4 } from "uuid";
 import Task from "./Task/Task";
-import Select from "../Main/UI/Select";
+import  Select from "../Main/UI/Select";
 import Input from "../Main/UI/Input";
 import Button from "../Main/UI/Button";
+import CloseButton from "../Main/UI/CloseButton";
 import MainContext from "../Context/MainContext";
 import UserInfo from "../ModalWindows/UserInfo";
 import Data from "../Data/Data";
@@ -110,12 +111,7 @@ const Posts = () => {
               });
               setToggleGlobalPosts(true);
             }}
-            clickReturnBtn={() => {
-              newDispatch({
-                type: "RETURN_POST",
-              });
-              setToggleGlobalPosts(false);
-            }}
+          
           />
         ))}
       </div>
@@ -151,6 +147,12 @@ const Posts = () => {
         <div>
           {console.log(newPosts)}
           <hr className="hr" />
+          <CloseButton className="closeButton" onClick={() => {
+              newDispatch({
+                type: "RETURN_POST",
+              });
+              setToggleGlobalPosts(false);
+            }}></CloseButton>
           {newPosts.newPosts.map((item) => (
             <Task
               username={item.username}

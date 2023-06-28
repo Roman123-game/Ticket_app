@@ -1,4 +1,4 @@
-import { FaRegTrashAlt, FaGlobe, FaPencilAlt, FaHamsa } from "react-icons/fa";
+import { FaRegTrashAlt, FaGlobe, FaPencilAlt } from "react-icons/fa";
 import Tippy from "@tippy.js/react";
 import { memo } from "react";
 
@@ -16,11 +16,6 @@ const Task = (props) => {
           {props.description}
         </h6>
         <div className="btnGrid">
-        <Tippy content="Return to posts">
-            <button className="buttonReturn" onClick={() => props.clickReturnBtn(props)}>
-              <FaHamsa />
-            </button>
-          </Tippy>
           <Tippy content="Users have same todo">
             <button className="buttonGlobe" onClick={() => props.clickGlobeBtn(props)}>
               <FaGlobe />
