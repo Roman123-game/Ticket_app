@@ -1,4 +1,4 @@
-import {FaTimes } from "react-icons/fa";
+import {FaAngleDoubleUp } from "react-icons/fa";
 import { memo } from "react";
 
 
@@ -10,7 +10,7 @@ const Button = (props) => {
       className={className}
       type={typ}
     >
-      <FaTimes />
+      <FaAngleDoubleUp />
     </button>
   );
 };
