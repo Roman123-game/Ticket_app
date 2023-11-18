@@ -7,11 +7,12 @@
   text-align: center;
   align-items: center;
   padding: 2px;
-  position: fixed;
+  position:relative;
 }
 
 .titleSignUp {
   margin-top: 0px;
+  position: relative;
 }
 
 .signUpBtn {
