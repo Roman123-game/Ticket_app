@@ -1,7 +1,7 @@
 import MainContext from "../Context/MainContext";
 import SignUp from "./SignUp/SignUp";
 import "./Login.css";
-import { useCallback, useContext, useState,memo, useEffect } from "react";
+import { useCallback, useContext, useState,memo} from "react";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 import { v4 as uuidv4 } from "uuid";
 import GoogleLoginComp from "./Google/GoogleLoginComp";
