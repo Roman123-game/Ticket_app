@@ -1,10 +1,11 @@
 import MainContext from "../Context/MainContext";
 import SignUp from "./SignUp/SignUp";
 import "./Login.css";
-import { useCallback, useContext, useState } from "react";
+import { useCallback, useContext, useState,memo, useEffect } from "react";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 import { v4 as uuidv4 } from "uuid";
-import { memo } from "react";
+import GoogleLoginComp from "./Google/GoogleLoginComp";
+
 
 const Login = (props) => {
   const [userPassword, setUserPassword] = useState("");
@@ -37,6 +38,8 @@ const Login = (props) => {
       <h2 className="welcomeMsg">Welcome to</h2>
       <h1 className="titleLogin">Tickets</h1>
       <h3 className="titleMsg">Application that keeping all your tasks organized</h3>
+      <GoogleLoginComp/>
+      <h3 className="titleMsg">or</h3>
       <label>Username</label>
       <input
         className="inputLogin"
@@ -78,6 +81,7 @@ const Login = (props) => {
         </CSSTransition>
       </TransitionGroup>
     </div>
+    
     </div>
   );
 };

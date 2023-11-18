@@ -1,7 +1,8 @@
 import React from 'react'
 import { GoogleLogin } from 'react-google-login'
+import './GoogleLoginComp.css'
 
-const clientId = "611336744283-pb1u0guaj2erfceptjpu19lndc7j7j9p.apps.googleusercontent.com"
+const clientId = "104231836749-h4u7488kujnf42obp6dmbok7omn94clu.apps.googleusercontent.com"
 
 const onSuccess =(res) =>{
   console.log("succes login ",res.rofileObj)
@@ -15,6 +16,7 @@ const GoogleLoginComp = () => {
   return (
     <div className="signInButton">
     <GoogleLogin
+    className="googleLogin"
     clientId={clientId}
     buttonText='Login'
     onSuccess={onSuccess}
