@@ -73,7 +73,7 @@ const Login = (props) => {
         </button>
       </h4>
       <h5 className="loginBottomMsg">
-        *UserName: Your Name *Password: test1234
+        (*UserName: Your Name *Password: test1234)
       </h5>
       <TransitionGroup>
         <CSSTransition key={uuidv4()} timeout={500} classNames="item">
