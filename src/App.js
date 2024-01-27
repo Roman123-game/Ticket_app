@@ -11,15 +11,12 @@ function App() {
  const [username, setUsername] = useState("")
   return (
     <div>
-      {token ? (
+
         <MainContext.Provider value={{setToken,setUsername, username}}>
-          <Posts />
+        {token ? <Posts/> :    <Login/>}
         </MainContext.Provider>
-      ) : (
-        <MainContext.Provider value={{setToken,setUsername, username}}>
-          <Login />
-        </MainContext.Provider>
-      )}
+ 
+      
     </div>
   );
 }
