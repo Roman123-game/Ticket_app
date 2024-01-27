@@ -10,14 +10,9 @@ function App() {
   const [token, setToken] = useState(false);
  const [username, setUsername] = useState("")
   return (
-    <div>
-
         <MainContext.Provider value={{setToken,setUsername, username}}>
         {token ? <Posts/> :    <Login/>}
         </MainContext.Provider>
- 
-      
-    </div>
   );
 }
 export default memo(App);
