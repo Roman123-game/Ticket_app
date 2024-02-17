@@ -58,17 +58,16 @@
   width: 40px;
   height: 40px;
   color: inherit;
-  margin: -30px auto auto -5px;
+
 }
 
 .bodyPost {
-  align-self: flex-start;
+  align-self: center;
   justify-self: center;
   font-family: "Orbitron", sans-serif;
-  font-size: 12px;
+  font-size: 14px;
   border-radius: 5px;
   min-width:120px;
-  margin: 40px  auto auto -120px;
   color: cyan;
   text-transform: capitalize;
   text-shadow: -1px 0 indigo, 0 1px indigo, 1px 0 indigo, 0 -1px indigo;

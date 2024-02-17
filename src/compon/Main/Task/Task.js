@@ -3,18 +3,18 @@ import Tippy from "@tippy.js/react";
 import { memo } from "react";
 
 const Task = (props) => {
-  // const {username, image, listName, description} = props
+  const {username, image, listName, description} = props
   return (
     <div className="task">
       <fieldset className="fieldset">
-        <legend className="legend">{props.username}</legend>
-        <h3> {props.image}</h3>
-        <h4 className="title">
-          {props.listName}
-        </h4>
-        <h6 className="bodyPost">
-          {props.description}
-        </h6>
+        <legend className="legend">{username}</legend>
+        <span> {image}</span>
+  
+        <span className="bodyPost">
+          {description}
+        </span>
+
+
         <div className="btnGrid">
           <Tippy content="Users have same todo">
             <button className="buttonGlobe" onClick={() => props.clickGlobeBtn(props)}>
