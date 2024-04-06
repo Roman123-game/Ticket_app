@@ -1,7 +1,7 @@
 .posts {
   color: silver;
   width: 100%;
-  height: 100%;
+  height: 90vh;
   text-align: center;
   font-size: 1.2em;
   border: 1px solid silver;
@@ -159,6 +159,7 @@ input::placeholder {
 
 .hr {
   width: 99%;
+  height: 1px;
   background-color: silver
 }
 
