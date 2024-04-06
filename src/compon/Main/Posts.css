@@ -1,6 +1,7 @@
 .posts {
   color: silver;
   width: 100%;
+  height: 'auto';
   text-align: center;
   font-size: 1.2em;
   border: 1px solid silver;
