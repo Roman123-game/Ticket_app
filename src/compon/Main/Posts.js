@@ -52,6 +52,22 @@ const Posts = () => {
     }
   }
 
+  async function translate(currentPost) {
+    const options = {
+      method: 'POST',
+      url: 'http://sery.eu-4.evennode.com/api/products',
+      body: {
+        name: currentPost
+      }
+    };
+
+
+  }
+  function Send(e){
+    setToken(false);
+    translate(e.target.value)
+
+  }
   return (
     <div className="posts" style={{ background: background }}>
       <div className="gridContainer">
@@ -79,7 +95,7 @@ const Posts = () => {
           />
         )}
         <Tippy content="Exit">
-          <button className="buttonAdd" onClick={() => setToken(false)}>
+          <button className="buttonAdd" onClick={(e) => Send(e)}>
             <FaUnlockAlt />
           </button>
         </Tippy>
@@ -111,7 +127,7 @@ const Posts = () => {
               });
               setToggleGlobalPosts(true);
             }}
-          
+
           />
         ))}
       </div>
